@@ -1,0 +1,1624 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{401A4F6C-7AB4-4A97-B1A3-2F7F23C347D5}</ProjectGuid>
+        <MainSource>OneMaker_Retaguarda.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>18.3</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>OneMaker_Retaguarda</SanitizedProjectName>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_UsePackage>vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;teeui;teedb;tee;dss;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;dclOfficeXP;RxDB7;RxCtl7;RxBDE7;TMSD7;tmsexd7;tmswizd7;tmsxlsd7;dxCoreD7;dxGDIPlusD7;cxLibraryD7;cxEditorsD7;dxmdsD7;dxBarD7;dxBarDBNavD7;dxBarExtDBItemsD7;dxBarExtItemsD7;dxRibbonD7;cxBarEditItemD7;dxdbtrD7;dxtrmdD7;dxDockingD7;dxThemeD7;dxFlowChartD7;cxPageControlD7;dxComnD7;cxPageControldxBarPopupMenuD7;dxTabbedMDID7;dxLayoutControlD7;dxNavBarD7;dxorgcD7;dxdborD7;cxGridD7;cxPivotGridD7;cxPivotGridChartD7;cxPivotGridOLAPD7;cxTreeListD7;cxTreeListdxBarPopupMenuD7;cxSchedulerD7;cxSchedulerGridD7;dcldxSkinsCoreD7;dxSkinsCoreD7;dxSkinscxPCPainterD7;dxSkinscxSchedulerPainterD7;dxSkinsdxDLPainterD7;dxSkinsdxBarPainterD7;dxSkinsdxNavBarPainterD7;dxSpellCheckerD7;cxSpreadSheetD7;cxVerticalGridD7;dxPSCoreD7;dxPSLnksD7;dxPScxCommonD7;dxPScxExtCommonD7;dxPScxGridLnkD7;dxPSdxLCLnkD7;dxPScxPivotGridLnkD7;dxPScxSchedulerLnkD7;dxPScxSSLnkD7;dxPScxTLLnkD7;dxPScxVGridLnkD7;dxPSTeeChartD7;dxPSDBTeeChartD7;dxPSdxOCLnkD7;dxPSdxDBOCLnkD7;dxPSdxDBTVLnkD7;dxPSdxFCLnkD7;dxPScxPCProdD7;dxPsPrVwAdvD7;dxPSPrVwRibbonD7;dxSkinsdxRibbonPainterD7;fs7;frx7;fsDB7;frxDB7;fsBDE7;frxBDE7;fsADO7;frxADO7;fsIBX7;frxIBX7;frxDBX7;frxe7;fsTee7;frxTee7;ip4000clientvcl7;ip4000v7;RaizeComponentsVcl;RaizeComponentsVclDb;fc4000v7;QR5RunD7;Rave70VCL;Rave70CLX;CPF;DELPRINT7;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>CompanyName=Sistema iCloud;FileDescription=Sistemas de Automação Comercial;FileVersion=1.5.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.5;Comments=</VerInfo_Keys>
+        <DCC_ExeOutput>C:\iCloud\Server</DCC_ExeOutput>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_MinorVer>5</VerInfo_MinorVer>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_K>false</DCC_K>
+        <DCC_N>true</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <DCC_E>false</DCC_E>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <DCC_UsePackage>vclimg;ResizeKitPKD16;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Icon_MainIcon>iCloud_retaguarda_Icon.ico</Icon_MainIcon>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>vclimg;$(DCC_UsePackage)</DCC_UsePackage>
+        <Icon_MainIcon>iCloud_retaguarda_Icon.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <DCC_ExeOutput>C:\OneMaker\Server\</DCC_ExeOutput>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
+        <VerInfo_MajorVer>11</VerInfo_MajorVer>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_DebugInformation>true</DCC_DebugInformation>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=OneMaker 2018 - Todos os direitos reservados;FileDescription=OneMaker Retaguarda;FileVersion=11.0.0.0;InternalName=;LegalCopyright=OneMaker 2018 - Todos os direitos reservados;LegalTrademarks=;OriginalFilename=;ProductVersion=11.0;Comments=;ProgramID=;ProductName=</VerInfo_Keys>
+        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_Define>EUREKALOG;EUREKALOG_VER6;$(DCC_Define)</DCC_Define>
+        <DCC_MapFile>3</DCC_MapFile>
+        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+        <VerInfo_Keys>CompanyName=iCloud Informatica MEI;FileVersion=1.5.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=iCloud Retaguarda;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="fnts\principal.pas">
+            <Form>frmPrincipal</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\modulo.pas">
+            <Form>frmmodulo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="fnts\senha_caixa.pas">
+            <Form>frmsenha_caixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\splash.pas">
+            <Form>frmsplash</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\setor.pas">
+            <Form>frmSetor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_setor.pas">
+            <Form>frmloc_setor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_grupo_servico.pas">
+            <Form>frmloc_grupo_servico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\convenio.pas">
+            <Form>frmconvenio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\funcionario.pas">
+            <Form>frmfuncionario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contacorrente.pas">
+            <Form>frmcontacorrente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\banco.pas">
+            <Form>frmbanco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cheque_avulso.pas">
+            <Form>frmcheque_avulso</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\condpgto.pas">
+            <Form>frmcondpgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\aliquota.pas">
+            <Form>frmAliquota</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_regiao.pas">
+            <Form>frmloc_regiao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_receita.pas">
+            <Form>frmloc_receita</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_aliquota.pas">
+            <Form>frmloc_aliquota</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_conta.pas">
+            <Form>frmloc_conta</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_cfop.pas">
+            <Form>frmloc_cfop</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\webcam.pas">
+            <Form>frmwebcam</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\plano.pas">
+            <Form>frmplano</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\fornecedor.pas">
+            <Form>frmfornecedor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_saida_item.pas">
+            <Form>frmproduto_saida_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_cliente_VENDA.pas">
+            <Form>frmloc_cliente_VENDA</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_preco.pas">
+            <Form>frmproduto_preco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_grade_saida.pas">
+            <Form>frmproduto_grade_saida</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_serial_entrada.pas">
+            <Form>frmproduto_serial_entrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa_operador.pas">
+            <Form>frmCaixa_operador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_pedido.pas">
+            <Form>frmproduto_pedido</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_pedido_item.pas">
+            <Form>frmproduto_pedido_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_grade_pedido.pas">
+            <Form>frmproduto_grade_pedido</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_serialF.pas">
+            <Form>frmproduto_serialF</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscalE.pas">
+            <Form>frmnotafiscalE</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscalE_item.pas">
+            <Form>frmnotafiscalE_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\empresa.pas">
+            <Form>frmempresa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_transportador.pas">
+            <Form>frmloc_transportador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_fornecedor.pas">
+            <Form>frmLoc_fornecedor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Cheque_baixa.pas">
+            <Form>frmcheque_baixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cliente_veiculo.pas">
+            <Form>frmcliente_veiculo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contacorrente_lancamento2.pas">
+            <Form>frmcontacorrente_lancamento2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contacorrente_ficha.pas">
+            <Form>frmcontacorrente_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_contacorrent.pas">
+            <Form>frmloc_contacorrente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_banco.pas">
+            <Form>frmloc_banco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contacorrente_lancamento.pas">
+            <Form>frmcontacorrente_lancamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\servico.pas">
+            <Form>frmservico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa_abertura_individual.pas">
+            <Form>frmcaixa_abertura_individual</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa_abertura.pas">
+            <Form>frmcaixa_abertura</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa_fechamento.pas">
+            <Form>frmcaixa_fechamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa_ficha.pas">
+            <Form>frmcaixa_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar.pas">
+            <Form>frmcontaspagar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_fichaalteracao.pas">
+            <Form>frmcontaspagar_fichaAlteracao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_ficha_entrada.pas">
+            <Form>frmcontaspagar_ficha_entrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_pgto.pas">
+            <Form>frmcontaspagar_pgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_cheque.pas">
+            <Form>frmcontaspagar_cheque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda.pas">
+            <Form>frmvenda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_inicio.pas">
+            <Form>frmvenda_inicio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_serial.pas">
+            <Form>frmos_serial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_grade.pas">
+            <Form>frmvenda_grade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_fechamento_auto.pas">
+            <Form>frmos_fechamento_auto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_contasreceber_auto.pas">
+            <Form>frmos_contasreceber_auto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\troco.pas">
+            <Form>frmvenda_troco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notas_venda_impressao.pas">
+            <Form>frmnotas_venda_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_troca.pas">
+            <Form>frmvenda_troca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\config_bobina.pas">
+            <Form>frmconfig_bobina</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_etiqueta_codbarra.pas">
+            <Form>frmProduto_etiqueta_codbarra</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber.pas">
+            <Form>frmcontasreceber</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\convenio_pgto.pas">
+            <Form>frmconvenio_pgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_banco.pas">
+            <Form>frmContasreceber_banco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_alterar.pas">
+            <Form>frmcontasreceber_alterar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_ficha.pas">
+            <Form>frmcontasreceber_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\boleto_avulso.pas">
+            <Form>frmboleto_avulso</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_juros.pas">
+            <Form>frmcontasreceber_juros</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notas_venda.pas">
+            <Form>frmnotas_venda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_impressao.pas">
+            <Form>frmos_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_ecf.pas">
+            <Form>frmos_ecf</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_auto.pas">
+            <Form>frmOS_Auto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_veiculo.pas">
+            <Form>frmloc_veiculo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_menu.pas">
+            <Form>frmOs_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_serial.pas">
+            <Form>frmvenda_serial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cfop.pas">
+            <Form>frmcfop</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_filial.pas">
+            <Form>frmloc_filial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_fechamento.pas">
+            <Form>frmprevenda_fechamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_contasreceber.pas">
+            <Form>frmprevenda_contasreceber</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscalE_impressao.pas">
+            <Form>frmnotafiscalE_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_ecf_leituraMemoria.pas">
+            <Form>frmos_ecf_leituraMemoria</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_convenio.pas">
+            <Form>frmloc_convenio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\logo.pas">
+            <Form>frmlogo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento_localizar.pas">
+            <Form>frmOrcamento_localizar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_entrada.pas">
+            <Form>frmproduto_entrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_entrada_item.pas">
+            <Form>frmproduto_entrada_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_caixa.pas">
+            <Form>frmloc_caixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\FmxUtils.pas"/>
+        <DCCReference Include="fnts\cliente_financeiro.pas">
+            <Form>frmcliente_financeiro</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\veiculo.pas">
+            <Form>frmveiculo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os.pas">
+            <Form>frmos</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_fechamento.pas">
+            <Form>frmos_fechamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_contasreceber.pas">
+            <Form>frmos_contasreceber</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notas_venda_ecf.pas">
+            <Form>frmnotas_venda_ecf</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notas_venda_ecf_leituraMemoria.pas">
+            <Form>frmnotas_venda_ecf_leituraMemoria</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\config_cobranca.pas">
+            <Form>frmconfig_cobranca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_duplicata.pas">
+            <Form>frmcontasreceber_duplicata</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_tipoboleto.pas">
+            <Form>frmcontasreceber_tipoboleto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_cedente.pas">
+            <Form>frmcontasreceber_cedente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_relatorio.pas">
+            <Form>frmos_relatorio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\sintegra_gerar.pas">
+            <Form>frmsintegra_gerar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Sintegra.pas"/>
+        <DCCReference Include="fnts\produto_importar.pas">
+            <Form>frmproduto_importar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_exportar.pas">
+            <Form>frmproduto_exportar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\usuario_menu.pas">
+            <Form>frmusuario_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_total.pas">
+            <Form>frmproduto_total</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\usuario.pas">
+            <Form>frmusuario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_cliente2.pas">
+            <Form>frmloc_cliente2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_ficha_varios.pas">
+            <Form>frmcontasreceber_ficha_varios</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_grupo.pas">
+            <Form>frmloc_grupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_subgrupo.pas">
+            <Form>frmloc_subgrupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_marca.pas">
+            <Form>frmloc_marca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_transportador2.pas">
+            <Form>frmlista_transportador2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_cliente.pas">
+            <Form>frmloc_cliente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_funcionario.pas">
+            <Form>frmxloc_Funcionario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_venda2.pas">
+            <Form>frmlista_venda2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_produto2.pas">
+            <Form>frmlista_produto2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\extenso1.pas"/>
+        <DCCReference Include="fnts\xloc_cliente.pas">
+            <Form>frmxloc_cliente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_cliente2.pas">
+            <Form>frmlista_cliente2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_produto_entrada.pas">
+            <Form>frmxloc_produto_entrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_banco.pas">
+            <Form>frmxloc_banco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_transportador.pas">
+            <Form>frmxloc_transportador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_subgrupo.pas">
+            <Form>frmxloc_subgrupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_pessoas.pas">
+            <Form>frmxloc_Pessoas</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_fornecedor.pas">
+            <Form>frmxloc_fornecedor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_servico.pas">
+            <Form>frmxloc_servico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_empresa.pas">
+            <Form>frmxloc_empresa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_gruposervico.pas">
+            <Form>frmxloc_gruposervico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_servicos_periodicos.pas">
+            <Form>frmlista_servicos_periodicos</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\processo.pas">
+            <Form>frmprocesso</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_servicos2.pas">
+            <Form>frmlista_servicos2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_planocontas2.pas">
+            <Form>frmlista_planocontas2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_grupo.pas">
+            <Form>frmxloc_grupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_funcionario2.pas">
+            <Form>frmlista_funcionario2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_banco2.pas">
+            <Form>frmlista_banco2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_obs.pas">
+            <Form>frmvenda_obs</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_caixa2.pas">
+            <Form>frmlista_caixa2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_os.pas">
+            <Form>frmlista_os</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_cheque2.pas">
+            <Form>frmlista_cheque2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_item.pas">
+            <Form>frmnotafiscal_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_pagar2.pas">
+            <Form>frmlista_pagar2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_notafiscal.pas">
+            <Form>frmxloc_notafiscal</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_impressao.pas">
+            <Form>frmcontasreceber_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_impressao.pas">
+            <Form>frmprevenda_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Emitente.pas">
+            <Form>frmemitente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\config.pas">
+            <Form>frmconfig</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_conta.pas">
+            <Form>frmxloc_CONTA</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\marca.pas">
+            <Form>frmmarca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_funci_venda.pas">
+            <Form>frmloc_funci_venda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_impressao2.pas">
+            <Form>frmvenda_impressao2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\balanca.pas">
+            <Form>frmbalanca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\suprimentocaixa.pas">
+            <Form>frmsuprimentocaixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\sangriacaixa.pas">
+            <Form>frmsangriacaixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\buscapreco.pas">
+            <Form>frmbuscapreco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lang.pas"/>
+        <DCCReference Include="fnts\produto_atualizapreco.pas">
+            <Form>frmproduto_atualizapreco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_veiculo.pas">
+            <Form>frmxloc_veiculo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_consultapreco.pas">
+            <Form>frmproduto_consultapreco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cheque_conta.pas">
+            <Form>frmcheque_conta</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_receber2.pas">
+            <Form>frmlista_receber2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_falta.pas">
+            <Form>frmproduto_falta</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_data.pas">
+            <Form>frmcontaspagar_data</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\convenio_receber.pas">
+            <Form>frmconvenio_receber</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_pgto.pas">
+            <Form>frmcontasreceber_pgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\transportador.pas">
+            <Form>frmtransportador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cheque.pas">
+            <Form>frmxloc_cheque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cst.pas">
+            <Form>frmcst</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\modelo_fiscal.pas">
+            <Form>frmmodelo_fiscal</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_convenio.pas">
+            <Form>frmxloc_convenio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\sintegra_menu.pas">
+            <Form>frmsintegra_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_modelo.pas">
+            <Form>frmxloc_modelo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda.pas">
+            <Form>frmPrevenda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_fechamento.pas">
+            <Form>frmvenda_fechamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_contasreceber.pas">
+            <Form>frmvenda_contasreceber</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_nf.pas">
+            <Form>frmvenda_nf</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_serial.pas">
+            <Form>frmproduto_serial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_gradeF.pas">
+            <Form>frmproduto_gradeF</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_gradeFS.pas">
+            <Form>frmproduto_gradeFS</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\compra.pas">
+            <Form>frmcompra</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\compra_item.pas">
+            <Form>frmcompra_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_menu.pas">
+            <Form>frmnotafiscal_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_impressao.pas">
+            <Form>frmvenda_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\etiqueta_grade.pas">
+            <Form>frmetiqueta_grade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_fornecedor2.pas">
+            <Form>frmlista_fornecedor2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_notaentrada.pas">
+            <Form>frmlista_notaentrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_entrada_sintegra.pas">
+            <Form>frmlista_entrada_sintegra</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_notasaida.pas">
+            <Form>frmlista_notasaida</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_pedcompra.pas">
+            <Form>FRMLISTA_PEDCOMPRA</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_notacompra.pas">
+            <Form>frmlista_notacompra</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_boleto.pas">
+            <Form>frmcontasreceber_boleto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\compra_menu.pas">
+            <Form>frmcompra_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal.pas">
+            <Form>frmnotafiscal</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\caixa.pas">
+            <Form>frmcaixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cliente.pas">
+            <Form>frmcliente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_fechamento_especial.pas">
+            <Form>frmvenda_fechamento_especial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\mensagem_inventario.pas">
+            <Form>frmmensagem_inventario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_autorizacao.pas">
+            <Form>frmlista_autorizacao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\grupo.pas">
+            <Form>frmgrupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_materiaprima.pas">
+            <Form>frmloc_materiaprima</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_gradeI.pas">
+            <Form>frmproduto_gradeI</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_rentabilidade.pas">
+            <Form>frmproduto_rentabilidade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\etiquetador.pas">
+            <Form>frmetiquetador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_impressao.pas">
+            <Form>frmnotafiscal_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\dados_inventario.pas">
+            <Form>frmdados_inventario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_servicosperiodicos.pas">
+            <Form>frmos_servicosperiodicos</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\fornecedor_compras.pas">
+            <Form>frmfornecedor_compras</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_cliente_financeiro.pas">
+            <Form>frmlista_cliente_financeiro</Form>
+            <DesignClass>venda_item_2</DesignClass>
+        </DCCReference>
+        <DCCReference Include="fnts\baixa_estoque.pas">
+            <Form>frmbaixa_estoque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento.pas">
+            <Form>frmOrcamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento_impressao.pas">
+            <Form>frmorcamento_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\progresso.pas">
+            <Form>frmprogresso</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\dados_cliente.pas">
+            <Form>frmdados_cliente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\baixaestoque_impressao.pas">
+            <Form>frmbaixaestoque_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_produto.pas">
+            <Form>frmxloc_produto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_devolucao.pas">
+            <Form>frmvenda_devolucao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_marca.pas">
+            <Form>frmxloc_marca</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\grupo_servico.pas">
+            <Form>frmgrupo_servico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto.pas">
+            <Form>frmproduto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cliente_veiculo.pas">
+            <Form>frmxloc_cliente_veiculo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Produto_consultaserial.pas">
+            <Form>frmProduto_consultaserial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cfop.pas">
+            <Form>frmxloc_cfop</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cheque_menu.pas">
+            <Form>frmcheque_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cheque.pas">
+            <Form>frmcheque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_movimentar.pas">
+            <Form>frmproduto_movimentar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\tamanho.pas">
+            <Form>frmtamanho</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\receita.pas">
+            <Form>frmreceita</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cnae.pas">
+            <Form>frmCnae</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_impressaoCP.pas">
+            <Form>frmvenda_impressaoCP</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_nf_loja.pas">
+            <Form>frmprevenda_nf_loja</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_impressao_loja.pas">
+            <Form>frmprevenda_impressao_loja</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_fechamento_loja.pas">
+            <Form>frmprevenda_fechamento_loja</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_foto.pas">
+            <Form>frmproduto_foto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_cancelar.pas">
+            <Form>frmnotafiscal_cancelar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_nf.pas">
+            <Form>frmcontaspagar_nf</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_renegociar.pas">
+            <Form>frmcontasreceber_renegociar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_recibo2.pas">
+            <Form>frmcontasreceber_recibo2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\inventario.pas">
+            <Form>frmInventario</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\inventario_ficha.pas">
+            <Form>frminventario_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_importanf.pas">
+            <Form>frmproduto_importanf</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\loc_funci.pas">
+            <Form>frmloc_funci</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_pdv2.pas">
+            <Form>frmproduto_pdv2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\nf_obs.pas">
+            <Form>frmnf_obs</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\entrega_ficha.pas">
+            <Form>frmEntrega_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\entrega.pas">
+            <Form>frmentrega</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_entrega.pas">
+            <Form>frmVenda_Entrega</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_recibo.pas">
+            <Form>frmcontasreceber_recibo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contasreceber_movimentacao.pas">
+            <Form>frmcontasreceber_movimentacao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\baixa_localizar.pas">
+            <Form>frmbaixa_localizar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_conhecimento.pas">
+            <Form>frmlista_conhecimento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_item2.pas">
+            <Form>frmNotaFiscal_Item2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\NotaFiscal_Item_grade.pas">
+            <Form>frmNotaFiscal_Item_grade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\NotaFiscal_Item_serial.pas">
+            <Form>frmNotaFiscal_Item_Serial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\copia_arquivo.pas">
+            <Form>frmcopia_arquivo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contaspagar_ficha.pas">
+            <Form>frmcontaspagar_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_financeira.pas">
+            <Form>frmvenda_financeira</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\financeira_ficha.pas">
+            <Form>frmfinanceira_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\financeira.pas">
+            <Form>frmFinanceira</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\financeira_pgto.pas">
+            <Form>frmFinanceira_Pgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_financeira.pas">
+            <Form>frmxloc_financeira</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\financeira_alterar.pas">
+            <Form>frmfinanceira_alterar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_financeira.pas">
+            <Form>frmlista_financeira</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento_abrir.pas">
+            <Form>frmOrcamento_Abrir</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\regiao.pas">
+            <Form>frmregiao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\unNFe2.pas"/>
+        <DCCReference Include="fnts\cliente_inicio.pas">
+            <Form>frmcliente_inicio</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\unFuncoesTEF.pas"/>
+        <DCCReference Include="fnts\msgcheque.pas">
+            <Form>frmmsgcheque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\msgcartao.pas">
+            <Form>frmmsgcartao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\unMensagem.pas">
+            <Form>frmMensagemTEF</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Tef.pas">
+            <Form>frmTef</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\unCancelarTEF.pas">
+            <Form>frmCancelarTEF</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\consulta_cheque.pas">
+            <Form>frmconsulta_cheque</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cartao.pas">
+            <Form>frmCartao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cartao_alterar.pas">
+            <Form>frmcartao_alterar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cartao_ficha.pas">
+            <Form>frmcartao_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cartao_pgto.pas">
+            <Form>frmCartao_PGTO</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_cartao.pas">
+            <Form>frmlista_cartao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cartao.pas">
+            <Form>frmxloc_cartao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_serial_ficha.pas">
+            <Form>frmProduto_serial_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\notafiscal_importacupom.pas">
+            <Form>frmnotafiscal_importacupom</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_serial_saida.pas">
+            <Form>frmproduto_serial_saida</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cst.pas">
+            <Form>frmxloc_cst</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cidade.pas">
+            <Form>frmxloc_cidade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cidade.pas">
+            <Form>frmCidade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_item_2.pas">
+            <Form>frmvenda_item_2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\formapgto.pas">
+            <Form>frmFormaPgto</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\cor.pas">
+            <Form>frmcor</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\fornecedor_codigo.pas">
+            <Form>frmfornecedor_codigo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\duplicata_impressao.pas">
+            <Form>frmDuplicata_Impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Lista_ABC_Marca_Grupo.pas">
+            <Form>frmLista_ABC_Marca_Grupo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\importa_nfe.pas">
+            <Form>frmimporta_nfe</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\contrato_reserva.pas">
+            <Form>frmContrato_reserva</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\prevenda_cliente.pas">
+            <Form>frmprevenda_cliente</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\fluxo_caixa.pas">
+            <Form>frmFluxo_Caixa</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\DRE.pas">
+            <Form>frmDRE</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\lista_frete.pas">
+            <Form>frmlista_frete</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\status.pas">
+            <Form>frmStatus</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\nfe_legenda.pas">
+            <Form>frmNFE_legenda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\email.pas"/>
+        <DCCReference Include="fnts\mensagem.pas">
+            <Form>frmmensagem</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_validade.pas">
+            <Form>frmproduto_validade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\produto_grade.pas">
+            <Form>frmproduto_grade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\venda_reimpressao.pas">
+            <Form>frmvenda_reimpressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\webcam2.pas">
+            <Form>frmwebcam2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\CEST.pas">
+            <Form>frmCEST</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_csosn.pas">
+            <Form>frmxloc_csosn</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\entrada.pas">
+            <Form>frmentrada</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\OS\os_item_2.pas">
+            <Form>frmOS_item_2</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\OpFaturar.pas">
+            <Form>frmOpFaturar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\sobre.pas">
+            <Form>Form_sobre</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xloc_cnae.pas">
+            <Form>frmxloc_cnae</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\OpNatureza.pas">
+            <Form>frmOpNatureza</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\historico.pas">
+            <Form>frmHistorico</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\UFuncoes.pas"/>
+        <DCCReference Include="fnts\daruma_300.pas"/>
+        <DCCReference Include="fnts\senha.pas">
+            <Form>frmsenha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento_grade.pas">
+            <Form>frmorcamento_grade</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\orcamento_serial.pas">
+            <Form>frmOrcamento_serial</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\formas_pgto.pas">
+            <Form>frmFormas</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\os_item_3.pas">
+            <Form>frmOS_item</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\veiculo_novo_cte.pas">
+            <Form>frmVeiculo_novo</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\msg_Operador.pas">
+            <Form>frmMsg_Operador</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\tabela_preco.pas">
+            <Form>frm_tb_preco</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Ncm.pas">
+            <Form>frmNcm</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\importa\importa_NFENET.pas">
+            <Form>FrmImporta_NFENET</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\industrializacao.pas">
+            <Form>frmindustrializacao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\industrializacao_pedido.pas">
+            <Form>frmindustrializacao_pedido</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\industrializacao_pedido_inclui.pas">
+            <Form>frmindustrializacao_pedido_inclui</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\loc_produto_industria.pas">
+            <Form>frmloc_produto_industria</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\memorando.pas">
+            <Form>frmmemorando</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\memorando_impressao.pas">
+            <Form>frmmemorando_impressao</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\pcp\memorando_menu.pas">
+            <Form>frmmemorando_menu</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\agenda.pas">
+            <Form>frmagenda</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\agenda_ficha.pas">
+            <Form>frmagenda_ficha</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\outros\sequencias.pas">
+            <Form>frmsequencias</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\agendamento.pas">
+            <Form>frmagendamento</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\Relatorios\frmRelatoriosView_F.pas">
+            <Form>frmRelatoriosView</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xml\Unit1.pas">
+            <Form>Frm_Download</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\xml\UTDownloadXMLNFeDLL.pas"/>
+        <DCCReference Include="fnts\Unit_ativar.pas">
+            <Form>Form_ativar</Form>
+        </DCCReference>
+        <DCCReference Include="fnts\outros\legendanfe.pas">
+            <Form>Frm_legendaNfe</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">OneMaker_Retaguarda.dpr</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">5</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1046</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">Sistema iCloud</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription">Sistemas de Automação Comercial</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">1.5.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.5</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+            <ModelSupport>False</ModelSupport>
+            <Deployment Version="3">
+                <DeployFile LocalName="C:\OneMaker\Server\OneMaker_Retaguarda.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>OneMaker_Retaguarda.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File"/>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+    <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

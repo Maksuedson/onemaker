@@ -1,0 +1,2926 @@
+object frmcompra_menu: Tfrmcompra_menu
+  Left = 435
+  Top = 150
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'NOTAS FISCAIS DE ENTRADA'
+  ClientHeight = 578
+  ClientWidth = 786
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PopupMenu = pop
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel2: TPanel
+    Left = 0
+    Top = 520
+    Width = 786
+    Height = 58
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 3355443
+    ParentBackground = False
+    TabOrder = 0
+    object bincluir: TAdvGlowButton
+      Left = 0
+      Top = 0
+      Width = 86
+      Height = 58
+      Align = alLeft
+      Caption = 'Incluir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003CF4944415478DAC497CF6B545714C73FDFF3DEBC31931AADF45730
+        A2B504C1AE5CB8D12C046971AD526A4117F9071477C9A28B2E926E6ACD3F60A1
+        85DA2EECBA3FB651280A22D285544A43152B8AD5A999C9CC9B774E1733F9A171
+        E2D396F40B17DEBBEFBEF3BDE7DC73BFF75C1DF8E2004BF0025506D0D05B84B7
+        7A9D1928D222FC7D607F66B62F22B6039B7A031E499A6BBB5F022E26B21F0975
+        A00D80AC4AD4FF24F22658B24495D207412018004E4A8C67B2D16E3F20AD1CBA
+        25E0EDCCEC0080C3AF119C83980968AA8F7DEB4F9A1E93D2AB66312D188D45D2
+        BE13ED36C1A8594C4BE955911E8B3E7F19EE745B015E10E1484C99255F4BC92E
+        5E1252B2AB6B83A98865FB8B7C2995CAB2F311586DF397928E13CEBF43F42660
+        1356DB3CE270A2BB44DE5BE3A1A1EE4B0C60AA4E49711CF712667B86D1DA03DD
+        51563B6E95C15B1EAD49D4040C231CC251C4111113653C35198D7C8146BE80C9
+        4A38EF889850C491453EC36BE083A9299D593B7D9671BFF980F1DD4719DF7D94
+        FBCD07A5436F4A67F0C114AF619020554E23DB5A96B89ECF7370641F0747F651
+        CFE7CBAFB96CAB54394D249829AA6671AA2C294022A3DE7E4CBDFD98A44CA857
+        7A6D714A16555BF062CCA461D609260D2F44316689D9A108D60D1150C10E59A6
+        646FB07ECC4150B1646F0AB17D95EA208A70EE36EFD1F162D5CFBFD5FFA055B4
+        969E9F85D412DE1C789D44C66AC7627B0A31C45322D0F2361B2B83CC8C7DCC6B
+        03AFAE32DA2ADABCBB651480D9C3DF524DB2676CB9BFF8FCDA39FECEE7C9ACF2
+        34F190F13F2105D5812D2B3BAB96D1ECB43839FB49DF50CF1EFE0680B1EF3E64
+        E7D0B6BEA1AE5AB62AD4811EA5A039881D4F2780490CD7DEE83BE36A520560E7
+        D036B6BD32FC5C4D7F328798B3DC8BCBCF15FAFF1042E4EE972DC7BFD7FAF122
+        418EFF601B94CC7AC49DF522F6883B1B94CC5AB85AEE3ACB0B84BB2B0229154B
+        7931F111EE3A1BAE96A18288FC0CE1B7CB924774CF6493515E6E05E1B723F233
+        A820D971EC1D50DB89644E4A3F28734A6D48337EAFDFE2E7BBD798EF34482D2D
+        733CE0918F638D5F500743063242BA10689A12C7DC605AE3CABDEB5CB9779DC1
+        B456C25923D074481716F952EAF5DED7061E3169B5CD23AAD6D6ACBB8A28D894
+        6D5C7A5EDB51235A8DAFBCF170F2C9622FCF972B042F703861D9C02DA18995D5
+        E2CBECD86E3EC4B4371E4ED26EF46E12EA05DE8C6E4BC012D44D9849F7E2A388
+        E2C6CB9FBBC58DAE0D26A565FB8B7CD64F5D82CEF988CE1E774D0037C5DA39BF
+        E2FB4D774D4474F6049DF3FD54315D4BDA8026F029CE6739FE5EC0FECC92DEA5
+        2D7A9736F52E6DC525C1C514FB09C89F5771FF33005371B84BAF5AC2F4000000
+        0049454E44AE426082}
+      Transparent = True
+      TabOrder = 0
+      OnClick = bincluirClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphTop
+      ExplicitLeft = 9
+      ExplicitTop = 10
+      ExplicitHeight = 53
+    end
+    object balterar: TAdvGlowButton
+      Left = 86
+      Top = 0
+      Width = 86
+      Height = 58
+      Align = alLeft
+      Caption = 'Alterar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000005154944415478DAB4974B6CD45514877FE73EE63F9D763A43A79D76
+        0A08D68AF55921A6D6408C24801263E223B0403446F1B5F015174617C6951BDD
+        B8F0012E7C261A13E3C6688CA0B1313E82025628880FC44A4BE7D54E679CCEFF
+        758E8BA928A42A53CADDDDCDF9EE39E7BBE7E6D2D8FB2988055409B03F19406B
+        0082461655A76033E76174F58B206BE0EB26F84F3C8DE8D8E11EDDBB7853E871
+        9736540C2667DE9319D96F5331189C8515860056F4DC628B3FBE29BE448D5210
+        06743CFA24A2785CFCF0D905076B6268BF767B69F36DAF39D6739D2F8610A63A
+        0022905686349E619F47D442018900CF5710A85B7B339557A33A080A376FF36A
+        03AB8FE94216100118101640AB2716062C8C9022487546B7144BFACD4A4DFB97
+        756527A2CAD3C54D7727DC8135637538D70F2974D9C2804D13FCE2F81D69F7E0
+        1BCB7A92FEA15F9DC93F3C13B9B42B5F8CEA4017366D8BBB036BC67431078840
+        08EE8280C589DDA7A64BAF943F7CAC968AED1BEBED6B37233F3BA8B8DAB9A42B
+        5F7074A80B9BEF6B7107D68CEBA9021086BBF4A35B628006C805745101AAE1B3
+        DC4D2E6D975493C7BDC70AC1FECFC3B6CC20A24B7BECA11F6A924CB05992A854
+        F29568B47CF1602A522EE4CD9123779E69C6DBC8553B242E2EAFF4B27AA6CBE0
+        BB4277F9ED0713EDB5EF83F3FBDAF5A15F1CA97A267269572E166DC24CE5CAB5
+        5BC4DA036702BE875C7A5912ECF215418E7264684425A9351D91E27873F9ED07
+        B823365C3AAFAFCD1C3EE274D47C5DEE4E56364AB5FA3188305F70BDBC09F679
+        6590A32C5975D02E8281839041C97499978EA2FCC903D451FD36BEF89CA6F244
+        516F84E0339A0D301FF0BDE4D20E49488D5706139453561DB04918711002D098
+        0EFBBD294A742A7C737C79F5DDA7C2386537C4E2D1AF42A6134154C399D6E825
+        69158F570579CA6BAB0EE824EC096889FB831229316A8F4E13DAC06EE986A032
+        FDB5287D5220D5B048ADE2F22A3FAB7264D488492202070C4051892F0FCA20D1
+        6AAFCDC02362135E07DBB413DAD427D73CC0A788A40C8D98457F9797A6F972BF
+        0E1D36DDF048D8F07A001FFDEBCC694CA4F02F91EA3D650006D3DCEF4F83C4A8
+        619B864B3E1B5E0760E8BF82AA331729284189D1C3360D17CC96D7FF1FF4FF32
+        AE8B9498152937A748D3A4C5A8BDB6537C105BD900C167A7D33B356F91FA4F15
+        49AE8360D769BF2B27ED1800E87EF2F082B4718D570679CA2A4307FF21929A15
+        498956C326332BD206087636F4A00917200C08B7023A721B9CE00549619ACFE7
+        2A65C9D427D229222931EABBD317694E3045D68148835AF66EE58BF3AF936D19
+        47DC32E548ABFD66119CD94C4D5D24D262F53E9B96BF4492C6A100605ADA1F02
+        B382913D8F9A880B88E53F2A6F5578623C018E38F005B032C5FD41F984485E63
+        22CDDD63EF3758ADBAA3D115BD44AD602E66C4F7B208D817C79B244709F7890B
+        255AEDB3197804B6DC904873827F1FCDA2B5B565D5E225B1963008C16151D8CF
+        3673A6725C2DA302353B197249D3F7260D97C086D7372AD29CE073977543691A
+        0C82000400E420D6725355127EAB8D5CD832137C1C0F8EEE895139E97294AF05
+        E65FDE93EEF1733B27A04CE41A938A81D90391D14DF15B3A63B1AD9D8E5D9D21
+        D818077E95090B06050075D7BA2589F142F99C4F877E81320644020E0B804C01
+        3206F10BA304E7FA85840280393A9EBBEA91ED5F2E5DDE11C7DAC1E508CBEE24
+        417E0AC2E0D363955F77C7C9FF1C84E30BFDE330373EF9C105575CD4BDFBF987
+        AF7E876BFED13094214598082544AE3A89E66680CEC2FFEACF0100BE4AB4F88B
+        9A2FD60000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 1
+      OnClick = balterarClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphTop
+      ExplicitLeft = 101
+      ExplicitTop = 10
+      ExplicitHeight = 53
+    end
+    object bexcluir: TAdvGlowButton
+      Left = 172
+      Top = 0
+      Width = 86
+      Height = 58
+      Align = alLeft
+      Caption = 'Excluir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001A0000001F0806000000F987DD
+        7D000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003C24944415478DAAC96BF8B5D5510C73FDF39E7FDD8B79B4D341B82
+        BB8A46B00A418862B0B0B20BD82982AD858A602358F80FA4B14E6195CACA26A5
+        85A5450A35103B2545DC35448524BB79F7DDBBF79E33167BDF7D777F288A6FE0
+        C0853B33DF9939DF99397AE5FD8F11622E52A0AEF7A8EB27C4B06A71B0F695E4
+        EF028F016721024EB9EBCBA6DEFBA84905C3E13A31AEE29EE88BE3448E49C66C
+        400C13421C7E61F2B752DEBF64367C04ACF4148B94F2F32184EF4218DE03AE49
+        11C89C24C780DC9D1086041B9B7BBEDA78FAD034F8E9246333ED644F9F998DDE
+        0B61E51ACAB8FBDF00896FD4D89BAAED0EF2191080041A097B51D8A7421F800F
+        8E9BABC2F359A49740B7C0B2C0DA9F09D78A0FF2258FE9DB6865BC4EF49BBB97
+        EF7FEEA3B4A5C60EBB82974F8EB17F550EF0DAA1CAC48CAAB073EACEF94FAC8C
+        3B11F39BBBAFEE506EEDBE634DDCE29FBDFE7B11E4D8FCECA3E6FAFAAD67898F
+        AEEC509F9B1276C73389A58A3CCEAAF3531E5DD9C6EAA70BAC88804F8F2A56A9
+        26BB77E417623F27F673EA5A424076A74AF509503EB569A43E5B605647308134
+        EDF35E88CDC9198621925A26359ED818ADB2315AA5697B25B9330C91CDC91984
+        F07EEDA52926AC8E98B2A3ECC8BDE83AC99D2071F1F4269330A46E9D96A9E6C2
+        DA0617D63628DB0C6A4F4CC2908BA7370912B9476FB91773FFB1875F1CBDA2E4
+        19385CBA7976FDD281B7BA470A075DF0D1D591A43841F118094F6AC893F4E6C1
+        CFFDC7C5C850014BA61D5ECC4388649BA7542C1F47056D4A31E78C3B58501124
+        96DAB0EE454E8E0431E70A77478A53313E4CCFFF85233CD7D39C1B24117F4B8F
+        499E38A5D56293090D69294001E3412E8ABD342528109F199FC3710256254F4B
+        BB9EE489A706EBD5FA600D21E28A0DE6D36096591EEF3230B43053BBF2625A6C
+        C44A4BA49D808C577376F5974FC9F2A5F36972684FB964B0524E39F76FBE1821
+        1507675952F9C1C1016391D20C7C891979897C36F71F7D714D25502E8B0E8E4A
+        47E5E215947C0164AAFAC4B3237477C0A4EEBBCF303B8E549117158A5A4C824A
+        84AA6F92FCF0409220B77BA7FFBEF056F7F000CA15A46A011427DD3EC4EB1212
+        262379E6F6C36DAA5C33B000C0D806FCB2F747F70D30B0C0B4A9B8FD709BC633
+        4176D0AE0AA5E2D8BB35F1A4B8D72EB4CC64BC510EC20AD9130EECD633A259B7
+        4D834491F6DB080DEFB66E66B79E75019922759A9545B98D7450A1F8E7831F0F
+        CA941A36B75EBF3B5A3BFD466E665DB4473769680D8F16AAAF6B61C8FEECC1DD
+        DFEF7F4F080723482FDCB8DA37784EB2AF252EB73D95FF23D90C18B9F3837B7E
+        DBF15FE73FFE1A0060E1D818B654B67A0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 2
+      OnClick = bexcluirClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphTop
+      ExplicitLeft = 193
+      ExplicitTop = 6
+      ExplicitHeight = 53
+    end
+    object brelatorio: TAdvGlowButton
+      Left = 258
+      Top = 0
+      Width = 86
+      Height = 58
+      Align = alLeft
+      Caption = 'Relat'#243'rios'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A200000009704859730000093A0000093A01F064924A000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F900000023E4944415478DAE497BF6B136118C73FEF79E6875C6E2908E6489A
+        A1217429A2C592C52193A2462862281467375DA4FE094A163767B7D641B41474
+        097429456944BB086D2909454B1382D1547289C99D432F31391212BDFC107CC6
+        E77DEFFBE1FBBCCFFBBC9C304D9371840CF0E45DADD35A54928C4927E2862165
+        814D7BFEFE25F9042C84D1E9BB7BA649C209580863A5131840624C21016C2417
+        D9482E0E1DD6CA915B173E3EBD4B269301E0E6E3370381BD5ABA02402814EAAB
+        D4CB85FDEDA853A8A5B1DCD719874221841009FDB818740AD68F8B412144C2EE
+        D65EEA53C075605ED3B4CD1FFB5BBE6C21EB7602AE7CCB57344D2B01CF8017C0
+        1A506F825555C5308C9716185996291FEE503EDC713E286419200ADC5114654D
+        92A41BADA59E02AE0DAB9B772F7AF8E916588CA926B85EAFCF026204D75758AC
+        F6EB34AC08A7F57F6C728DED75CAE7F3E172B93C12A0D7EB0D371DEBBABE3B2A
+        A70D56C7E6AAD56A54ABD581805C2E57E32E779D5CCDC8E57278676FE30E9C77
+        04AD1C7CA0B8F51CBFDFDF1F5855557CE72691CF6A8EC0B5DA574AAADABDB980
+        A3D6A4A2285C8804D1669C39FEBCFD9D745AB1A78F9AE0542AB51E8BC5F61AE3
+        CC1E9F0E4AACBEFDD23770E956A4DBD25E2A955A6F756C0209E001300FB85A77
+        6B131EE2737E27E6ABD6EB94B4586D03E43DB000B801A1CD5C5EF913656DC2C3
+        74C0C774C0F73B77A2212CCD058BD1BDB9E28F5EB79F5541EF59EAF89C1FF5CC
+        E98E5AAB0FAFF6EE6A3B14B09C44FEBACE9DE0522FE8A0C2AE2DC6F50BF3FF3D
+        8BBF06000A89ACCFF90571920000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 3
+      OnClick = brelatorioClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphTop
+      ExplicitLeft = 285
+      ExplicitTop = 10
+      ExplicitHeight = 53
+    end
+    object btabela: TAdvGlowMenuButton
+      Left = 844
+      Top = 1
+      Width = 138
+      Height = 32
+      Caption = 'Menu'
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+        F8000000097048597300000EC400000EC401952B0E1B0000017D494441544889
+        CD94314BC3401886DF2F1C42A4496D848EBA7449210EFE03F137B839B84A3B6A
+        115741C4AE05FF80B8F81BF4273858700841B063C15C7B410A2EE7D26BD3A469
+        2E9688EFF4F2DDE5DEF07D770F9D5C3D3CBF7F5907C851D31A0DEE2E8F7701A0
+        D7EBDD562A951611994444524A0900314F0010455197E91C0E006FD1D68EF296
+        65B55CD7351DC7C9DC1F86217CDF3F67AAF07871887AD54C6D1C8E2738BA795A
+        A811D1A6E33868341AB3527C190082200011611650AF9A78F994A980FDED74E8
+        54524A89552D02300F284BEB0410112D9A845F37E09FB568389E2C1DE8703CC9
+        FA36757396F87940F22AE6290C43AD75E6D95CF445CDCE3BB0698D06CA0B21BA
+        BEEF9F1986A1FE58DD6FE5090038E75D9ACEA734953FE422E06AB7DB1D0038BD
+        BEFF88B3294B9ECD052B022E001D60117CABD417359B150157523A805433D07A
+        9549E900F2CF5EB216B8D609F8558B8A0494A6598B62B54C7025A5034806E883
+        2B291D40B222E0521FEDD9FCFB55D436F20EF76C2E7E00180CCDB4D28DAEFE00
+        00000049454E44AE426082}
+      Transparent = True
+      TabOrder = 4
+      Visible = False
+      Appearance.BorderColor = 14727579
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 15653832
+      Appearance.ColorTo = 16178633
+      Appearance.ColorChecked = 7915518
+      Appearance.ColorCheckedTo = 11918331
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 15586496
+      Appearance.ColorMirrorTo = 16245200
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      DropDownButton = True
+      DropDownSplit = False
+      DropDownMenu = menu_tabelas_fiscais
+    end
+    object AdvGlowButton1: TAdvGlowButton
+      Left = 344
+      Top = 0
+      Width = 193
+      Height = 58
+      Align = alLeft
+      Caption = 'Importa Nota Fiscal Eletr'#244'nica'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A200000009704859730000093A0000093A01F064924A000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000001834944415478DAEC97314BC35010C7FFF792B81714870E6E8EEE4E
+        F503B4B80835DF407070EAD710DC847E007573702E7610D1D1315B0B1D14A14B
+        17CDEB3B8744496242EED9D814F14186DCFBDFFDEEDE252F2FC4CCA863B8C99B
+        CDA3A1C467D718DE4A1A94A21180FB32C7E7F3563E5858FD0981BA19BF2B0938
+        952C6A1AA98A8948E2736698AF53D9138D6CC1AB51F17F8FFF7E8FDF94F34DB0
+        36D73FEAF1BBE32E5831937D39021F5555205BADAA34A04582AAB225B46C4919
+        B8012000C05F17A71FAC18DA4D69229FC622E029C36903985A1423F2912C7560
+        980E0084026D186B03ABA5F6B42ED20D18382E7D0422CD206F2E1B5BE5090A12
+        E813705A048DE7FAD27885DB8BA7355E9B7B59736F6332DC06D0CED86F5E9AAD
+        5E56BC3EB9956D99458E89040C3CF611D21D809DD8F6048F7D00460214810B12
+        9869723B2EEB4700D0E4765C843329D00A9C4C80A3868E1599FDD83CE6D00E6A
+        0DFE1C0E8798831E00C011BD65E5E0C35FFE0C5FE69F404017CB02AFC82913EC
+        2F0B4C75FDB47D0C00EDD79C13F1FF5EAF0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 5
+      OnClick = AdvGlowButton1Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphTop
+      ExplicitHeight = 48
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 478
+    Width = 786
+    Height = 42
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    Enabled = False
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitTop = 484
+    ExplicitWidth = 899
+    object Label22: TLabel
+      Left = 603
+      Top = 13
+      Width = 28
+      Height = 13
+      Caption = 'Total:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label5: TLabel
+      Left = 351
+      Top = 13
+      Width = 171
+      Height = 13
+      Caption = 'Quantidade de Documentos Fiscais:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label6: TLabel
+      Left = 7
+      Top = 13
+      Width = 45
+      Height = 13
+      Caption = 'Empresa:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object rtotal: TRzNumericEdit
+      Left = 640
+      Top = 9
+      Width = 122
+      Height = 24
+      DisabledColor = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      FocusColor = 16774120
+      FrameHotTrack = True
+      FrameStyle = fsLowered
+      FrameVisible = True
+      ParentFont = False
+      ReadOnly = True
+      ReadOnlyColor = clWindow
+      TabOrder = 0
+      DisplayFormat = ',0.00;(,0.00)'
+    end
+    object rqde: TRzNumericEdit
+      Left = 526
+      Top = 9
+      Width = 67
+      Height = 24
+      Ctl3D = True
+      DisabledColor = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      FocusColor = 16774120
+      FrameHotTrack = True
+      FrameStyle = fsLowered
+      FrameVisible = True
+      ParentCtl3D = False
+      ParentFont = False
+      ReadOnly = True
+      ReadOnlyColor = clWindow
+      TabOrder = 1
+      DisplayFormat = ',0;(,0)'
+    end
+    object RzDBEdit1: TRzDBEdit
+      Left = 56
+      Top = 10
+      Width = 281
+      Height = 21
+      DataSource = dsnota
+      DataField = 'empresa'
+      Color = clWhite
+      TabOrder = 2
+    end
+  end
+  object grid: TwwDBGrid
+    Left = 0
+    Top = 49
+    Width = 786
+    Height = 429
+    ControlType.Strings = (
+      'SITUACAO;ImageIndex;Original Size')
+    Selected.Strings = (
+      'OBS7'#9'6'#9'Seq.'#9'F'
+      'NUMERO'#9'7'#9'N'#250'mero'#9'F'
+      'DATA_EMISSAO'#9'9'#9'Emiss'#227'o'#9'F'#9'Data'
+      'DATA_LANCAMENTO'#9'9'#9'Lan'#231'amento'#9'F'#9'Data'
+      'fornecedor'#9'22'#9'Emitente '#9'F'
+      'MODELO'#9'3'#9'Mod'#9'F'#9'Documento'
+      'ESPECIE'#9'5'#9'Esp.'#9'F'#9'Documento'
+      'SERIE'#9'2'#9'S'#233'r'#9'F'#9'Documento'
+      'CFOP'#9'4'#9'CFOP'
+      'TOTAL_NOTA'#9'10'#9'Total-R$'#9'F'
+      'BASE_ICMS'#9'9'#9'B.C'#225'lculo'#9'F'#9'ICMS'
+      'VALOR_ICMS'#9'8'#9'Valor'#9'F'#9'ICMS'
+      'ICMS_ISENTO'#9'9'#9'ISENTO'#9'F'
+      'ICMS_OUTRAS'#9'10'#9'OUTRAS'#9'F')
+    IniAttributes.Delimiter = ';;'
+    IniAttributes.UnicodeIniFile = False
+    TitleColor = clBtnFace
+    OnRowChanged = gridRowChanged
+    FixedCols = 0
+    ShowHorzScrollBar = True
+    Align = alClient
+    DataSource = dsnota
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgAlwaysShowEditor, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgWordWrap]
+    ParentFont = False
+    RowHeightPercent = 113
+    TabOrder = 2
+    TitleAlignment = taCenter
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    TitleLines = 2
+    TitleButtons = True
+    UseTFields = False
+    OnTitleButtonClick = gridTitleButtonClick
+    PaintOptions.AlternatingRowColor = 15724527
+    PaintOptions.ActiveRecordColor = clBlack
+    ExplicitWidth = 780
+    ExplicitHeight = 435
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 0
+    Width = 786
+    Height = 49
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 3
+    ExplicitWidth = 899
+    object Label8: TLabel
+      Left = 31
+      Top = 16
+      Width = 46
+      Height = 13
+      Caption = 'Emitente:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label2: TLabel
+      Left = 576
+      Top = 16
+      Width = 6
+      Height = 13
+      Caption = 'a'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label3: TLabel
+      Left = 7
+      Top = 16
+      Width = 19
+      Height = 13
+      Caption = 'F6 |'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label4: TLabel
+      Left = 295
+      Top = 17
+      Width = 41
+      Height = 13
+      Caption = 'N'#250'mero:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label1: TLabel
+      Left = 407
+      Top = 17
+      Width = 62
+      Height = 13
+      Caption = 'Lan'#231'amento:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object efornecedor: TRzButtonEdit
+      Left = 80
+      Top = 13
+      Width = 209
+      Height = 21
+      Text = ''
+      CharCase = ecUpperCase
+      Color = clWhite
+      TabOrder = 0
+      OnEnter = efornecedorEnter
+      OnExit = DateEdit1Exit
+      OnKeyPress = efornecedorKeyPress
+      ButtonGlyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFCFDFEE7EEF4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAFBFD6494BA2166
+        9C80A8C5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFAFCFD6E9BC1548CBB88B4DC175E96FFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFCFD7AA3C96396C49CC0E36598
+        C63070A4FFFFFFFFFFFFFFFFFFFFFFFFFFFEFEE8CEB9DAB292D2A57FCFA07BD1
+        A684ADA09874A1CBAACAE775A3CD3F7AAEDEE8F1FFFFFFFFFFFFFFFFFFFFFEFE
+        E8C9AFE7C8ADF4E0CCF6E4D2F6E4D0F2DCC7DEB99BC6A79085ADD44F86BAE1EA
+        F3FFFFFFFFFFFFFFFFFFFFFFFFF1DBC7ECCFB6F7E7D8F4DDC7F2D7BCF2D5BAF3
+        DAC1F6E3D1DEBA9C9F9694E3ECF5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEDCDB1
+        F6E6D6F5E0CBF3DAC1F3D9BFF2D7BCF2D6BAF3DAC1F2DDC8D1A787FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFEFCDAEF8EBDEF4DEC7F4DCC5F3DBC2F3D9C0F2
+        D8BDF2D6BCF7E5D2D2A57FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3D2B4
+        F8ECE0F5E0CBF4DEC8F4DDC6F3DBC3F3DAC1F3D9BFF7E6D5D6AA86FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFF7DBC0F8EADDF6E6D5F5E0CBF4DFC9F4DDC7F4
+        DCC4F5E0CAF4E1CFDEB898FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBE9D7
+        F7E1CBF9EDE2F6E6D5F5E1CDF5E0CAF5E2CFF8E9DCEBCEB4EBD3BEFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFAE3CDF8E1CCF9EBDDF8EDE1F8ECE1F7
+        E8D9EFD4BCECCFB6FFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFBEAD9F9DCC2F5D5B8F3D2B4F2D3B7F4E0CDFFFFFEFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      ButtonNumGlyphs = 1
+      ButtonKind = bkCustom
+      AltBtnWidth = 15
+      ButtonWidth = 22
+      OnButtonClick = efornecedorButtonClick
+    end
+    object DateEdit1: TJvDateEdit
+      Left = 476
+      Top = 13
+      Width = 97
+      Height = 21
+      Color = clWhite
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFDFB492D49C73D09567CD9162CA8D5DC8895AC6
+        8655C28351C28351C28351C28351C28351C28351CFA07CFFFFFFFFFFFFD6A074
+        F7F1ECF6EFE9F5ECE5F3E9E1F2E6DDF0E3DAEFE1D7EFE1D7EFE1D7EFE1D7EFE1
+        D7EFE1D7C48A5DFFFFFFFFFFFFD8A379F8F2EDEACFBBE6C0A3E6BEA0E5BD9EE5
+        BA99E2B794E0B48EDDAF88DBAA82D8AD88EFE1D7C58B5EFFFFFFFFFFFFDCA77D
+        F8F2EEEACFB9FEFEFEFDFDFDFDFEFDFDFEFDFEFEFEFDFDFDFEFEFEFEFEFEDAAF
+        8BEFE1D7C5895BFFFFFFFFFFFFDEA981F8F2EEE9CDB6FEFEFEBFDCC261AA68A0
+        CCA4AAD1AE67AD6DAAD1AEFEFEFEDCB390EFE1D7C78C5EFFFFFFFFFFFFE0AD86
+        F9F3EFE9CAB1FEFEFEFEFEFE61AA68D4E8D68BC090FEFEFE61AA68FEFEFEDEB7
+        95EFE1D7C38553FFFFFFFFFFFFE2B08BF9F5F0E9C8ADFEFEFEFEFEFE61AA68D4
+        E8D695C69AF8FBF86BB072FEFEFEE0BC9CEFE1D7C58554FFFFFFFFFFFFE4B38E
+        F9F5F1E8C5A9FEFEFEAAD1AE6BB072D4E8D6AAD1AE64AC6BAAD1AEFEFEFEE3C0
+        A3F1E6DDC78958FFFFFFFFFFFFE6B693FAF6F3E8C2A5FEFEFEFEFEFEFEFEFEFE
+        FEFEFEFEFEFEFEFEFEFEFEFEFEFEE4C5AAF6F0EACA8E5EFFFFFFFFFFFFE8B997
+        FAF6F364A3FE63A2FE61A1FE60A0FE5E9EFE5B9CFE5999FE5697FE5394FE5193
+        FEFAF6F3CD9263FFFFFFFFFFFFEABC9AFAF6F363A3FE78BCFE74BAFE70B8FE6C
+        B7FE67B2FE60AFFE59AAFE53A6FE3A7CFEFAF6F3D09669FFFFFFFFFFFFEBBE9D
+        FAF6F364A3FE63A2FE5F9FFE5C9DFE5798FE5395FE4C8FFE468AFE4183FE3C7E
+        FEFAF6F3D39A6EFFFFFFFFFFFFEEC5A7FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3FA
+        F6F3FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3D7A277FFFFFFFFFFFFF7E0D1
+        F0C7ABECBF9EEABD9CEABB99E8B995E6B692E5B48FE3B18BE1AE87DFAB83DCA8
+        7FDBA47CE1B595FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      ImageKind = ikCustom
+      ShowNullDate = False
+      TabOrder = 2
+      OnEnter = ENUMEROEnter
+      OnExit = DateEdit1Exit
+      OnKeyPress = ENUMEROKeyPress
+    end
+    object DateEdit2: TJvDateEdit
+      Left = 577
+      Top = 13
+      Width = 97
+      Height = 21
+      Color = clWhite
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFDFB492D49C73D09567CD9162CA8D5DC8895AC6
+        8655C28351C28351C28351C28351C28351C28351CFA07CFFFFFFFFFFFFD6A074
+        F7F1ECF6EFE9F5ECE5F3E9E1F2E6DDF0E3DAEFE1D7EFE1D7EFE1D7EFE1D7EFE1
+        D7EFE1D7C48A5DFFFFFFFFFFFFD8A379F8F2EDEACFBBE6C0A3E6BEA0E5BD9EE5
+        BA99E2B794E0B48EDDAF88DBAA82D8AD88EFE1D7C58B5EFFFFFFFFFFFFDCA77D
+        F8F2EEEACFB9FEFEFEFDFDFDFDFEFDFDFEFDFEFEFEFDFDFDFEFEFEFEFEFEDAAF
+        8BEFE1D7C5895BFFFFFFFFFFFFDEA981F8F2EEE9CDB6FEFEFEBFDCC261AA68A0
+        CCA4AAD1AE67AD6DAAD1AEFEFEFEDCB390EFE1D7C78C5EFFFFFFFFFFFFE0AD86
+        F9F3EFE9CAB1FEFEFEFEFEFE61AA68D4E8D68BC090FEFEFE61AA68FEFEFEDEB7
+        95EFE1D7C38553FFFFFFFFFFFFE2B08BF9F5F0E9C8ADFEFEFEFEFEFE61AA68D4
+        E8D695C69AF8FBF86BB072FEFEFEE0BC9CEFE1D7C58554FFFFFFFFFFFFE4B38E
+        F9F5F1E8C5A9FEFEFEAAD1AE6BB072D4E8D6AAD1AE64AC6BAAD1AEFEFEFEE3C0
+        A3F1E6DDC78958FFFFFFFFFFFFE6B693FAF6F3E8C2A5FEFEFEFEFEFEFEFEFEFE
+        FEFEFEFEFEFEFEFEFEFEFEFEFEFEE4C5AAF6F0EACA8E5EFFFFFFFFFFFFE8B997
+        FAF6F364A3FE63A2FE61A1FE60A0FE5E9EFE5B9CFE5999FE5697FE5394FE5193
+        FEFAF6F3CD9263FFFFFFFFFFFFEABC9AFAF6F363A3FE78BCFE74BAFE70B8FE6C
+        B7FE67B2FE60AFFE59AAFE53A6FE3A7CFEFAF6F3D09669FFFFFFFFFFFFEBBE9D
+        FAF6F364A3FE63A2FE5F9FFE5C9DFE5798FE5395FE4C8FFE468AFE4183FE3C7E
+        FEFAF6F3D39A6EFFFFFFFFFFFFEEC5A7FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3FA
+        F6F3FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3FAF6F3D7A277FFFFFFFFFFFFF7E0D1
+        F0C7ABECBF9EEABD9CEABB99E8B995E6B692E5B48FE3B18BE1AE87DFAB83DCA8
+        7FDBA47CE1B595FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      ImageKind = ikCustom
+      ShowNullDate = False
+      TabOrder = 3
+      OnEnter = ENUMEROEnter
+      OnExit = DateEdit1Exit
+      OnKeyPress = DateEdit2KeyPress
+    end
+    object ENUMERO: TEdit
+      Left = 341
+      Top = 13
+      Width = 49
+      Height = 21
+      Color = clWhite
+      TabOrder = 1
+      Text = '000000'
+      OnEnter = ENUMEROEnter
+      OnExit = ENUMEROExit
+      OnKeyPress = ENUMEROKeyPress
+    end
+    object bfiltrar: TAdvGlowButton
+      Left = 683
+      Top = 6
+      Width = 86
+      Height = 38
+      Caption = 'Filtrar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000005F34944415478DABC965B8C5E5515C77F7B9FEB77BECB7C33EDDCDA
+        7E1DCA8CD3D2522DD45E80D8C4169422248A2115A260E22B98A80F6AD407134D
+        4C50135F8CC668C28346084A8294348A8519465A81523A6DA22D36AD0CBDB7D3
+        99EF7ABE73CEDECB87999A5E9C4E4B53FFC97AD80F3BBFBDD6DEEBBF97DABAF5
+        2900C45AA28525142159DBE2E4A9388ACF8AB0095889480F6051EA24C25EA518
+        B5CABEA013E7FC74758223C70E716AE221AA675B80309FDC8B1722A05D895C5F
+        7D576B792A6EB40AD6185CCF43690D80B5B6274BD38F7A9EF7849F0B7FE8F8DE
+        D3D69A9FA6498C529A6B952B32431463C1527103E78FB1697EBC35D5A677E912
+        962E5F4E777F1FB9421E11A151AD716AE2038E1E3CC8E4C9D37DC572F92751B1
+        634BB9ABFFD189C34915D43581D5C39FFB2AE2F8E0054B3CDF7BABD1A8F70561
+        8EF5F76D61D5BAB544A50226B317954FA1B5667A7292FDBB76B3E7D5113CCFC5
+        8F8A7B766E6FAD4F9ACA5E4BA9D5B6479E44DCBCA70A1D6FD627CFAD2994CB6C
+        FDE2630C2CBF95663D26896394BA2C0B1182282297F7F9E73BFBF9F3EF9FC324
+        295129FFBC341A8FA8CC82BE7AE6CECADB3683EF7EAF9D245FF07C9F07BFFC25
+        960E0F529D9CC61A73251440294C9AD28E132A1F594ABED4C5E1F1FD086AA5D2
+        FA8068F987688D6835676882A80F37F85612B7587FDF160656CC40E7AF954244
+        983E5B63D5BA35ACBE7B23CD5A0D71DC1F89E707E2FA5C2DB4F5CCE7DBAD7AD8
+        BB64092BD7ADA5598BB91E196348DB19B76FDC40B15C264D922132F713A40E64
+        7387ABE05E9319068687C9178B54CF4FFDEFF2CE99B8A2D56CD1D9DDCDE2C165
+        1CDABB0FBF237C20080AAFCCD7C783AEE7B1A0BF1F33D79DCE231141BB0E0BFB
+        FA39C43869D65E7EFEDCB1790C44A45B694D54C8F3A12582A335B9429E309767
+        7AF244EF5FB7FF6A5EE732337B2D372AB182B582765CE3BAFE3C60A54E596B17
+        D7AB3514EA43019552186368D4AA2471835267F78907B77D7D3ECB5407B234BD
+        F3F4C4046AE38619C3BECE7B565A932629A7263E40391A8DB3D70F4B57DDA341
+        7678BECFBF0F1E62EAEC19827C7E067E1D0F2B2A449C39769CE3478EE2070118
+        5ECA5A29593C77689D387FF2C3DCB9C9D367187F633761E4A11DE79AA19EEFA3
+        B466DFD8DF889B2D5CDF7F1337DB839792DA167156A59D4DD1CEA667638AB6A9
+        E292D6EB38EE7772C5E22FF68E8ED15BA970FB86354C4FD6315936677B5D8096
+        BA2276ED18E5D0BBFBF002CFC6E7CF7D8D2CC1E2B278A087CEEE4132E3C285C7
+        AB15364970B5D302897EE9E70A0F9934FDCC5F9E7B1E931956DFB596B46D6835
+        9B33DFE66CF995525C683FA515BB768C30F6D2CBA084BECAD0EF725EF48689DB
+        785117DD5D2DC2A017711682A4B3EFC1216BD471868636921948DBE90B41187E
+        D298B47278FC00D5A92AC572078572193F0C09A31C7E18E2BA2E029C38FA3EA3
+        2F6EE79DD746505AB1747035C3B76DEC2A2DEC8F8B0BFBDFEEE8A990368E9126
+        60F130591B63528CCD48E3166E1C0BD046B246CB71BBEE090BD133693B7D7CDF
+        EB63FC6B7C9C45CB6EA57B511FB9FCEC20509B19048E1F394AD28A090B119EEB
+        7FBB52195EAC1DE7C9B85EFDB9B5924F53F9B158C35C33893B33D168C475510E
+        646D798254BF5CE8ECF866DA4EEF38BCFF00EFBDBB6FD660144A2B1CC7C50B02
+        0A9D1D234923FE81D2E92BF51327414A0BC27CF468DC6A3C2D92443A7F8B4F92
+        FD019BEDBDDC22DC2B8E62C1643C8B55CF7A9EB7D9F3BCCD28B51AE805ACA08E
+        63ED5B2846AC98DD62C14A46E09479F1995F3FB66AD36073CD9D0F7CA5563DFB
+        7D9C22E8EC71899BF7203271B13F5C095617FB87EC04765E31475DE87305264B
+        E8EC5C46A1BBCC8A8F0D52CC757E2349DA0F83EAC4A6A0544505E1EBD28E3721
+        F2FE450672633226239F5F80F2E08E0D77B378D18A9E66B3AA2F1D5DF5800A72
+        23283574E1D0370C9EF1E914B142BD5623495BEF69A5EF07A62F85AB5B0873AF
+        A2F51022370E9E43BBC5CABD97C395524B08C251945E76B3C0006F8B954F8BD0
+        BA2473A15F974ABFBD996080BF23F22991993F7FF6D3463BCE5D371B0C3086C8
+        16111AFF6567E6372EFF1F8D20B25E601BA829117EF69F01007684EC3F1FCFFC
+        640000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 4
+      OnClick = BfiltrarClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+  end
+  object btotaliza_nota: TButton
+    Left = 272
+    Top = 352
+    Width = 100
+    Height = 25
+    Caption = 'btotaliza_nota'
+    TabOrder = 4
+    Visible = False
+    OnClick = btotaliza_notaClick
+  end
+  object AdvMenuOfficeStyler1: TAdvMenuOfficeStyler
+    AntiAlias = aaNone
+    AutoThemeAdapt = False
+    Style = osOffice2003Blue
+    Background.Position = bpCenter
+    Background.Color = 16185078
+    Background.ColorTo = 16185078
+    ButtonAppearance.DownColor = 5149182
+    ButtonAppearance.DownColorTo = 9556991
+    ButtonAppearance.HoverColor = 13432063
+    ButtonAppearance.HoverColorTo = 9556223
+    ButtonAppearance.DownBorderColor = clNavy
+    ButtonAppearance.HoverBorderColor = clNavy
+    ButtonAppearance.CaptionFont.Charset = DEFAULT_CHARSET
+    ButtonAppearance.CaptionFont.Color = clWindowText
+    ButtonAppearance.CaptionFont.Height = -11
+    ButtonAppearance.CaptionFont.Name = 'Tahoma'
+    ButtonAppearance.CaptionFont.Style = []
+    IconBar.Color = 16773091
+    IconBar.ColorTo = 14986631
+    IconBar.CheckBorder = clNavy
+    IconBar.RadioBorder = clNavy
+    SelectedItem.BorderColor = clNavy
+    SelectedItem.Font.Charset = DEFAULT_CHARSET
+    SelectedItem.Font.Color = clWindowText
+    SelectedItem.Font.Height = -11
+    SelectedItem.Font.Name = 'Tahoma'
+    SelectedItem.Font.Style = []
+    SelectedItem.NotesFont.Charset = DEFAULT_CHARSET
+    SelectedItem.NotesFont.Color = clWindowText
+    SelectedItem.NotesFont.Height = -8
+    SelectedItem.NotesFont.Name = 'Tahoma'
+    SelectedItem.NotesFont.Style = []
+    SelectedItem.CheckBorder = clNavy
+    SelectedItem.RadioBorder = clNavy
+    RootItem.Color = 16105118
+    RootItem.ColorTo = 16240050
+    RootItem.Font.Charset = DEFAULT_CHARSET
+    RootItem.Font.Color = clMenuText
+    RootItem.Font.Height = -11
+    RootItem.Font.Name = 'Tahoma'
+    RootItem.Font.Style = []
+    RootItem.SelectedColor = 16773091
+    RootItem.SelectedColorTo = 15185299
+    RootItem.SelectedBorderColor = 9841920
+    RootItem.HoverColor = 13432063
+    RootItem.HoverColorTo = 10147583
+    Glyphs.SubMenu.Data = {
+      5A000000424D5A000000000000003E0000002800000004000000070000000100
+      0100000000001C0000000000000000000000020000000200000000000000FFFF
+      FF0070000000300000001000000000000000100000003000000070000000}
+    Glyphs.Check.Data = {
+      7E000000424D7E000000000000003E0000002800000010000000100000000100
+      010000000000400000000000000000000000020000000200000000000000FFFF
+      FF00FFFF0000FFFF0000FFFF0000FFFF0000FDFF0000F8FF0000F07F0000F23F
+      0000F71F0000FF8F0000FFCF0000FFEF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000}
+    Glyphs.Radio.Data = {
+      7E000000424D7E000000000000003E0000002800000010000000100000000100
+      010000000000400000000000000000000000020000000200000000000000FFFF
+      FF00FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FC3F0000F81F0000F81F
+      0000F81F0000F81F0000FC3F0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000}
+    SideBar.Font.Charset = DEFAULT_CHARSET
+    SideBar.Font.Color = clWhite
+    SideBar.Font.Height = -19
+    SideBar.Font.Name = 'Tahoma'
+    SideBar.Font.Style = [fsBold, fsItalic]
+    SideBar.Image.Position = bpCenter
+    SideBar.Background.Position = bpCenter
+    SideBar.SplitterColorTo = clBlack
+    Separator.Color = 13339754
+    Separator.GradientType = gtBoth
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    NotesFont.Charset = DEFAULT_CHARSET
+    NotesFont.Color = clGray
+    NotesFont.Height = -8
+    NotesFont.Name = 'Tahoma'
+    NotesFont.Style = []
+    MenuBorderColor = 9841920
+    Left = 440
+    Top = 248
+  end
+  object qrnota: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000087')
+    Params = <>
+    Left = 48
+    Top = 120
+    object qrnotafornecedor: TStringField
+      DisplayLabel = 'Emitente '
+      DisplayWidth = 33
+      FieldKind = fkLookup
+      FieldName = 'FORNECEDOR'
+      LookupDataSet = frmmodulo.qrfornecedor
+      LookupKeyFields = 'codigo'
+      LookupResultField = 'NOME'
+      KeyFields = 'codfornecedor'
+      Size = 50
+      Lookup = True
+    end
+    object qrnotaempresa: TStringField
+      DisplayLabel = 'EMPRESA'
+      DisplayWidth = 17
+      FieldKind = fkLookup
+      FieldName = 'empresa'
+      LookupDataSet = frmmodulo.qrFilial
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'FILIAL'
+      KeyFields = 'codempresa'
+      Size = 30
+      Lookup = True
+    end
+    object qrnotaconta: TStringField
+      FieldKind = fkLookup
+      FieldName = 'conta'
+      LookupDataSet = frmmodulo.qrplano
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'CONTA'
+      KeyFields = 'OBS5'
+      Size = 30
+      Lookup = True
+    end
+    object qrnotaREMETENTE: TStringField
+      FieldKind = fkLookup
+      FieldName = 'REMETENTE'
+      LookupDataSet = frmmodulo.qrfornecedor
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'NOME'
+      KeyFields = 'CODFORNECEDOR'
+      Size = 30
+      Lookup = True
+    end
+    object qrnotaCODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 10
+    end
+    object qrnotaNUMERO: TWideStringField
+      FieldName = 'NUMERO'
+      Size = 10
+    end
+    object qrnotaCODEMPRESA: TWideStringField
+      FieldName = 'CODEMPRESA'
+      Size = 10
+    end
+    object qrnotaCODFORNECEDOR: TWideStringField
+      FieldName = 'CODFORNECEDOR'
+      Size = 10
+    end
+    object qrnotaMODELO: TWideStringField
+      FieldName = 'MODELO'
+      Size = 10
+    end
+    object qrnotaESPECIE: TWideStringField
+      FieldName = 'ESPECIE'
+      Size = 10
+    end
+    object qrnotaSERIE: TWideStringField
+      FieldName = 'SERIE'
+      Size = 10
+    end
+    object qrnotaCFOP: TWideStringField
+      FieldName = 'CFOP'
+      Size = 10
+    end
+    object qrinventarioDATA_EMISSAO: TDateField
+      FieldName = 'DATA_EMISSAO'
+    end
+    object qrinventarioDATA_LANCAMENTO: TDateField
+      FieldName = 'DATA_LANCAMENTO'
+    end
+    object qrnotaCONF_BASEICMS: TFloatField
+      FieldName = 'CONF_BASEICMS'
+    end
+    object qrnotaCONF_VALORICMS: TFloatField
+      FieldName = 'CONF_VALORICMS'
+    end
+    object qrnotaCONF_BASESUB: TFloatField
+      FieldName = 'CONF_BASESUB'
+    end
+    object qrnotaCONF_VALORSUB: TFloatField
+      FieldName = 'CONF_VALORSUB'
+    end
+    object qrnotaCONF_FRETE: TFloatField
+      FieldName = 'CONF_FRETE'
+    end
+    object qrnotaCONF_SEGURO: TFloatField
+      FieldName = 'CONF_SEGURO'
+    end
+    object qrnotaCONF_OUTRAS: TFloatField
+      FieldName = 'CONF_OUTRAS'
+    end
+    object qrnotaCONF_IPI: TFloatField
+      FieldName = 'CONF_IPI'
+    end
+    object qrnotaCONF_DESCONTO: TFloatField
+      FieldName = 'CONF_DESCONTO'
+    end
+    object qrnotaCONF_TOTALPRODUTOS: TFloatField
+      FieldName = 'CONF_TOTALPRODUTOS'
+    end
+    object qrnotaCONF_TOTALNOTA: TFloatField
+      FieldName = 'CONF_TOTALNOTA'
+    end
+    object qrnotaCONF_ICMSRETIDO: TFloatField
+      FieldName = 'CONF_ICMSRETIDO'
+    end
+    object qrnotaCONF_ICMSREDITO_PERC: TFloatField
+      FieldName = 'CONF_ICMSREDITO_PERC'
+    end
+    object qrnotaBASE_ICMS: TFloatField
+      FieldName = 'BASE_ICMS'
+    end
+    object qrnotaVALOR_ICMS: TFloatField
+      FieldName = 'VALOR_ICMS'
+      DisplayFormat = '#,##0.00'
+    end
+    object qrnotaBASE_SUB: TFloatField
+      FieldName = 'BASE_SUB'
+    end
+    object qrnotaVALOR_SUB: TFloatField
+      FieldName = 'VALOR_SUB'
+    end
+    object qrnotaFRETE: TFloatField
+      FieldName = 'FRETE'
+    end
+    object qrnotaSEGURO: TFloatField
+      FieldName = 'SEGURO'
+    end
+    object qrnotaOUTRAS: TFloatField
+      FieldName = 'OUTRAS'
+    end
+    object qrnotaIPI: TFloatField
+      FieldName = 'IPI'
+    end
+    object qrnotaDESCONTO: TFloatField
+      FieldName = 'DESCONTO'
+    end
+    object qrnotaTOTAL_PRODUTOS: TFloatField
+      FieldName = 'TOTAL_PRODUTOS'
+    end
+    object qrnotaTOTAL_NOTA: TFloatField
+      FieldName = 'TOTAL_NOTA'
+    end
+    object qrnotaTRANSP_NOME: TWideStringField
+      FieldName = 'TRANSP_NOME'
+      Size = 60
+    end
+    object qrnotaTRANSP_FRETE: TWideStringField
+      FieldName = 'TRANSP_FRETE'
+    end
+    object qrnotaTRANSP_PLACA: TWideStringField
+      FieldName = 'TRANSP_PLACA'
+      Size = 10
+    end
+    object qrnotaTRANSP_PLACAUF: TWideStringField
+      FieldName = 'TRANSP_PLACAUF'
+      Size = 2
+    end
+    object qrnotaTRANSP_IE: TWideStringField
+      FieldName = 'TRANSP_IE'
+      Size = 25
+    end
+    object qrnotaTRANSP_CNPJ: TWideStringField
+      FieldName = 'TRANSP_CNPJ'
+      Size = 25
+    end
+    object qrnotaTRANSP_ENDERECO: TWideStringField
+      FieldName = 'TRANSP_ENDERECO'
+      Size = 40
+    end
+    object qrnotaTRANSP_CIDADE: TWideStringField
+      FieldName = 'TRANSP_CIDADE'
+      Size = 30
+    end
+    object qrnotaTRANSP_UF: TWideStringField
+      FieldName = 'TRANSP_UF'
+      Size = 2
+    end
+    object qrnotaTRANSP_QTDE: TFloatField
+      FieldName = 'TRANSP_QTDE'
+    end
+    object qrnotaTRANSP_ESPECIE: TWideStringField
+      FieldName = 'TRANSP_ESPECIE'
+    end
+    object qrnotaTRANSP_MARCA: TWideStringField
+      FieldName = 'TRANSP_MARCA'
+    end
+    object qrnotaTRANSP_NUMERO: TWideStringField
+      FieldName = 'TRANSP_NUMERO'
+    end
+    object qrnotaTRANSP_PESOBRUTO: TFloatField
+      FieldName = 'TRANSP_PESOBRUTO'
+    end
+    object qrnotaTRANSP_PESOLIQUIDO: TFloatField
+      FieldName = 'TRANSP_PESOLIQUIDO'
+    end
+    object qrnotaOBS1: TWideStringField
+      FieldName = 'OBS1'
+      Size = 60
+    end
+    object qrnotaOBS2: TWideStringField
+      FieldName = 'OBS2'
+      Size = 60
+    end
+    object qrnotaOBS3: TWideStringField
+      FieldName = 'OBS3'
+      Size = 60
+    end
+    object qrnotaOBS4: TWideStringField
+      FieldName = 'OBS4'
+      Size = 60
+    end
+    object qrnotaOBS5: TWideStringField
+      FieldName = 'OBS5'
+      Size = 60
+    end
+    object qrnotaOBS6: TWideStringField
+      FieldName = 'OBS6'
+      Size = 60
+    end
+    object qrnotaOBS7: TWideStringField
+      FieldName = 'OBS7'
+      Size = 60
+    end
+    object qrnotaSITUACAO: TIntegerField
+      FieldName = 'SITUACAO'
+    end
+    object qrnotaITENS: TIntegerField
+      FieldName = 'ITENS'
+    end
+    object qrnotaTIPO: TWideStringField
+      FieldName = 'TIPO'
+      Size = 30
+    end
+    object qrnotaNOTA_FISCAL: TWideStringField
+      FieldName = 'NOTA_FISCAL'
+      Size = 6
+    end
+    object qrnotaVALOR_MERCADORIAS: TFloatField
+      FieldName = 'VALOR_MERCADORIAS'
+    end
+    object qrnotaCODREMETENTE: TWideStringField
+      FieldName = 'CODREMETENTE'
+      Size = 6
+    end
+    object qrnotaICMS_ISENTO: TFloatField
+      FieldName = 'ICMS_ISENTO'
+    end
+    object qrnotaICMS_OUTRAS: TFloatField
+      FieldName = 'ICMS_OUTRAS'
+    end
+    object qrnotaDESCONTO_INCIDENTE: TIntegerField
+      FieldName = 'DESCONTO_INCIDENTE'
+    end
+    object qrnotaITEM_FRETE_VALOR: TFloatField
+      FieldName = 'ITEM_FRETE_VALOR'
+    end
+    object qrnotaITEM_FRETE_BASE: TFloatField
+      FieldName = 'ITEM_FRETE_BASE'
+    end
+    object qrnotaITEM_FRETE_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_FRETE_ALIQUOTA'
+    end
+    object qrnotaITEM_FRETE_ICMS: TFloatField
+      FieldName = 'ITEM_FRETE_ICMS'
+    end
+    object qrnotaITEM_SEGURO_VALOR: TFloatField
+      FieldName = 'ITEM_SEGURO_VALOR'
+    end
+    object qrnotaITEM_SEGURO_BASE: TFloatField
+      FieldName = 'ITEM_SEGURO_BASE'
+    end
+    object qrnotaITEM_SEGURO_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_SEGURO_ALIQUOTA'
+    end
+    object qrnotaITEM_SEGURO_ICMS: TFloatField
+      FieldName = 'ITEM_SEGURO_ICMS'
+    end
+    object qrnotaITEM_PIS_VALOR: TFloatField
+      FieldName = 'ITEM_PIS_VALOR'
+    end
+    object qrnotaITEM_PIS_BASE: TFloatField
+      FieldName = 'ITEM_PIS_BASE'
+    end
+    object qrnotaITEM_PIS_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_PIS_ALIQUOTA'
+    end
+    object qrnotaITEM_PIS_ICMS: TFloatField
+      FieldName = 'ITEM_PIS_ICMS'
+    end
+    object qrnotaITEM_COMPLEMENTO_VALOR: TFloatField
+      FieldName = 'ITEM_COMPLEMENTO_VALOR'
+    end
+    object qrnotaITEM_COMPLEMENTO_BASE: TFloatField
+      FieldName = 'ITEM_COMPLEMENTO_BASE'
+    end
+    object qrnotaITEM_COMPLEMENTO_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_COMPLEMENTO_ALIQUOTA'
+    end
+    object qrnotaITEM_COMPLEMENTO_ICMS: TFloatField
+      FieldName = 'ITEM_COMPLEMENTO_ICMS'
+    end
+    object qrnotaITEM_SERVICO_VALOR: TFloatField
+      FieldName = 'ITEM_SERVICO_VALOR'
+    end
+    object qrnotaITEM_SERVICO_BASE: TFloatField
+      FieldName = 'ITEM_SERVICO_BASE'
+    end
+    object qrnotaITEM_SERVICO_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_SERVICO_ALIQUOTA'
+    end
+    object qrnotaITEM_SERVICO_ICMS: TFloatField
+      FieldName = 'ITEM_SERVICO_ICMS'
+    end
+    object qrnotaITEM_OUTRAS_VALOR: TFloatField
+      FieldName = 'ITEM_OUTRAS_VALOR'
+    end
+    object qrnotaITEM_OUTRAS_BASE: TFloatField
+      FieldName = 'ITEM_OUTRAS_BASE'
+    end
+    object qrnotaITEM_OUTRAS_ALIQUOTA: TFloatField
+      FieldName = 'ITEM_OUTRAS_ALIQUOTA'
+    end
+    object qrnotaITEM_OUTRAS_ICMS: TFloatField
+      FieldName = 'ITEM_OUTRAS_ICMS'
+    end
+    object qrnotaITEM_ESPECIAL_TOTAL: TFloatField
+      FieldName = 'ITEM_ESPECIAL_TOTAL'
+    end
+    object qrnotaITEM_ESPECIAL_VALOR: TFloatField
+      FieldName = 'ITEM_ESPECIAL_VALOR'
+    end
+    object qrnotaBASEICMS_PRODUTOS: TIntegerField
+      FieldName = 'BASEICMS_PRODUTOS'
+    end
+    object qrnotaCONF_ITEM_ESPECIAL: TFloatField
+      FieldName = 'CONF_ITEM_ESPECIAL'
+    end
+    object qrnotaOBS8: TWideStringField
+      FieldName = 'OBS8'
+      Size = 60
+    end
+    object qrnotaCREDITO_ICMS: TFloatField
+      FieldName = 'CREDITO_ICMS'
+    end
+    object qrnotaPIS: TFloatField
+      FieldName = 'PIS'
+    end
+    object qrnotaCOFINS: TFloatField
+      FieldName = 'COFINS'
+    end
+    object qrnotaOPERACAO: TWideStringField
+      FieldName = 'OPERACAO'
+      Size = 1
+    end
+    object qrnotaINTEGRACAO: TIntegerField
+      FieldName = 'INTEGRACAO'
+    end
+    object qrnotaAPROVEITA_CREDITO_ICMS: TWideStringField
+      FieldName = 'APROVEITA_CREDITO_ICMS'
+      Size = 1
+    end
+    object qrnotaCHAVE: TWideStringField
+      FieldName = 'CHAVE'
+      Size = 50
+    end
+  end
+  object dsnota: TDataSource
+    DataSet = qrnota
+    Left = 73
+    Top = 198
+  end
+  object qrempresa: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000004')
+    Params = <>
+    Left = 168
+    Top = 120
+    object qrempresaCODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 6
+    end
+    object qrempresaFILIAL: TWideStringField
+      FieldName = 'FILIAL'
+      Size = 50
+    end
+    object qrempresaNOTAFISCAL: TIntegerField
+      FieldName = 'NOTAFISCAL'
+    end
+    object qrempresaENDERECO: TWideStringField
+      FieldName = 'ENDERECO'
+      Size = 60
+    end
+    object qrempresaCIDADE: TWideStringField
+      FieldName = 'CIDADE'
+      Size = 30
+    end
+    object qrempresaUF: TWideStringField
+      FieldName = 'UF'
+      Size = 2
+    end
+    object qrempresaCEP: TWideStringField
+      FieldName = 'CEP'
+      Size = 9
+    end
+    object qrempresaTELEFONE: TWideStringField
+      FieldName = 'TELEFONE'
+      Size = 25
+    end
+    object qrempresaCNPJ: TWideStringField
+      FieldName = 'CNPJ'
+      Size = 25
+    end
+    object qrempresaIE: TWideStringField
+      FieldName = 'IE'
+      Size = 14
+    end
+    object qrempresaSEQNF: TIntegerField
+      FieldName = 'SEQNF'
+    end
+    object qrempresaFAX: TWideStringField
+      FieldName = 'FAX'
+      Size = 25
+    end
+    object qrempresaOBS1: TWideStringField
+      FieldName = 'OBS1'
+      Size = 100
+    end
+    object qrempresaOBS2: TWideStringField
+      FieldName = 'OBS2'
+      Size = 100
+    end
+    object qrempresaCONTRIBUINTE_IPI: TWideStringField
+      FieldName = 'CONTRIBUINTE_IPI'
+      Size = 1
+    end
+    object qrempresaSUBSTITUTO_TRIBUTARIO: TWideStringField
+      FieldName = 'SUBSTITUTO_TRIBUTARIO'
+      Size = 1
+    end
+    object qrempresaEMPRESA_ESTADUAL: TWideStringField
+      FieldName = 'EMPRESA_ESTADUAL'
+      Size = 1
+    end
+    object qrempresaOPTANTE_SIMPLES: TWideStringField
+      FieldName = 'OPTANTE_SIMPLES'
+      Size = 1
+    end
+    object qrempresaOPTANTE_SUPER_SIMPLES: TWideStringField
+      FieldName = 'OPTANTE_SUPER_SIMPLES'
+      Size = 1
+    end
+    object qrempresaECF: TWideStringField
+      FieldName = 'ECF'
+      Size = 1
+    end
+    object qrempresaTIPO: TIntegerField
+      FieldName = 'TIPO'
+    end
+    object qrempresaIPI: TFloatField
+      FieldName = 'IPI'
+    end
+    object qrempresaISS: TFloatField
+      FieldName = 'ISS'
+    end
+    object qrempresaNUMERO: TWideStringField
+      FieldName = 'NUMERO'
+      Size = 10
+    end
+    object qrempresaRESPONSAVEL: TWideStringField
+      FieldName = 'RESPONSAVEL'
+      Size = 50
+    end
+    object qrempresaCOMPLEMENTO: TWideStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 50
+    end
+    object qrempresaBAIRRO: TWideStringField
+      FieldName = 'BAIRRO'
+      Size = 30
+    end
+    object qrempresaFARMACIA_RESP_TECNICO: TWideStringField
+      FieldName = 'FARMACIA_RESP_TECNICO'
+      Size = 50
+    end
+    object qrempresaFARMACIA_CRF: TWideStringField
+      FieldName = 'FARMACIA_CRF'
+      Size = 10
+    end
+    object qrempresaFARMACIA_CPF: TWideStringField
+      FieldName = 'FARMACIA_CPF'
+      Size = 14
+    end
+    object qrempresaFARMCIA_DATA: TDateField
+      FieldName = 'FARMCIA_DATA'
+    end
+    object qrempresaFARMACIA_UF: TWideStringField
+      FieldName = 'FARMACIA_UF'
+      Size = 2
+    end
+    object qrempresaFARMACIA_SENHA: TWideStringField
+      FieldName = 'FARMACIA_SENHA'
+      Size = 10
+    end
+    object qrempresaFARMACIA_EMAIL: TWideStringField
+      FieldName = 'FARMACIA_EMAIL'
+      Size = 10
+    end
+    object qrempresaFARMACIA_LOGIN: TWideStringField
+      FieldName = 'FARMACIA_LOGIN'
+    end
+    object qrempresaFARMACIA_ENVIO: TWideStringField
+      FieldName = 'FARMACIA_ENVIO'
+      Size = 100
+    end
+    object qrempresaCONHECIMENTO: TIntegerField
+      FieldName = 'CONHECIMENTO'
+    end
+    object qrempresaINDUSTRIA: TWideStringField
+      FieldName = 'INDUSTRIA'
+      Size = 1
+    end
+    object qrempresaFARMACIA_NUMEROLICENCA: TWideStringField
+      FieldName = 'FARMACIA_NUMEROLICENCA'
+    end
+    object qrempresaCOD_MUNICIPIO_IBGE: TWideStringField
+      FieldName = 'COD_MUNICIPIO_IBGE'
+      Size = 10
+    end
+    object qrempresaIBGE: TWideStringField
+      FieldName = 'IBGE'
+      Size = 10
+    end
+    object qrempresaPIS: TFloatField
+      FieldName = 'PIS'
+    end
+    object qrempresaCOFINS: TFloatField
+      FieldName = 'COFINS'
+    end
+    object qrempresaEMAIL: TWideStringField
+      FieldName = 'EMAIL'
+      Size = 60
+    end
+    object qrempresaATIVIDADE: TWideStringField
+      FieldName = 'ATIVIDADE'
+      Size = 40
+    end
+    object qrempresaCONTADOR_COD_MUNICIPIO_IBGE: TWideStringField
+      FieldName = 'CONTADOR_COD_MUNICIPIO_IBGE'
+      Size = 10
+    end
+    object qrempresaCONTADOR_NOME: TWideStringField
+      FieldName = 'CONTADOR_NOME'
+      Size = 60
+    end
+    object qrempresaCONTADOR_CPF: TWideStringField
+      FieldName = 'CONTADOR_CPF'
+    end
+    object qrempresaCONTADOR_CRC: TWideStringField
+      FieldName = 'CONTADOR_CRC'
+      Size = 15
+    end
+    object qrempresaCONTADOR_CNPJ: TWideStringField
+      FieldName = 'CONTADOR_CNPJ'
+      Size = 25
+    end
+    object qrempresaCONTADOR_CEP: TWideStringField
+      FieldName = 'CONTADOR_CEP'
+      Size = 10
+    end
+    object qrempresaCONTADOR_ENDERECO: TWideStringField
+      FieldName = 'CONTADOR_ENDERECO'
+      Size = 60
+    end
+    object qrempresaCONTADOR_NUMERO: TWideStringField
+      FieldName = 'CONTADOR_NUMERO'
+      Size = 5
+    end
+    object qrempresaCONTADOR_COMPLEMENTO: TWideStringField
+      FieldName = 'CONTADOR_COMPLEMENTO'
+      Size = 60
+    end
+    object qrempresaCONTADOR_BAIRRO: TWideStringField
+      FieldName = 'CONTADOR_BAIRRO'
+      Size = 60
+    end
+    object qrempresaCONTADOR_FONE: TWideStringField
+      FieldName = 'CONTADOR_FONE'
+      Size = 15
+    end
+    object qrempresaCONTADOR_FAX: TWideStringField
+      FieldName = 'CONTADOR_FAX'
+      Size = 15
+    end
+    object qrempresaCONTADOR_EMAIL: TWideStringField
+      FieldName = 'CONTADOR_EMAIL'
+      Size = 60
+    end
+    object qrempresaINSC_MUNICIPAL: TWideStringField
+      FieldName = 'INSC_MUNICIPAL'
+    end
+    object qrempresaDATA_ABERTURA: TDateField
+      FieldName = 'DATA_ABERTURA'
+    end
+    object qrempresaCNAE: TWideStringField
+      FieldName = 'CNAE'
+      Size = 10
+    end
+    object qrempresaCRT: TWideStringField
+      FieldName = 'CRT'
+      Size = 1
+    end
+    object qrempresaCONTADOR_CIDADE: TWideStringField
+      FieldName = 'CONTADOR_CIDADE'
+      Size = 30
+    end
+    object qrempresaCONTADOR_COD_MUNICIPIO: TWideStringField
+      FieldName = 'CONTADOR_COD_MUNICIPIO'
+      Size = 30
+    end
+    object qrempresaCONTADOR_UF: TWideStringField
+      FieldName = 'CONTADOR_UF'
+      Size = 2
+    end
+    object qrempresaPERMITE_CREDITO: TIntegerField
+      FieldName = 'PERMITE_CREDITO'
+    end
+    object qrempresaFANTASIA: TWideStringField
+      FieldName = 'FANTASIA'
+      Size = 60
+    end
+    object qrempresaDFIXAS: TSingleField
+      FieldName = 'DFIXAS'
+    end
+    object qrempresaTIPOCALCULO: TIntegerField
+      FieldName = 'TIPOCALCULO'
+    end
+    object qrempresaSERIE_CTE: TWideStringField
+      FieldName = 'SERIE_CTE'
+      Size = 6
+    end
+    object qrempresaSEQ_CTE: TWideStringField
+      FieldName = 'SEQ_CTE'
+      Size = 6
+    end
+    object qrempresaCOD_PAIS: TWideStringField
+      FieldName = 'COD_PAIS'
+    end
+    object qrempresaPAIS: TWideStringField
+      FieldName = 'PAIS'
+      Size = 50
+    end
+    object qrempresaHOMEPAGE: TWideStringField
+      FieldName = 'HOMEPAGE'
+      Size = 100
+    end
+  end
+  object qrmodelo: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000082')
+    Params = <>
+    Left = 200
+    Top = 120
+    object qrmodeloCODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Size = 6
+    end
+    object qrmodeloMODELO: TWideStringField
+      FieldName = 'MODELO'
+      Size = 100
+    end
+    object qrmodeloSIGLA: TWideStringField
+      FieldName = 'SIGLA'
+      Size = 5
+    end
+    object qrmodeloSINTEGRA: TWideStringField
+      FieldName = 'SINTEGRA'
+      Size = 2
+    end
+    object qrmodeloTIPO_REGISTRO: TWideStringField
+      FieldName = 'TIPO_REGISTRO'
+      Size = 10
+    end
+    object qrmodeloSEQUENCIANF: TIntegerField
+      FieldName = 'SEQUENCIANF'
+    end
+  end
+  object qrfornecedor: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000009')
+    Params = <>
+    Left = 232
+    Top = 120
+    object qrfornecedorCODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 6
+    end
+    object qrfornecedorNOME: TWideStringField
+      FieldName = 'NOME'
+      Size = 80
+    end
+    object qrfornecedorFANTASIA: TWideStringField
+      FieldName = 'FANTASIA'
+      Size = 50
+    end
+    object qrfornecedorENDERECO: TWideStringField
+      FieldName = 'ENDERECO'
+      Size = 80
+    end
+    object qrfornecedorBAIRRO: TWideStringField
+      FieldName = 'BAIRRO'
+      Size = 30
+    end
+    object qrfornecedorCIDADE: TWideStringField
+      FieldName = 'CIDADE'
+      Size = 40
+    end
+    object qrfornecedorUF: TWideStringField
+      FieldName = 'UF'
+      Size = 2
+    end
+    object qrfornecedorCEP: TWideStringField
+      FieldName = 'CEP'
+      Size = 10
+    end
+    object qrfornecedorCOMPLEMENTO: TWideStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 40
+    end
+    object qrfornecedorTELEFONE1: TWideStringField
+      FieldName = 'TELEFONE1'
+    end
+    object qrfornecedorTELEFONE2: TWideStringField
+      FieldName = 'TELEFONE2'
+    end
+    object qrfornecedorFAX: TWideStringField
+      FieldName = 'FAX'
+    end
+    object qrfornecedorCONTATO1: TWideStringField
+      FieldName = 'CONTATO1'
+      Size = 40
+    end
+    object qrfornecedorCONTATO2: TWideStringField
+      FieldName = 'CONTATO2'
+      Size = 40
+    end
+    object qrfornecedorCELULAR1: TWideStringField
+      FieldName = 'CELULAR1'
+    end
+    object qrfornecedorCELULAR2: TWideStringField
+      FieldName = 'CELULAR2'
+    end
+    object qrfornecedorEMAIL: TWideStringField
+      FieldName = 'EMAIL'
+      Size = 80
+    end
+    object qrfornecedorHOMEPAGE: TWideStringField
+      FieldName = 'HOMEPAGE'
+      Size = 80
+    end
+    object qrfornecedorCNPJ: TWideStringField
+      FieldName = 'CNPJ'
+      Size = 25
+    end
+    object qrfornecedorIE: TWideStringField
+      FieldName = 'IE'
+      Size = 25
+    end
+    object qrfornecedorBANCO: TWideStringField
+      FieldName = 'BANCO'
+      Size = 30
+    end
+    object qrfornecedorAGENCIA: TWideStringField
+      FieldName = 'AGENCIA'
+      Size = 15
+    end
+    object qrfornecedorCONTA: TWideStringField
+      FieldName = 'CONTA'
+    end
+    object qrfornecedorOBS1: TWideStringField
+      FieldName = 'OBS1'
+      Size = 80
+    end
+    object qrfornecedorOBS2: TWideStringField
+      FieldName = 'OBS2'
+      Size = 80
+    end
+    object qrfornecedorOBS3: TWideStringField
+      FieldName = 'OBS3'
+      Size = 80
+    end
+    object qrfornecedorDATA: TDateField
+      FieldName = 'DATA'
+    end
+    object qrfornecedorTIPO: TIntegerField
+      FieldName = 'TIPO'
+    end
+    object qrfornecedorASSISTENCIA_TECNICA: TIntegerField
+      FieldName = 'ASSISTENCIA_TECNICA'
+    end
+    object qrfornecedorNUMERO: TWideStringField
+      FieldName = 'NUMERO'
+      Size = 10
+    end
+    object qrfornecedorIM: TWideStringField
+      FieldName = 'IM'
+      Size = 25
+    end
+    object qrfornecedorREP_NOME: TWideStringField
+      FieldName = 'REP_NOME'
+      Size = 80
+    end
+    object qrfornecedorREP_TELEFONE: TWideStringField
+      FieldName = 'REP_TELEFONE'
+    end
+    object qrfornecedorREP_ENDERECO: TWideStringField
+      FieldName = 'REP_ENDERECO'
+      Size = 60
+    end
+    object qrfornecedorREP_BAIRRO: TWideStringField
+      FieldName = 'REP_BAIRRO'
+      Size = 40
+    end
+    object qrfornecedorREP_COMPLEMENTO: TWideStringField
+      FieldName = 'REP_COMPLEMENTO'
+      Size = 50
+    end
+    object qrfornecedorREP_CIDADE: TWideStringField
+      FieldName = 'REP_CIDADE'
+      Size = 40
+    end
+    object qrfornecedorREP_UF: TWideStringField
+      FieldName = 'REP_UF'
+      Size = 2
+    end
+    object qrfornecedorREP_CEP: TWideStringField
+      FieldName = 'REP_CEP'
+      Size = 15
+    end
+    object qrfornecedorREP_TELEFONE1: TWideStringField
+      FieldName = 'REP_TELEFONE1'
+    end
+    object qrfornecedorREP_TELEFONE2: TWideStringField
+      FieldName = 'REP_TELEFONE2'
+    end
+    object qrfornecedorREP_TELEFONE3: TWideStringField
+      FieldName = 'REP_TELEFONE3'
+    end
+    object qrfornecedorREP_FAX: TWideStringField
+      FieldName = 'REP_FAX'
+    end
+    object qrfornecedorREP_CNPJ: TWideStringField
+      FieldName = 'REP_CNPJ'
+      Size = 25
+    end
+    object qrfornecedorREP_IE: TWideStringField
+      FieldName = 'REP_IE'
+      Size = 25
+    end
+    object qrfornecedorREP_HOME_PAGE: TWideStringField
+      FieldName = 'REP_HOME_PAGE'
+      Size = 100
+    end
+    object qrfornecedorREP_EMAIL: TWideStringField
+      FieldName = 'REP_EMAIL'
+      Size = 100
+    end
+    object qrfornecedorCNAE: TWideStringField
+      FieldName = 'CNAE'
+      Size = 10
+    end
+    object qrfornecedorCOD_MUNICIPIO_IBGE: TWideStringField
+      FieldName = 'COD_MUNICIPIO_IBGE'
+      Size = 10
+    end
+    object qrfornecedorIBGE: TWideStringField
+      FieldName = 'IBGE'
+      Size = 5
+    end
+  end
+  object menu_tabelas_fiscais: TAdvPopupMenu
+    MenuStyler = AdvMenuOfficeStyler1
+    Version = '2.6.2.1'
+    Left = 552
+    Top = 232
+    object ModelosdeNotasFiscais1: TMenuItem
+      Caption = 'Modelos de Notas Fiscais'
+      ImageIndex = 89
+      OnClick = ModelosdeNotasFiscais1Click
+    end
+    object CFOP1: TMenuItem
+      Caption = 'CFOP'
+      ImageIndex = 105
+      OnClick = CFOP1Click
+    end
+    object ClassesdeRecolhimento1: TMenuItem
+      Caption = 'CST'
+      ImageIndex = 33
+      OnClick = ClassesdeRecolhimento1Click
+    end
+    object N1: TMenuItem
+      Caption = '-'
+      Visible = False
+    end
+    object ImportaNotaFiscalEletrnica1: TMenuItem
+      Caption = 'Importa Nota Fiscal Eletr'#244'nica'
+      Visible = False
+      OnClick = ImportaNotaFiscalEletrnica1Click
+    end
+  end
+  object pop: TAdvPopupMenu
+    MenuStyler = AdvMenuOfficeStyler1
+    Version = '2.6.2.1'
+    Left = 440
+    Top = 328
+    object Incluir2: TMenuItem
+      Caption = 'Incluir'
+      ShortCut = 113
+      OnClick = bincluirClick
+    end
+    object Alterar2: TMenuItem
+      Caption = 'Alterar'
+      ShortCut = 114
+      OnClick = Alterar2Click
+    end
+    object Excluir2: TMenuItem
+      Caption = 'Excluir'
+      ShortCut = 46
+      OnClick = bexcluirClick
+    end
+    object LocalizarFiltro2: TMenuItem
+      Caption = 'Localizar / Filtro'
+      ShortCut = 117
+      OnClick = b
+    end
+    object Relatrios2: TMenuItem
+      Caption = 'Relat'#243'rios'
+      ShortCut = 118
+      OnClick = brelatorioClick
+    end
+    object Sair2: TMenuItem
+      Caption = 'Sair'
+      ShortCut = 27
+      OnClick = bfecharClick
+    end
+  end
+  object qrfornecedor2: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000009')
+    Params = <>
+    Left = 136
+    Top = 120
+    object qrfornecedor2CODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 6
+    end
+    object qrfornecedor2NOME: TWideStringField
+      FieldName = 'NOME'
+      Size = 80
+    end
+    object qrfornecedor2FANTASIA: TWideStringField
+      FieldName = 'FANTASIA'
+      Size = 50
+    end
+    object qrfornecedor2ENDERECO: TWideStringField
+      FieldName = 'ENDERECO'
+      Size = 80
+    end
+    object qrfornecedor2BAIRRO: TWideStringField
+      FieldName = 'BAIRRO'
+      Size = 30
+    end
+    object qrfornecedor2CIDADE: TWideStringField
+      FieldName = 'CIDADE'
+      Size = 40
+    end
+    object qrfornecedor2UF: TWideStringField
+      FieldName = 'UF'
+      Size = 2
+    end
+    object qrfornecedor2CEP: TWideStringField
+      FieldName = 'CEP'
+      Size = 10
+    end
+    object qrfornecedor2COMPLEMENTO: TWideStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 40
+    end
+    object qrfornecedor2TELEFONE1: TWideStringField
+      FieldName = 'TELEFONE1'
+    end
+    object qrfornecedor2TELEFONE2: TWideStringField
+      FieldName = 'TELEFONE2'
+    end
+    object qrfornecedor2FAX: TWideStringField
+      FieldName = 'FAX'
+    end
+    object qrfornecedor2CONTATO1: TWideStringField
+      FieldName = 'CONTATO1'
+      Size = 40
+    end
+    object qrfornecedor2CONTATO2: TWideStringField
+      FieldName = 'CONTATO2'
+      Size = 40
+    end
+    object qrfornecedor2CELULAR1: TWideStringField
+      FieldName = 'CELULAR1'
+    end
+    object qrfornecedor2CELULAR2: TWideStringField
+      FieldName = 'CELULAR2'
+    end
+    object qrfornecedor2EMAIL: TWideStringField
+      FieldName = 'EMAIL'
+      Size = 80
+    end
+    object qrfornecedor2HOMEPAGE: TWideStringField
+      FieldName = 'HOMEPAGE'
+      Size = 80
+    end
+    object qrfornecedor2CNPJ: TWideStringField
+      FieldName = 'CNPJ'
+      Size = 25
+    end
+    object qrfornecedor2IE: TWideStringField
+      FieldName = 'IE'
+      Size = 25
+    end
+    object qrfornecedor2BANCO: TWideStringField
+      FieldName = 'BANCO'
+      Size = 30
+    end
+    object qrfornecedor2AGENCIA: TWideStringField
+      FieldName = 'AGENCIA'
+      Size = 15
+    end
+    object qrfornecedor2CONTA: TWideStringField
+      FieldName = 'CONTA'
+    end
+    object qrfornecedor2OBS1: TWideStringField
+      FieldName = 'OBS1'
+      Size = 80
+    end
+    object qrfornecedor2OBS2: TWideStringField
+      FieldName = 'OBS2'
+      Size = 80
+    end
+    object qrfornecedor2OBS3: TWideStringField
+      FieldName = 'OBS3'
+      Size = 80
+    end
+    object qrfornecedor2DATA: TDateField
+      FieldName = 'DATA'
+    end
+    object qrfornecedor2TIPO: TIntegerField
+      FieldName = 'TIPO'
+    end
+    object qrfornecedor2ASSISTENCIA_TECNICA: TIntegerField
+      FieldName = 'ASSISTENCIA_TECNICA'
+    end
+    object qrfornecedor2NUMERO: TWideStringField
+      FieldName = 'NUMERO'
+      Size = 10
+    end
+    object qrfornecedor2IM: TWideStringField
+      FieldName = 'IM'
+      Size = 25
+    end
+    object qrfornecedor2REP_NOME: TWideStringField
+      FieldName = 'REP_NOME'
+      Size = 80
+    end
+    object qrfornecedor2REP_TELEFONE: TWideStringField
+      FieldName = 'REP_TELEFONE'
+    end
+    object qrfornecedor2REP_ENDERECO: TWideStringField
+      FieldName = 'REP_ENDERECO'
+      Size = 60
+    end
+    object qrfornecedor2REP_BAIRRO: TWideStringField
+      FieldName = 'REP_BAIRRO'
+      Size = 40
+    end
+    object qrfornecedor2REP_COMPLEMENTO: TWideStringField
+      FieldName = 'REP_COMPLEMENTO'
+      Size = 50
+    end
+    object qrfornecedor2REP_CIDADE: TWideStringField
+      FieldName = 'REP_CIDADE'
+      Size = 40
+    end
+    object qrfornecedor2REP_UF: TWideStringField
+      FieldName = 'REP_UF'
+      Size = 2
+    end
+    object qrfornecedor2REP_CEP: TWideStringField
+      FieldName = 'REP_CEP'
+      Size = 15
+    end
+    object qrfornecedor2REP_TELEFONE1: TWideStringField
+      FieldName = 'REP_TELEFONE1'
+    end
+    object qrfornecedor2REP_TELEFONE2: TWideStringField
+      FieldName = 'REP_TELEFONE2'
+    end
+    object qrfornecedor2REP_TELEFONE3: TWideStringField
+      FieldName = 'REP_TELEFONE3'
+    end
+    object qrfornecedor2REP_FAX: TWideStringField
+      FieldName = 'REP_FAX'
+    end
+    object qrfornecedor2REP_CNPJ: TWideStringField
+      FieldName = 'REP_CNPJ'
+      Size = 25
+    end
+    object qrfornecedor2REP_IE: TWideStringField
+      FieldName = 'REP_IE'
+      Size = 25
+    end
+    object qrfornecedor2REP_HOME_PAGE: TWideStringField
+      FieldName = 'REP_HOME_PAGE'
+      Size = 100
+    end
+    object qrfornecedor2REP_EMAIL: TWideStringField
+      FieldName = 'REP_EMAIL'
+      Size = 100
+    end
+    object qrfornecedor2CNAE: TWideStringField
+      FieldName = 'CNAE'
+      Size = 10
+    end
+    object qrfornecedor2COD_MUNICIPIO_IBGE: TWideStringField
+      FieldName = 'COD_MUNICIPIO_IBGE'
+      Size = 10
+    end
+    object qrfornecedor2IBGE: TWideStringField
+      FieldName = 'IBGE'
+      Size = 5
+    end
+  end
+  object qrproduto: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000025')
+    Params = <>
+    Left = 104
+    Top = 120
+    object qrprodutoCODIGO: TWideStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 6
+    end
+    object qrprodutoCODBARRA: TWideStringField
+      FieldName = 'CODBARRA'
+      Size = 13
+    end
+    object qrprodutoPRODUTO: TWideStringField
+      FieldName = 'PRODUTO'
+      Size = 100
+    end
+    object qrprodutoUNIDADE: TWideStringField
+      FieldName = 'UNIDADE'
+      Size = 2
+    end
+    object qrprodutoDATA_CADASTRO: TDateField
+      FieldName = 'DATA_CADASTRO'
+    end
+    object qrprodutoCODGRUPO: TWideStringField
+      FieldName = 'CODGRUPO'
+      Size = 6
+    end
+    object qrprodutoCODSUBGRUPO: TWideStringField
+      FieldName = 'CODSUBGRUPO'
+      Size = 6
+    end
+    object qrprodutoCODFORNECEDOR: TWideStringField
+      FieldName = 'CODFORNECEDOR'
+      Size = 6
+    end
+    object qrprodutoCODMARCA: TWideStringField
+      FieldName = 'CODMARCA'
+      Size = 6
+    end
+    object qrprodutoDATA_ULTIMACOMPRA: TDateField
+      FieldName = 'DATA_ULTIMACOMPRA'
+    end
+    object qrprodutoNOTAFISCAL: TWideStringField
+      FieldName = 'NOTAFISCAL'
+      Size = 7
+    end
+    object qrprodutoPRECOCUSTO: TFloatField
+      FieldName = 'PRECOCUSTO'
+    end
+    object qrprodutoPRECOVENDA: TFloatField
+      FieldName = 'PRECOVENDA'
+    end
+    object qrprodutoDATA_ULTIMAVENDA: TDateField
+      FieldName = 'DATA_ULTIMAVENDA'
+    end
+    object qrprodutoESTOQUE: TFloatField
+      FieldName = 'ESTOQUE'
+    end
+    object qrprodutoESTOQUEMINIMO: TFloatField
+      FieldName = 'ESTOQUEMINIMO'
+    end
+    object qrprodutoCODALIQUOTA: TWideStringField
+      FieldName = 'CODALIQUOTA'
+      Size = 5
+    end
+    object qrprodutoAPLICACAO: TWideMemoField
+      FieldName = 'APLICACAO'
+      BlobType = ftWideMemo
+    end
+    object qrprodutoLOCALICAZAO: TWideStringField
+      FieldName = 'LOCALICAZAO'
+      Size = 50
+    end
+    object qrprodutoPESO: TFloatField
+      FieldName = 'PESO'
+    end
+    object qrprodutoVALIDADE: TWideStringField
+      FieldName = 'VALIDADE'
+    end
+    object qrprodutoCOMISSAO: TFloatField
+      FieldName = 'COMISSAO'
+    end
+    object qrprodutoUSA_BALANCA: TIntegerField
+      FieldName = 'USA_BALANCA'
+    end
+    object qrprodutoUSA_SERIAL: TIntegerField
+      FieldName = 'USA_SERIAL'
+    end
+    object qrprodutoUSA_GRADE: TIntegerField
+      FieldName = 'USA_GRADE'
+    end
+    object qrprodutoCODRECEITA: TWideStringField
+      FieldName = 'CODRECEITA'
+      Size = 6
+    end
+    object qrprodutoFOTO: TWideStringField
+      FieldName = 'FOTO'
+      Size = 80
+    end
+    object qrprodutoDATA_ULTIMACOMPRA_ANTERIOR: TDateField
+      FieldName = 'DATA_ULTIMACOMPRA_ANTERIOR'
+    end
+    object qrprodutoNOTAFISCAL_ANTERIOR: TWideStringField
+      FieldName = 'NOTAFISCAL_ANTERIOR'
+      Size = 6
+    end
+    object qrprodutoCODFORNECEDOR_ANTERIOR: TWideStringField
+      FieldName = 'CODFORNECEDOR_ANTERIOR'
+      Size = 6
+    end
+    object qrprodutoPRECOCUSTO_ANTERIOR: TFloatField
+      FieldName = 'PRECOCUSTO_ANTERIOR'
+    end
+    object qrprodutoPRECOVENDA_ANTERIOR: TFloatField
+      FieldName = 'PRECOVENDA_ANTERIOR'
+    end
+    object qrprodutoCUSTOMEDIO: TFloatField
+      FieldName = 'CUSTOMEDIO'
+    end
+    object qrprodutoAUTO_APLICACAO: TWideStringField
+      FieldName = 'AUTO_APLICACAO'
+      Size = 60
+    end
+    object qrprodutoAUTO_COMPLEMENTO: TWideStringField
+      FieldName = 'AUTO_COMPLEMENTO'
+      Size = 60
+    end
+    object qrprodutoDATA_REMARCACAO_CUSTO: TDateField
+      FieldName = 'DATA_REMARCACAO_CUSTO'
+    end
+    object qrprodutoDATA_REMARCACAO_VENDA: TDateField
+      FieldName = 'DATA_REMARCACAO_VENDA'
+    end
+    object qrprodutoPRECO_PROMOCAO: TFloatField
+      FieldName = 'PRECO_PROMOCAO'
+    end
+    object qrprodutoDATA_PROMOCAO: TDateField
+      FieldName = 'DATA_PROMOCAO'
+    end
+    object qrprodutoFIM_PROMOCAO: TDateField
+      FieldName = 'FIM_PROMOCAO'
+    end
+    object qrprodutoCST: TWideStringField
+      FieldName = 'CST'
+      Size = 10
+    end
+    object qrprodutoCLASSIFICACAO_FISCAL: TWideStringField
+      FieldName = 'CLASSIFICACAO_FISCAL'
+    end
+    object qrprodutoNBM: TWideStringField
+      FieldName = 'NBM'
+    end
+    object qrprodutoNCM: TWideStringField
+      FieldName = 'NCM'
+    end
+    object qrprodutoALIQUOTA: TFloatField
+      FieldName = 'ALIQUOTA'
+    end
+    object qrprodutoIPI: TFloatField
+      FieldName = 'IPI'
+    end
+    object qrprodutoREDUCAO: TFloatField
+      FieldName = 'REDUCAO'
+    end
+    object qrprodutoQTDE_EMBALAGEM: TFloatField
+      FieldName = 'QTDE_EMBALAGEM'
+    end
+    object qrprodutoTIPO: TWideStringField
+      FieldName = 'TIPO'
+      Size = 30
+    end
+    object qrprodutoPESO_LIQUIDO: TFloatField
+      FieldName = 'PESO_LIQUIDO'
+    end
+    object qrprodutoFARMACIA_CONTROLADO: TWideStringField
+      FieldName = 'FARMACIA_CONTROLADO'
+      Size = 1
+    end
+    object qrprodutoFARMACIA_APRESENTACAO: TIntegerField
+      FieldName = 'FARMACIA_APRESENTACAO'
+    end
+    object qrprodutoFARMACIA_REGISTRO_MEDICAMENTO: TWideStringField
+      FieldName = 'FARMACIA_REGISTRO_MEDICAMENTO'
+    end
+    object qrprodutoFARMACIA_PMC: TFloatField
+      FieldName = 'FARMACIA_PMC'
+    end
+    object qrprodutoULTIMA_ALTERACAO: TDateField
+      FieldName = 'ULTIMA_ALTERACAO'
+    end
+    object qrprodutoULTIMA_CARGA: TDateField
+      FieldName = 'ULTIMA_CARGA'
+    end
+    object qrprodutoDATA_INVENTARIO: TDateField
+      FieldName = 'DATA_INVENTARIO'
+    end
+    object qrprodutoCUSTO_INVENTARIO: TFloatField
+      FieldName = 'CUSTO_INVENTARIO'
+    end
+    object qrprodutoESTOQUE_INVENTARIO: TFloatField
+      FieldName = 'ESTOQUE_INVENTARIO'
+    end
+    object qrprodutoESTOQUE_ANTERIOR: TFloatField
+      FieldName = 'ESTOQUE_ANTERIOR'
+    end
+    object qrprodutoPRECOVENDA_NOVO: TFloatField
+      FieldName = 'PRECOVENDA_NOVO'
+    end
+    object qrprodutoUSA_RENTABILIDADE: TIntegerField
+      FieldName = 'USA_RENTABILIDADE'
+    end
+    object qrprodutoQUANTIDADE_MINIMA_FAB: TFloatField
+      FieldName = 'QUANTIDADE_MINIMA_FAB'
+    end
+    object qrprodutoAPRESENTACAO: TWideStringField
+      FieldName = 'APRESENTACAO'
+      Size = 60
+    end
+    object qrprodutoSITUACAO: TIntegerField
+      FieldName = 'SITUACAO'
+    end
+    object qrprodutoPRECOVENDA1: TFloatField
+      FieldName = 'PRECOVENDA1'
+    end
+    object qrprodutoPRECOVENDA2: TFloatField
+      FieldName = 'PRECOVENDA2'
+    end
+    object qrprodutoPRECOVENDA3: TFloatField
+      FieldName = 'PRECOVENDA3'
+    end
+    object qrprodutoPRECOVENDA4: TFloatField
+      FieldName = 'PRECOVENDA4'
+    end
+    object qrprodutoPRECOVENDA5: TFloatField
+      FieldName = 'PRECOVENDA5'
+    end
+    object qrprodutoDESCONTO_PRECOVENDA: TFloatField
+      FieldName = 'DESCONTO_PRECOVENDA'
+    end
+    object qrprodutoDATA_INVENTARIO_ATUAL: TDateField
+      FieldName = 'DATA_INVENTARIO_ATUAL'
+    end
+    object qrprodutoCUSTO_INVENTARIO_ATUAL: TFloatField
+      FieldName = 'CUSTO_INVENTARIO_ATUAL'
+    end
+    object qrprodutoESTOQUE_INVENTARIO_ATUAL: TFloatField
+      FieldName = 'ESTOQUE_INVENTARIO_ATUAL'
+    end
+    object qrprodutoMARGEM_MINIMA: TFloatField
+      FieldName = 'MARGEM_MINIMA'
+    end
+    object qrprodutoPISCOFINS: TWideStringField
+      FieldName = 'PISCOFINS'
+      Size = 1
+    end
+    object qrprodutoREFERENCIA_FORNECEDOR: TWideStringField
+      FieldName = 'REFERENCIA_FORNECEDOR'
+      Size = 30
+    end
+    object qrprodutoCOMISSAO1: TFloatField
+      FieldName = 'COMISSAO1'
+    end
+    object qrprodutoMARGEM_DESCONTO: TFloatField
+      FieldName = 'MARGEM_DESCONTO'
+    end
+    object qrprodutoTAMANHO: TWideStringField
+      FieldName = 'TAMANHO'
+      Size = 6
+    end
+    object qrprodutoCOR: TWideStringField
+      FieldName = 'COR'
+      Size = 6
+    end
+    object qrprodutoINCIDENCIA_PISCOFINS: TWideStringField
+      FieldName = 'INCIDENCIA_PISCOFINS'
+      Size = 30
+    end
+    object qrprodutoVEIC_CHASSI: TWideStringField
+      FieldName = 'VEIC_CHASSI'
+      Size = 50
+    end
+    object qrprodutoVEIC_SERIE: TWideStringField
+      FieldName = 'VEIC_SERIE'
+      Size = 50
+    end
+    object qrprodutoVEIC_POTENCIA: TWideStringField
+      FieldName = 'VEIC_POTENCIA'
+      Size = 50
+    end
+    object qrprodutoVEIC_PESO_LIQUIDO: TWideStringField
+      FieldName = 'VEIC_PESO_LIQUIDO'
+      Size = 15
+    end
+    object qrprodutoVEIC_PESO_BRUTO: TWideStringField
+      FieldName = 'VEIC_PESO_BRUTO'
+      Size = 15
+    end
+    object qrprodutoVEIC_TIPO_COMBUSTIVEL: TWideStringField
+      FieldName = 'VEIC_TIPO_COMBUSTIVEL'
+    end
+    object qrprodutoVEIC_RENAVAM: TWideStringField
+      FieldName = 'VEIC_RENAVAM'
+      Size = 50
+    end
+    object qrprodutoVEIC_ANO_FABRICACAO: TIntegerField
+      FieldName = 'VEIC_ANO_FABRICACAO'
+    end
+    object qrprodutoVEIC_ANO_MODELO: TIntegerField
+      FieldName = 'VEIC_ANO_MODELO'
+    end
+    object qrprodutoVEIC_TIPO: TWideStringField
+      FieldName = 'VEIC_TIPO'
+      Size = 50
+    end
+    object qrprodutoVEIC_TIPO_PINTURA: TWideStringField
+      FieldName = 'VEIC_TIPO_PINTURA'
+      Size = 15
+    end
+    object qrprodutoVEIC_COD_COR: TWideStringField
+      FieldName = 'VEIC_COD_COR'
+      Size = 15
+    end
+    object qrprodutoVEIC_COR: TWideStringField
+      FieldName = 'VEIC_COR'
+      Size = 30
+    end
+    object qrprodutoVEIC_VIN: TWideStringField
+      FieldName = 'VEIC_VIN'
+      Size = 10
+    end
+    object qrprodutoVEIC_NUMERO_MOTOR: TWideStringField
+      FieldName = 'VEIC_NUMERO_MOTOR'
+      Size = 50
+    end
+    object qrprodutoVEIC_CMKG: TWideStringField
+      FieldName = 'VEIC_CMKG'
+      Size = 15
+    end
+    object qrprodutoVEIC_CM3: TWideStringField
+      FieldName = 'VEIC_CM3'
+      Size = 15
+    end
+    object qrprodutoVEIC_DISTANCIA_EIXO: TWideStringField
+      FieldName = 'VEIC_DISTANCIA_EIXO'
+      Size = 15
+    end
+    object qrprodutoVEIC_COD_MARCA: TWideStringField
+      FieldName = 'VEIC_COD_MARCA'
+      Size = 15
+    end
+    object qrprodutoVEIC_ESPECIE: TWideStringField
+      FieldName = 'VEIC_ESPECIE'
+      Size = 50
+    end
+    object qrprodutoVEIC_CONDICAO: TWideStringField
+      FieldName = 'VEIC_CONDICAO'
+      Size = 50
+    end
+    object qrprodutoLOTE_FABRICACAO: TWideStringField
+      FieldName = 'LOTE_FABRICACAO'
+    end
+    object qrprodutoLOTE_VALIDADE: TDateField
+      FieldName = 'LOTE_VALIDADE'
+    end
+    object qrprodutoMARGEM_AGREGADA: TFloatField
+      FieldName = 'MARGEM_AGREGADA'
+    end
+    object qrprodutoCODBARRA_NOVARTIS: TWideStringField
+      FieldName = 'CODBARRA_NOVARTIS'
+      Size = 13
+    end
+    object qrprodutoFARMACIA_DCB: TWideStringField
+      FieldName = 'FARMACIA_DCB'
+    end
+    object qrprodutoFARMACIA_ABCFARMA: TWideStringField
+      FieldName = 'FARMACIA_ABCFARMA'
+      Size = 10
+    end
+    object qrprodutoFARMACIA_APRESENTACAO_CAIXA: TWideStringField
+      FieldName = 'FARMACIA_APRESENTACAO_CAIXA'
+      Size = 10
+    end
+    object qrprodutoFARMACIA_PRINCIPIOATIVO: TWideStringField
+      FieldName = 'FARMACIA_PRINCIPIOATIVO'
+      Size = 30
+    end
+    object qrprodutoULTIMA_COMPRA: TDateField
+      FieldName = 'ULTIMA_COMPRA'
+    end
+    object qrprodutoFARMACIA_DATAVIGENCIA: TDateField
+      FieldName = 'FARMACIA_DATAVIGENCIA'
+    end
+    object qrprodutoFARMACIA_TIPO: TWideStringField
+      FieldName = 'FARMACIA_TIPO'
+      Size = 1
+    end
+    object qrprodutoUSA_COMBUSTIVEL: TWideStringField
+      FieldName = 'USA_COMBUSTIVEL'
+      Size = 1
+    end
+    object qrprodutoREFERENCIA: TWideStringField
+      FieldName = 'REFERENCIA'
+      Size = 30
+    end
+    object qrprodutoPERDA: TFloatField
+      FieldName = 'PERDA'
+    end
+    object qrprodutoCOMPOSICAO1: TWideStringField
+      FieldName = 'COMPOSICAO1'
+      Size = 30
+    end
+    object qrprodutoCOMPOSICAO2: TWideStringField
+      FieldName = 'COMPOSICAO2'
+      Size = 30
+    end
+    object qrprodutoIAT: TWideStringField
+      FieldName = 'IAT'
+      Size = 1
+    end
+    object qrprodutoIPPT: TWideStringField
+      FieldName = 'IPPT'
+      Size = 1
+    end
+    object qrprodutoSITUACAO_TRIBUTARIA: TWideStringField
+      FieldName = 'SITUACAO_TRIBUTARIA'
+      Size = 1
+    end
+    object qrprodutoFLAG_SIS: TWideStringField
+      FieldName = 'FLAG_SIS'
+      Size = 1
+    end
+    object qrprodutoFLAG_ACEITO: TWideStringField
+      FieldName = 'FLAG_ACEITO'
+      Size = 3
+    end
+    object qrprodutoFLAG_EST: TWideStringField
+      FieldName = 'FLAG_EST'
+      Size = 1
+    end
+    object qrprodutoCSOSN: TWideStringField
+      FieldName = 'CSOSN'
+      Size = 60
+    end
+    object qrprodutoCODORIGINAL: TWideStringField
+      FieldName = 'CODORIGINAL'
+    end
+    object qrprodutoCUSTO_ATACADO: TSingleField
+      FieldName = 'CUSTO_ATACADO'
+    end
+    object qrprodutoUNIDADE_ATACADO: TWideStringField
+      FieldName = 'UNIDADE_ATACADO'
+      Size = 2
+    end
+    object qrprodutoQTDE_EMBALAGEMATACADO: TSingleField
+      FieldName = 'QTDE_EMBALAGEMATACADO'
+    end
+    object qrprodutoPMARGEM1: TSingleField
+      FieldName = 'PMARGEM1'
+    end
+    object qrprodutoPMARGEM2: TSingleField
+      FieldName = 'PMARGEM2'
+    end
+    object qrprodutoPMARGEM3: TSingleField
+      FieldName = 'PMARGEM3'
+    end
+    object qrprodutoPMARGEM4: TSingleField
+      FieldName = 'PMARGEM4'
+    end
+    object qrprodutoPMARGEM5: TSingleField
+      FieldName = 'PMARGEM5'
+    end
+    object qrprodutoPMARGEMATACADO1: TSingleField
+      FieldName = 'PMARGEMATACADO1'
+    end
+    object qrprodutoPMARGEMATACADO2: TSingleField
+      FieldName = 'PMARGEMATACADO2'
+    end
+    object qrprodutoPMARGEMATACADO3: TSingleField
+      FieldName = 'PMARGEMATACADO3'
+    end
+    object qrprodutoPMARGEMATACADO4: TSingleField
+      FieldName = 'PMARGEMATACADO4'
+    end
+    object qrprodutoPMARGEMATACADO5: TSingleField
+      FieldName = 'PMARGEMATACADO5'
+    end
+    object qrprodutoPMARGEMATACADO6: TSingleField
+      FieldName = 'PMARGEMATACADO6'
+    end
+    object qrprodutoPRECOATACADO1: TSingleField
+      FieldName = 'PRECOATACADO1'
+    end
+    object qrprodutoPRECOATACADO2: TSingleField
+      FieldName = 'PRECOATACADO2'
+    end
+    object qrprodutoPRECOATACADO3: TSingleField
+      FieldName = 'PRECOATACADO3'
+    end
+    object qrprodutoPRECOATACADO4: TSingleField
+      FieldName = 'PRECOATACADO4'
+    end
+    object qrprodutoPRECOATACADO5: TSingleField
+      FieldName = 'PRECOATACADO5'
+    end
+    object qrprodutoIND_CFOP: TWideStringField
+      FieldName = 'IND_CFOP'
+      Size = 6
+    end
+    object qrprodutoCFOP_DESC: TWideStringField
+      FieldName = 'CFOP_DESC'
+      Size = 30
+    end
+    object qrprodutoUSA_LOTE: TIntegerField
+      FieldName = 'USA_LOTE'
+    end
+    object qrprodutoIND_CFOP_VENDA_DENTRO: TWideStringField
+      FieldName = 'IND_CFOP_VENDA_DENTRO'
+      Size = 6
+    end
+    object qrprodutoCODCONTA: TWideStringField
+      FieldName = 'CODCONTA'
+      Size = 6
+    end
+    object qrprodutoIND_CFOP_VENDA_FORA: TWideStringField
+      FieldName = 'IND_CFOP_VENDA_FORA'
+      Size = 6
+    end
+    object qrprodutoIND_CFOP_DEVOLUCAO_DENTRO: TWideStringField
+      FieldName = 'IND_CFOP_DEVOLUCAO_DENTRO'
+      Size = 6
+    end
+    object qrprodutoIND_CFOP_DEVOLUCAO_FORA: TWideStringField
+      FieldName = 'IND_CFOP_DEVOLUCAO_FORA'
+      Size = 6
+    end
+    object qrprodutoIND_CFOP_GARANTIA_DENTRO: TWideStringField
+      FieldName = 'IND_CFOP_GARANTIA_DENTRO'
+      Size = 6
+    end
+    object qrprodutoIND_CFOP_GARANTIA_FORA: TWideStringField
+      FieldName = 'IND_CFOP_GARANTIA_FORA'
+      Size = 6
+    end
+    object qrprodutoUSA_TB_PC: TWideStringField
+      FieldName = 'USA_TB_PC'
+      Size = 4
+    end
+    object qrprodutoATIVA: TWideStringField
+      FieldName = 'ATIVA'
+      Size = 10
+    end
+    object qrprodutoCEST: TWideStringField
+      FieldName = 'CEST'
+      Required = True
+      Size = 7
+    end
+  end
+  object qrnota_item: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000088')
+    Params = <>
+    Left = 296
+    Top = 120
+  end
+  object qrgrade_entrada: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000033')
+    Params = <>
+    Left = 264
+    Top = 120
+  end
+  object qrnota_antes: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select sum(valor_contabil) total_geral,'
+      'sum(valor_mercadorias) total_mercadorias,'
+      
+        'sum(base_icms) base_icms,sum(valor_icms_creditado) valor_icms_cr' +
+        'editado,'
+      
+        'sum(base_substituicao) base_substituicao,sum(valor_substituicao)' +
+        ' valor_substituicao,'
+      'sum(valor_icms_outras) valor_icms_outras,'
+      'sum(valor_frete) valor_frete,'
+      'sum(valor_despesas) valor_despesas,'
+      'sum(valor_seguro) valor_seguro,'
+      'sum(valor_ipi_creditado) valor_ipi_creditado,'
+      'data,'
+      'CODIGO,'
+      'notafiscal,'
+      'modelo_nf,'
+      'valor_contabil,'
+      'obs2'
+      'from c000086'
+      'group by '
+      'obs1,'
+      'data,'
+      'CODIGO,'
+      'notafiscal,'
+      'modelo_nf,'
+      'valor_contabil,'
+      'obs2'
+      'order by data')
+    Params = <>
+    Left = 368
+    Top = 120
+  end
+  object qritem_antes: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'select * from c000085')
+    Params = <>
+    Left = 408
+    Top = 120
+  end
+  object qrnota_total: TZQuery
+    Connection = frmmodulo.Conexao
+    Params = <>
+    Left = 332
+    Top = 122
+  end
+  object qrpagar: TZQuery
+    Connection = frmmodulo.Conexao
+    Params = <>
+    Left = 440
+    Top = 120
+  end
+  object UCControls1: TUCControls
+    GroupName = 'Form.Menu NF Entrada'
+    UserControl = frmPrincipal.icloud
+    Components = ''
+    NotAllowed = naDisabled
+    Left = 536
+    Top = 376
+  end
+end

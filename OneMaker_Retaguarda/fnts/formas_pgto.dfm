@@ -1,0 +1,324 @@
+object frmFormas: TfrmFormas
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Tipo Entrada'
+  ClientHeight = 165
+  ClientWidth = 190
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PopupMenu = pop1
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 185
+    Height = 165
+    Align = alLeft
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    object Bevel1: TBevel
+      Left = 0
+      Top = 18
+      Width = 185
+      Height = 2
+      Align = alTop
+    end
+    object rchequeav: TAdvGlowButton
+      Left = 5
+      Top = 68
+      Width = 176
+      Height = 45
+      Caption = 'F2 - Cheque '#224' Vista'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+        87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000B1100000B11017F645F91000002D6494441546843ED97BF
+        4F535114C7F90318D47FC3C5C1058DD138BBB09876204C44271A8A5A4017132D
+        09A1DAD19A88262D2E04E950694B4BDFEBCFD746FBD2C6C64D4918EC20261208
+        249AE3D773B0D46A9B02AFB430DC6FF2C94DF3EEBDE77CEF3DEFBEDE3E252525
+        252525252525A5D3A54C26D31F8FC783A9548A9B9395E4B0BABABA140C06FB6B
+        E91DAC582C762E9148FC344D13F97CFE5829187918C577C8544C643EB4275B7A
+        0FB35804FBF8118944CED6D23B58D2995D7F63F7E0F65889A534E4FC4BF838F9
+        0C95291F2AD2B6409E9B4F034866D3326E23140A9DA9A577B01A0C10B7C74AC4
+        4851F9D11C6D9F77D0E6B529DABC7EBF050F68EB8293D66DD3A4E5B332CEB281
+        A615EC94A89142C9FD0ADF075CA0B50A405F809DF5BFEC32BFAAD8BEE5C5E79B
+        8FA1E7B332CE9A816432095DD7216D2B1A133B2C7F0CBCC4E6C53BD879F21ABB
+        2F96B0FB7CF15FE682D8BAF1106BF6E9CE0C64B35972BBDD343A3A4AE3E3E375
+        C6C6C6C8E57211F7237ED99BCAA41DD15C924C8F9F36AE4E51F5B28BAA03F7A8
+        7AA901F93D7097BE5E99A44FB7BDA41B191967D900D8001C0E0738F13A4EA713
+        131313E07E60034DABDC0E3E139188C6A08722D0DFB6819F6BE1286A65DC5909
+        C9248DA5B34F63628726CE26127C1AE91A93684B5C4B2095ECCC0009E974BA25
+        724A750B997F3FBE65033C09161616E0F7FB1108047A8AC494D892836503B95C
+        6EAFDE07070761B3D97A8AC494D88661583720DBC8AB40BC1A343F3FDF5324A6
+        C4961C2C1B901755906DE4BAEC2912733FBE65033211B75D47D3B496C8115DCB
+        C1B281FA07A85BF03F4D0A87C3B4BCBCDC04E7B1772271BFD3B903B2CA9C3C46
+        464630343484E1E1E13A76BB1DFCB5EFEC25EEB601299195951578BD5ECCCECE
+        C2E3F1D499999981CFE7035FAEA4EFD10C74F342F33F854201A552A98972B90C
+        895FE40B0D1B38DA8546AE943CE80D9F0031AED1134572E0C55C3CD295524949
+        49494949494949A907EAEBFB0DED1EFCA2FE22A03E0000000049454E44AE4260
+        82}
+      Transparent = True
+      TabOrder = 1
+      OnClick = C1Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphLeftAdjusted
+      Style = bsCheck
+    end
+    object rdinheiro: TAdvGlowButton
+      Left = 5
+      Top = 22
+      Width = 176
+      Height = 45
+      Caption = 'F1 - '#192' Vista / Dinheiro'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+        87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000B1200000B1201D2DD7EFC000003F9494441546843ED57EB
+        4F544714E763FB4DFC1F9AD4888F56581E61357CD136A5BA4D10ADA0C03E2EBB
+        5D96D29A088A8A34688B58C107CBB27BF785A06CD426A246A8141574C3CBDDA8
+        68A2913412D434428C7FC0C9E999C9B521BBD7B278B362747EC92F7BB3F7CC39
+        BF9973E6CCDC140101010101010101818F00A527D6A695B9720E173567351535
+        EB92C4AC2616C3D8B26EB912563B7EBDF4FD92BA5041AAC599B7D7DAA5C73277
+        565269EDD4A3D99957CB62B2D88A8CB783E4D1175676E7CE5864DDACE4CD9C91
+        E46C90E42C4C2E2906C56231596C9BBCAE4091933842E1AA4FFC911FAA5BC3C6
+        9EC66B05D8D067C0865E03FE7279D33B218BC562B2D8CE5BC60B81DBF65D4748
+        93226F7E0447EC4B7D5109438F2BD11FB142206A5B14B2D84C833722A127FC53
+        AA226F7E78C2A65479DC3C1BB8634579DCB2607A6F4BE88F5A914470B267F69F
+        9AED7C5434CC38876C89EF072D13089058F7A8198F0C6CC1FACBF9B8FFE2D7F4
+        BC153D6366FE4E6DCCFF51EB048006274C5A6938DCBF191CA7F4B0ADF57328F7
+        66C3AE33DFC2D6939F81BD2387DE15721BB5B16FA2A221F91960AB7BB0F73B34
+        79D271872B0D8FFD59898FFE19C3E7AF26F142A40DCD72061ADD5F729B856442
+        6B06E21CAAD11729C76343C568F1EA48E417587BD6807FCFDCC5E0CD7A0C8DFC
+        8E134F6F62F7701316B72D43896C8E932D1BA3E62B965A2710975235B2B2D8FD
+        C706A0D58752F74A68E9AB8007CFC2B0F3F47A906FECA5BEAE833D670DF49BC1
+        6DF6906DA2A5A468485E06BCE3D4E2688356D209CA569744A23D988BF7A607F1
+        E1F351ECBFDF4599C9C0EDB4FA367F36B761B66C0C1BABE6732EB56620CE612C
+        597B740D9791E81C2CF765729146CF6A947C3A5EFBD32F1FE293D9093CD45342
+        578555DC86D9BA868D09B556AD13884B692C691581DA26383AF5BC54CA7D3AF8
+        F1541E58FDD950DDFD0DC8D76BC13F5807134F87A0B47D05D03E01CA005006F8
+        58359F73A96848EE26660715ED01DE814ADAD3D035508D77A76F604D281F9DFD
+        3BB1B9CF8EF79FDD42DA1F6872AFE1B66C8C9AAF586ACD409C4335FA59171A2C
+        420BB54AB39C8E15413DED8121DE7D224FAEE2E48B281EEDB5D1E456908D8E6C
+        8BF918355FB1D43A81B894BE89D4DBA1E18A014CEE742873AFA652CA8473632D
+        109D1A809AD046D8DEB69CBF6336CC561E53F7134B45437233F09AAC2C7EBB5A
+        80151DB958E25AC557FBE7AE0D58D4BA8CFFD748EF122D9DD7D49A813887F391
+        9DB2EDA3266CFAAB100F5CCAC77D3D5FD1F316BA1F99DEFFBB10279506B5477E
+        50FD772DA667F65FA26533978A86854D807F0FD01DFCFC541586261D8B4AA681
+        9D170BFA1E681FB77CDA11AD38D03951D51888381695A7494330EAA8635F898A
+        3C0101010101010101810F032929FF02B71E476013FC9DEA0000000049454E44
+        AE426082}
+      Transparent = True
+      TabOrder = 0
+      OnClick = D1Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphLeftAdjusted
+      Style = bsCheck
+    end
+    object rcartaod: TAdvGlowButton
+      Left = 5
+      Top = 114
+      Width = 176
+      Height = 45
+      Caption = 'F3 - Cart'#227'o de D'#233'bito'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+        87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000B1100000B11017F645F9100000311494441546843ED973F
+        4C535114C69FA4032991D822415118A4D0E2E2C0A0D1C589C5814126630407FF
+        B0B892285095408A010D0282B8408B324862803268888968296D29D84011110C
+        15154C64D4EDE678CECD637A97FAFA5A4B63EE97FC52C2CB39E73BEFDD7BDEBB
+        8A9494949494949494D47FA88686867DF89311A85E1290CB959BD5F230646AEF
+        5F31B53DDA5BD043566B6750A977E5AAEE74A8AACA9ADDE5FE5D1A8E41C9F4CA
+        BFC1FF098EE9803C64770DFE522AAB2DAA3B1DAAACB4987B3CDBE5731B60F7AF
+        A61C071AB3CDAC41D1EC06148576815FFB028EF90D402F3F9533E70EA8EE7448
+        6DC0118EB1B2E9959473241863D5E32F59B4F1028BDEAE416AB5382FB1F9E62B
+        ECB46F91997A870D37005830E51C0DC6E0FCF82B5868BA080B776A91CB5A9C35
+        106EBE0AD800645C0376DF47DC03AB804F222ED4A81D3D987BDC99B5847628D5
+        017930BE0766D7C111FC0CE5F85B1E4A336A6DF260B8019A4205CF27C13AF002
+        ACEEB1F482350B4626813C186C6068FBF8FB6FCCDCE5664A531B53EEDE4F2F58
+        D3DCED66DC431263146C534B50F2661189A699455E9B3C186F00D79F7D065F3C
+        015C8B81352174DD8E2F26D10B2B3E18C3738BF3524D7E3D993D4013C0F6F603
+        B34D459125015156FA6E593861F440B1F17253ED24A610DF0360EEF680E2BC07
+        4AF3032D8D6D90F774824F0C349410149337E4E53984B9B1261A07EEC1E813A0
+        09601D790D39836390E3F16A191885C3137EFEC84526E3413187BC7E9E43981B
+        6B52ED24A690671BDF82ACC2B7C44EF9A2BB72C2874B4CB03CFE06C550AC28E7
+        0E549B3C186A201B975071640B422DD701EA4E02DC38ABE55A0574F777C0C1F0
+        A6F02EC783627AFADB790E616EAC1968AD83A2C80F402FC6F6802DF21D6E3D1B
+        84BE3E17F43DE9D0D2DB0A35A313508C9FBDE249B33B14533BEAE53984B9B1E6
+        CD6137944436710925DA807AA0290BAF43FEEC57B0CC6D8105EF9806FC7F6170
+        1D6CD3F8718677351128A6103FD6E2E5CEC773017948FC40534F47CACEA0A9E3
+        F1321EEBF616F480C7DB80E274EE57DDE91300A87FEDBD32C98B949494949494
+        949454CAA4287F009E7669E877AE61AC0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 2
+      OnClick = C2Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Layout = blGlyphLeftAdjusted
+      Style = bsCheck
+    end
+    object Panel2: TPanel
+      Left = 0
+      Top = 0
+      Width = 185
+      Height = 18
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'Formas de Pagamento'
+      Enabled = False
+      TabOrder = 3
+    end
+  end
+  object pop1: TPopupMenu
+    Left = 160
+    Top = 152
+    object D1: TMenuItem
+      Caption = 'Dinheiro'
+      ShortCut = 112
+      OnClick = D1Click
+    end
+    object C1: TMenuItem
+      Caption = 'Cheque a Vista'
+      ShortCut = 113
+      OnClick = C1Click
+    end
+    object C2: TMenuItem
+      Caption = 'Cart'#227'o D'#233'bito'
+      ShortCut = 114
+      OnClick = C2Click
+    end
+  end
+end

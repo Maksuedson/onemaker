@@ -1,0 +1,484 @@
+object frmecf_texto: Tfrmecf_texto
+  Left = 322
+  Top = 158
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'ECF | Resultado'
+  ClientHeight = 508
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PopupMenu = PopupMenu1
+  Position = poOwnerFormCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Bevel1: TBevel
+    Left = 0
+    Top = 474
+    Width = 382
+    Height = 2
+    Align = alBottom
+    ExplicitTop = 478
+  end
+  object RichEdit1: TRichEdit
+    Left = 0
+    Top = 0
+    Width = 382
+    Height = 474
+    Align = alClient
+    Color = 12713983
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Style = []
+    Lines.Strings = (
+      '       '#14#27'E1ELPRO INFORMATICA'
+      ''
+      '      RUA DARLIANE, 60 3'#186' PISO - MARGARETH'
+      '          NOVA VENECIA  ES - 29830-000'
+      'CNPJ: 04.172.696/0001-94       IE:   08226505-4          '
+      '31/08/2008 08:21:44                   COO:001269'
+      ' '#14'       REDU'#199#195'O Z       '#20' '
+      'MOVIMENTO DO DIA: 30/08/2008'
+      '------------------ CONTADORES ------------------'
+      'Geral de Opera'#231#227'o N'#227'o-Fiscal:             000220'
+      'Contador de Rein'#237'cio de Opera'#231#227'o:            006'
+      'Contador de Redu'#231#245'es Z:                     0096'
+      'Contador de Cupom Fiscal:                 000844'
+      'Contador de Fita-Detalhe:                 000000'
+      'Comprovante de Cr'#233'dito ou D'#233'bito:           0000'
+      'Geral de Relat'#243'rio Gerencial:             000055'
+      'Geral Oper. N'#227'o-Fiscal Canc.:               0000'
+      'Cupom Fiscal Cancelado:                     0000'
+      '------------ TOTALIZADORES FISCAIS -------------'
+      'TOTALIZADOR GERAL:                    2398166,24'
+      'VENDA BRUTA DI'#193'RIA:                     23742,61'
+      'CANCELAMENTO ICMS:                ***********,**'
+      'DESCONTO ICMS:                             25,13'
+      'Total de ISSQN:                   ***********,**'
+      'CANCELAMENTO ISSQN:               ***********,**'
+      'DESCONTO ISSQN:                   ***********,**'
+      '                                                '
+      'VENDA L'#205'QUIDA:                          23717,48'
+      'ACR'#201'SCIMO ICMS:                   ***********,**'
+      'ACR'#201'SCIMO ISSQN:                  ***********,**'
+      '--------------------- ICMS ---------------------'
+      'Totalizador  Base C'#225'lculo( R$)      Imposto( R$)'
+      'T07,00%                0,00                 0,00'
+      'T12,00%                0,00                 0,00'
+      'T17,00%            23717,48              4031,97'
+      'T25,00%                0,00                 0,00'
+      'T27,00%                0,00                 0,00'
+      'T04,00%                0,00                 0,00'
+      'Total ICMS:        23717,48              4031,97'
+      '---------------- N'#227'o Tributados ----------------'
+      'Totalizador                 Valor Acumulado( R$)'
+      'F1 =                                        0,00'
+      'F2 =                                        0,00'
+      'I1 =                                        0,00'
+      'I2 =                                        0,00'
+      'N1 =                                        0,00'
+      'N2 =                                        0,00'
+      '-------------------- ISSQN ---------------------'
+      'Totalizador  Base C'#225'lculo( R$)      Imposto( R$)'
+      'Total ISSQN:           0,00                 0,00'
+      '---------------- N'#227'o Tributados ----------------'
+      'Totalizador                 Valor Acumulado( R$)'
+      'FS1 =                                       0,00'
+      'FS2 =                                       0,00'
+      'IS1 =                                       0,00'
+      'IS2 =                                       0,00'
+      'NS1 =                                       0,00'
+      'NS2 =                                       0,00'
+      '---------- TOTALIZADORES N'#195'O FISCAIS -----------'
+      'No Opera'#231#227'o        CON      Valor Acumulado( R$)'
+      '01 Sangria         0000                     0,00'
+      '02 Suprimento      0000                     0,00'
+      'Total Oper N'#227'o-Fiscais        R$            0,00'
+      ''
+      'ACRE N'#195'O-FISC                               0,00'
+      'DESC N'#195'O-FISC                               0,00'
+      'CANC N'#195'O-FISC                               0,00'
+      '------------- RELAT'#211'RIO GERENCIAL --------------'
+      'No Relat'#243'rio                                 CER'
+      '01 Gerencial X                              0000'
+      '-------------- MEIOS DE PAGAMENTO --------------'
+      'No. Meio Pagamento          Valor Acumulado( R$)'
+      '01  Dinheiro                            23591,48'
+      '02v Cheque                                 20,00'
+      '03v Cheque-pre                              0,00'
+      '04v Cartao                                 20,00'
+      '05v Promissoria                            95,00'
+      '06v Convenio                                0,00'
+      'TROCO                                       9,00'
+      'Comprovante N'#227'o Emitido:                    0006'
+      'Tempo Emitindo Doc.Fiscal:              00:05:45'
+      'Tempo Operacional:                      06:29:50'
+      'Qtd. Redu'#231#245'es Restantes:                    1933'
+      'N'#250'mero s'#233'rie MFD:           60131282007060029302'
+      '1E0 C5F25 26BE3 B8E02F CC FC51E7 281C5 30F34 FE4'
+      'DARUMA AUTOMA'#199#195'O     FS600               '
+      'ECF-IF    VERS'#195'O:01.04.00     ECF:001    Lj:    '
+      'AAAAAAAAACDJIBGGCE          31/08/2008 08:21:52 '
+      'FAB:DR0207BR000000107810                   BR'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      '       '#14#27'E1ELPRO INFORMATICA'
+      ''
+      '      RUA DARLIANE, 60 3'#186' PISO - MARGARETH'
+      '          NOVA VENECIA  ES - 29830-000'
+      'CNPJ: 04.172.696/0001-94       IE:   08226505-4          '
+      '31/08/2008 08:25:49                   COO:001270'
+      ' '#14'       LEITURA X       '#20' '
+      '------------------ CONTADORES ------------------'
+      'Geral de Opera'#231#227'o N'#227'o-Fiscal:             000220'
+      'Contador de Rein'#237'cio de Opera'#231#227'o:            006'
+      'Contador de Redu'#231#245'es Z:                     0096'
+      'Contador de Cupom Fiscal:                 000844'
+      'Contador de Fita-Detalhe:                 000000'
+      'Comprovante de Cr'#233'dito ou D'#233'bito:           0000'
+      'Geral de Relat'#243'rio Gerencial:             000055'
+      'Geral Oper. N'#227'o-Fiscal Canc.:               0000'
+      'Cupom Fiscal Cancelado:                     0000'
+      '------------ TOTALIZADORES FISCAIS -------------'
+      'TOTALIZADOR GERAL:                    2398166,24'
+      'VENDA BRUTA DI'#193'RIA:                         0,00'
+      'CANCELAMENTO ICMS:                          0,00'
+      'DESCONTO ICMS:                              0,00'
+      'Total de ISSQN:                             0,00'
+      'CANCELAMENTO ISSQN:                         0,00'
+      'DESCONTO ISSQN:                             0,00'
+      '                                                '
+      'VENDA L'#205'QUIDA:                              0,00'
+      'ACR'#201'SCIMO ICMS:                             0,00'
+      'ACR'#201'SCIMO ISSQN:                            0,00'
+      '--------------------- ICMS ---------------------'
+      'Totalizador  Base C'#225'lculo( R$)      Imposto( R$)'
+      'T07,00%                0,00                 0,00'
+      'T12,00%                0,00                 0,00'
+      'T17,00%                0,00                 0,00'
+      'T25,00%                0,00                 0,00'
+      'T27,00%                0,00                 0,00'
+      'T04,00%                0,00                 0,00'
+      'Total ICMS:            0,00                 0,00'
+      '---------------- N'#227'o Tributados ----------------'
+      'Totalizador                 Valor Acumulado( R$)'
+      'F1 =                                        0,00'
+      'F2 =                                        0,00'
+      'I1 =                                        0,00'
+      'I2 =                                        0,00'
+      'N1 =                                        0,00'
+      'N2 =                                        0,00'
+      '-------------------- ISSQN ---------------------'
+      'Totalizador  Base C'#225'lculo( R$)      Imposto( R$)'
+      'Total ISSQN:           0,00                 0,00'
+      '---------------- N'#227'o Tributados ----------------'
+      'Totalizador                 Valor Acumulado( R$)'
+      'FS1 =                                       0,00'
+      'FS2 =                                       0,00'
+      'IS1 =                                       0,00'
+      'IS2 =                                       0,00'
+      'NS1 =                                       0,00'
+      'NS2 =                                       0,00'
+      '---------- TOTALIZADORES N'#195'O FISCAIS -----------'
+      'No Opera'#231#227'o        CON      Valor Acumulado( R$)'
+      '01 Sangria         0000                     0,00'
+      '02 Suprimento      0000                     0,00'
+      'Total Oper N'#227'o-Fiscais        R$            0,00'
+      ''
+      'ACRE N'#195'O-FISC                               0,00'
+      'DESC N'#195'O-FISC                               0,00'
+      'CANC N'#195'O-FISC                               0,00'
+      '------------- RELAT'#211'RIO GERENCIAL --------------'
+      'No Relat'#243'rio                                 CER'
+      '01 Gerencial X                              0000'
+      '-------------- MEIOS DE PAGAMENTO --------------'
+      'No. Meio Pagamento          Valor Acumulado( R$)'
+      '01  Dinheiro                                0,00'
+      '02v Cheque                                  0,00'
+      '03v Cheque-pre                              0,00'
+      '04v Cartao                                  0,00'
+      '05v Promissoria                             0,00'
+      '06v Convenio                                0,00'
+      'TROCO                                       0,00'
+      'Comprovante N'#227'o Emitido:                    0000'
+      'Tempo Emitindo Doc.Fiscal:              00:00:00'
+      'Tempo Operacional:                      00:03:56'
+      'Qtd. Redu'#231#245'es Restantes:                    1933'
+      'N'#250'mero s'#233'rie MFD:           60131282007060029302'
+      'DARUMA AUTOMA'#199#195'O     FS600               '
+      'ECF-IF    VERS'#195'O:01.04.00     ECF:001    Lj:    '
+      'AAAAAAAAACDJIBGGCE          31/08/2008 08:25:52 '
+      'FAB:DR0207BR000000107810                   BR'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      '       '#14#27'E1ELPRO INFORMATICA'
+      ''
+      '      RUA DARLIANE, 60 3'#186' PISO - MARGARETH'
+      '          NOVA VENECIA  ES - 29830-000'
+      'CNPJ: 04.172.696/0001-94       IE:   08226505-4          '
+      '31/08/2008 08:28:30        CCF:000845 COO:001271'
+      #14'      CUPOM FISCAL      '
+      'ITEM C'#211'DIGO DESCRI'#199#195'O QTD.UN.VL UNIT( R$) ST VL '
+      'ITEM( R$)'
+      '001 315            ABRACADEIRA 3/8 X1/2'
+      '    1    UN  X     1,08   T17,00%          1,08'#8364
+      ''
+      '002 315            ABRACADEIRA 3/8 X1/2'
+      '    1    UN  X     1,08   T17,00%          1,08'#8364
+      ''
+      ' '#14'TOTAL   R$         2,16'
+      'Promissoria                                2,16'
+      '------------------------------------------------'
+      'CLIENTE.: 000001-ESPECIAL                       '
+      ''
+      'ENDERECO:  /                                    '
+      ''
+      'CPF/CNPJ:  RG/INSC:                             '
+      ''
+      'VENDEDOR: 000001-RENATA                   '
+      ''
+      '------------------------------------------------'
+      ''
+      '              OBRIGADO!! VOLTE SEMPRE!!         '
+      '   DARUMA32 FrameWork Mensagem N'#227'o Programada'
+      ''
+      '   DARUMA32 FrameWork Mensagem N'#227'o Programada'
+      ''
+      '1E0 D2275 26BE3 D8202F CE 3611E7 34515 3165D 45C'
+      'DARUMA AUTOMA'#199#195'O     FS600               '
+      'ECF-IF    VERS'#195'O:01.04.00     ECF:001    Lj:    '
+      'AAAAAAAAACDJIBGIEA          31/08/2008 08:28:57 '
+      'FAB:DR0207BR000000107810                   BR'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      '       '#14#27'E1ELPRO INFORMATICA'
+      ''
+      '      RUA DARLIANE, 60 3'#186' PISO - MARGARETH'
+      '          NOVA VENECIA  ES - 29830-000'
+      'CNPJ: 04.172.696/0001-94       IE:   08226505-4          '
+      '31/08/2008 08:29:33        CCF:000846 COO:001272'
+      #14'      CUPOM FISCAL      '
+      #14'      CANCELAMENTO      '
+      ''
+      'Cancelamento de Cupom Fiscal (CCF):       000845'
+      'COO do Cupom Fiscal cancelado:            001271'
+      'Valor total da opera'#231#227'o  R$                 2,16'
+      'Quantidade de CCD cancelados:               0000'
+      '122 0C435 258D0 EF201C BA 6CB128 6E6D3 316E9 E2F'
+      'DARUMA AUTOMA'#199#195'O     FS600               '
+      'ECF-IF    VERS'#195'O:01.04.00     ECF:001    Lj:    '
+      'AAAAAAAAACDJIBGIEA          31/08/2008 08:29:33 '
+      'FAB:DR0207BR000000107810                   BR'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      #255
+      '')
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 0
+    ExplicitHeight = 478
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 476
+    Width = 382
+    Height = 32
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitTop = 480
+    object bcancelar: TAdvGlowButton
+      Left = 265
+      Top = 4
+      Width = 108
+      Height = 24
+      Caption = 'ESC | Cancelar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        610000000467414D410000AFC837058AE90000001974455874536F6674776172
+        650041646F626520496D616765526561647971C9653C000002E74944415478DA
+        62FCFFFF3F032500208058D0059EB636C431FCFB9BF9FFEF3F7D86BF7FBFFFFF
+        FB87E1FFDFBF9C407C91E1CF9FE9F213A62D42560F10408CC82E006A8E67E5E3
+        5A2060A4C9C0CACFC3F0FFF71F0686BFFF18188172BFDEBE67787BE40CC3CF57
+        6F9214672E980FD303104070039EB6D427B2F072CD1334D66260FBF69481E1D5
+        2306867FFF18184086FCFCC9C0C02FC9F0935786E1F5C1130C3F5FBF4D565EB4
+        721E481F4000810D78DA5C97C8C207D46C04D4FC15A8F9D93D06A07381D6FE06
+        1AF01B62C8AF5F0C0CE20A0C3F05E4185E1E380E7249A2EAEA4D0B0002880964
+        0AD09F9982869A0C6C1F1F33303CBACDC02028C3C0A0E308D4F89781E13BD076
+        4D2B0606216906865B5718D89FDC6010B334027AEF5726482F40004102F1CF5F
+        3D566E6E06866B409B7F026DE2E06760B0F26360E0126460F8F619C8F6626058
+        3505287F8981E1F6550676653DA001BFF5415A0102086CC0FF3FBFBFFDFFF993
+        9D1164E30FA08DE70E3230B0703230B8864342EAE0460686C33B20728C4C0CFF
+        7EFC0219F00D240510406003FE81FC0B73EEF75F104DACEC88B862051AF6E71F
+        DC00A08B419682A5000208E282DFBFB9191980B1F1ED1BC410637B0606870006
+        865D6B18183E7F6060084E01062C305656CC640029636204E9F9C30DD20B1040
+        9030F8FDFBF2EFB7EF8DD984810175E71A03C3BD1B0C0C8B263030ECDB04B40D
+        68D3ABE7C0787E0C894E252D861FAFDE805C7019A4152080A05EF83DFDD591D3
+        73444DF519D8BF7D6760B80994BB7611128D20EFED580F36E88FB216C34F251D
+        8667BBF7010DF83B1DA4172080E009E96E4C680A2B2FCF6C313323068EFB5780
+        2E01BAE2FF3F706AFCFDF307C33F3965865FC0D07FB9673F300DBC4ED5397365
+        0E481F4000A124E55BC13E89ECFCBCF3C4CC8C19D804F819FE0213CFBF7F7FC1
+        01F7FDCD5B8637FB0F32FC7CFE3249E7EC55785206082046F4DC78D3CB29EEFF
+        9F3FC0CCF4571F487F674064A64B403C5DF7ECB585C8EA01028891D2EC0C1060
+        008C5756165E6F8C750000000049454E44AE426082}
+      TabOrder = 0
+      OnClick = bcancelarClick
+      Appearance.BorderColor = 12179676
+      Appearance.BorderColorHot = clHighlight
+      Appearance.BorderColorDown = clHighlight
+      Appearance.BorderColorChecked = clBlack
+      Appearance.ColorTo = 12179676
+      Appearance.ColorChecked = 12179676
+      Appearance.ColorCheckedTo = 12179676
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 11899524
+      Appearance.ColorDownTo = 11899524
+      Appearance.ColorHot = 15717318
+      Appearance.ColorHotTo = 15717318
+      Appearance.ColorMirror = 12179676
+      Appearance.ColorMirrorTo = 12179676
+      Appearance.ColorMirrorHot = 15717318
+      Appearance.ColorMirrorHotTo = 15717318
+      Appearance.ColorMirrorDown = 11899524
+      Appearance.ColorMirrorDownTo = 11899524
+      Appearance.ColorMirrorChecked = 12179676
+      Appearance.ColorMirrorCheckedTo = 12179676
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object bitbtn5: TAdvGlowButton
+      Left = 5
+      Top = 3
+      Width = 103
+      Height = 24
+      Caption = 'F7 | Imprimir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        610000000467414D410000AFC837058AE90000001974455874536F6674776172
+        650041646F626520496D616765526561647971C9653C000002B64944415478DA
+        62FCFFFF3F030CB8D61D4AE0E4638F6662647006721981F007C37F4686BF7FFF
+        B0BF7FFB7FDA914EEB1C06340010408CC80678B51FFDB538C798950968024C18
+        44BFFEF28B61D9990F0CCFEEFFF87EFBD62DC18353BC7FC2F400041013B269CC
+        CC4C7F58999918EEBF676178F08199E1F65B46866BAF18181445B919024CA418
+        1455393859F8B8E723EB0108201403FE839C0D1564626484E3E7EFBE33C8F3FC
+        6648B514666066650E45D603104070039A9A9A38814630819CCCC20CC28C0CCC
+        40AF80E83B40979C7CF487819D9599819185F15F626222274C1F400031413527
+        03A95740EBD9405E67616402BB8215A89905E802763666060E20FE0F1405BA88
+        EDE7CF9FAF424242407A1800028809A8D9555252728EB7B7370F131313C33F50
+        C83242BCC0088C019021AC2C4C0C6CCCCC603926266686ACAC2C1E4545C5391E
+        1E1EAE0001C40214EBB5B0B06010131363D0FF34956142E736065C6017101B03
+        B1AA6A3643404000C3A3478FA6030410C800752D2D2DB0023F3F3F0675757506
+        7CE0CA952B0C22222260BC66CD1A25800062F9FBF72F1B1083251F3C78009678
+        F3E60D56CD20B9BB77EF32181B1B83F91F3F7E64040820963F7FFE30DCBB770F
+        2C00D2080C20862F5FBE603580878787E1F5EBD770F5201A2080587EFFFECDF0
+        E4C913B0C0B76FDF184006FEFAF50BAB0120B9AF5FBFC2D5830C030820B00130
+        0D1C1C1C0C6BD7AE05B37FFCF80156FCF9F3679053C11894EC757474E0EA417A
+        01028805C8F9F7E9D327263E3E3EB01734B5F5188445C4B0BAE0F5AB170C2D4D
+        F50CEEEEEE0CCF9E3D63F8F7EF1F034000B100FD3C67DBB66D9640D374396DF3
+        194ABD8D18BEFD02276B867F401BFFFEFDCFF01B18C87F818A2D2D4C1976BE92
+        62C8CF8F05B9E61250C94A800042C98D49D34EFE656106A6A6FF28F9034E3202
+        13D79F3FFFFECDCB366786C90304180072C1114B15D29D760000000049454E44
+        AE426082}
+      TabOrder = 1
+      OnClick = bitbtn5Click
+      Appearance.BorderColor = 12179676
+      Appearance.BorderColorHot = clHighlight
+      Appearance.BorderColorDown = clHighlight
+      Appearance.BorderColorChecked = clBlack
+      Appearance.ColorTo = 12179676
+      Appearance.ColorChecked = 12179676
+      Appearance.ColorCheckedTo = 12179676
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 11899524
+      Appearance.ColorDownTo = 11899524
+      Appearance.ColorHot = 15717318
+      Appearance.ColorHotTo = 15717318
+      Appearance.ColorMirror = 12179676
+      Appearance.ColorMirrorTo = 12179676
+      Appearance.ColorMirrorHot = 15717318
+      Appearance.ColorMirrorHotTo = 15717318
+      Appearance.ColorMirrorDown = 11899524
+      Appearance.ColorMirrorDownTo = 11899524
+      Appearance.ColorMirrorChecked = 12179676
+      Appearance.ColorMirrorCheckedTo = 12179676
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 104
+    Top = 168
+    object Imprimir1: TMenuItem
+      Caption = 'Imprimir'
+      ShortCut = 118
+      OnClick = bitbtn5Click
+    end
+    object Fechar1: TMenuItem
+      Caption = 'Fechar'
+      ShortCut = 27
+      OnClick = bcancelarClick
+    end
+  end
+end

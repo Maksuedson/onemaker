@@ -1,0 +1,4744 @@
+object frmInventario: TfrmInventario
+  Left = 604
+  Top = 282
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'PRODUTOS | Invent'#225'rio'
+  ClientHeight = 513
+  ClientWidth = 818
+  Color = 5460819
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PopupMenu = PopupMenu1
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object bar: TRzProgressBar
+    Left = 0
+    Top = 369
+    Width = 818
+    Height = 4
+    Align = alBottom
+    BackColor = clBtnFace
+    BarColor = 12582847
+    BarColorStop = 59904
+    BarStyle = bsGradient
+    BorderOuter = fsStatus
+    BorderWidth = 0
+    FlatColor = clBtnFace
+    Font.Charset = ANSI_CHARSET
+    Font.Color = 12582847
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    InteriorOffset = 0
+    ParentFont = False
+    PartsComplete = 0
+    Percent = 0
+    ShowPercent = False
+    ThemeAware = False
+    TotalParts = 500
+    ExplicitTop = 434
+    ExplicitWidth = 829
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 818
+    Height = 53
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitTop = 37
+    ExplicitWidth = 825
+    object Label1: TLabel
+      Left = 8
+      Top = 6
+      Width = 109
+      Height = 13
+      Caption = 'Movimento (M'#234's/Ano):'
+    end
+    object Label4: TLabel
+      Left = 47
+      Top = 24
+      Width = 6
+      Height = 19
+      Caption = '/'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object rano: TRzSpinEdit
+      Left = 56
+      Top = 25
+      Width = 47
+      Height = 21
+      AllowKeyEdit = True
+      ButtonWidth = 12
+      Max = 2100.000000000000000000
+      Min = 2000.000000000000000000
+      Value = 2000.000000000000000000
+      Color = clWhite
+      FocusColor = 10550008
+      TabOrder = 0
+      OnEnter = ranoEnter
+      OnKeyPress = ranoKeyPress
+    end
+    object bfiltrar: TAdvGlowButton
+      Left = 147
+      Top = 5
+      Width = 103
+      Height = 49
+      Caption = 'Procurar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F40000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C0000032469545874584D4C3A636F6D2E61646F62652E786D7000
+        000000003C3F787061636B657420626567696E3D22EFBBBF222069643D225735
+        4D304D7043656869487A7265537A4E54637A6B633964223F3E203C783A786D70
+        6D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A
+        786D70746B3D2241646F626520584D5020436F726520352E332D633031312036
+        362E3134353636312C20323031322F30322F30362D31343A35363A3237202020
+        2020202020223E203C7264663A52444620786D6C6E733A7264663D2268747470
+        3A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E
+        7461782D6E7323223E203C7264663A4465736372697074696F6E207264663A61
+        626F75743D222220786D6C6E733A786D703D22687474703A2F2F6E732E61646F
+        62652E636F6D2F7861702F312E302F2220786D6C6E733A786D704D4D3D226874
+        74703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F6D6D2F222078
+        6D6C6E733A73745265663D22687474703A2F2F6E732E61646F62652E636F6D2F
+        7861702F312E302F73547970652F5265736F75726365526566232220786D703A
+        43726561746F72546F6F6C3D2241646F62652050686F746F73686F7020435336
+        20284D6163696E746F7368292220786D704D4D3A496E7374616E636549443D22
+        786D702E6969643A383545384531343232434338313145344131464238373045
+        42434346363742382220786D704D4D3A446F63756D656E7449443D22786D702E
+        6469643A38354538453134333243433831314534413146423837304542434346
+        36374238223E203C786D704D4D3A4465726976656446726F6D2073745265663A
+        696E7374616E636549443D22786D702E6969643A383545384531343032434338
+        3131453441314642383730454243434636374238222073745265663A646F6375
+        6D656E7449443D22786D702E6469643A38354538453134313243433831314534
+        41314642383730454243434636374238222F3E203C2F7264663A446573637269
+        7074696F6E3E203C2F7264663A5244463E203C2F783A786D706D6574613E203C
+        3F787061636B657420656E643D2272223F3E6886D51B000004E94944415478DA
+        BC574D881C4514AEAAEEEABFEDF95D85B05E166260252A6ADCC3AE4A4E0A9A80
+        1E2407054513F122DE924BCE9E44416F12351830074D0EC26E12415037E81257
+        A391842C4421100881FCECCECE4CCFF4547797EFF556CFF63AD3BDD3C25AF0B1
+        3D55F5DEFBEAD5FBA9D59F3BFE2BC91914F00CE079C01EC02E4055ADAD02AE01
+        7E039C059C07485270E8396BFB0087150136641D894C029E051C5104DE07CC17
+        2190A5F818600EB037D983478BE466C8CD7AF62A9963292F152630A1941C4A26
+        D050378CFF06B64684033E43E037CEA9B5F438A4744C14BD820AE06BC06C32D1
+        03E5B64EC493E3D47BB4C6E4A4AB49CE687C3AB0DEBADE0AE99F2B11BDB4229D
+        4E40B8A1F5753DA574BD00688C4AE0C3B4713CD95499365F9EE4D1D4B8E598A6
+        C5A5A613C6D69D1645516D671890A7FDAE58BEDBF54E5D176C794D96AC0D12B3
+        4AE7C151086094BF99363E3D4E5B6FEF2E69E39552296283B1AA31B0A473629B
+        36DFE30695C96AD3FBE44AB3B57457BA2912A8F394CA92CC18C0ED4793093F94
+        E4A10A6BBDF3589DDD5FAF39685C4A990BDC837B51066551476A1C55363209CC
+        24AEC760B2352A5EDB5D0DE1E40E46191AD86AE01EDC8B32288B3A528139AB6C
+        6412D8A70A4E7CFA9907C6BC4776941D3F8C8AD6148232288B3A525EA0CA4626
+        81E924CF3923627A871D514AB82C5CD3D013600D645107EA4AA9984E0E398CC0
+        CEC4FD2EE4D1AE9A19F582FF603D495D90451DA82B750D68C3CECA0255B52461
+        C0DE60B486BF1CC789673DCF2B4C0275802EB6EE579A54573E52298E454006F3
+        5DD3B47EDE6FD760AAABC54CC165A217C99524B2293041C88201813A5057EADA
+        D186C822F077FC017B5B507BFF5AF1990EDF4110ACBBD3308AB95FA3E41AE840
+        5D6C23ECD046278BC052922B90BC7CE95687C10F0103CB2DE19C13D334FB4567
+        84215007EA4A85FD52D65B81A9FE1D2F9A1A238B37DBCEF23DDFE35412DFF7E3
+        4D9665C5418964F04AB286A53372F55ED7431DA82B1556F37931B008F839B986
+        8E88F889CB2BCC0FA4474241BC4E273E391A4712AEEB12DBB60788409724DD20
+        F2501675C4EEC718E2E67962DA8BC4802C1C024C43683DE43DC099D80B708A3F
+        6E774A1FFD7EA7F5EE13F779360D1CAFDD269AAE0FF50055321D30FEF1C53B11
+        CA3AF09B503C9B8C7A572F7CA0B55743AAE9B9DD10BBD5E7494744050B375A6E
+        A31B365F7FB8D698AA9B8E0C05F703D1AF7878422376B314CBE0F62FE0E497FA
+        C6A10818A65C5B381D885FCEBE512ED7BE979434873E3A538FD28AF2C2C69B00
+        AA9AC3A99899186B4379950FD64C09515E5D7FACC855C8180A0147E1CEC73C21
+        B9A5C77E27D47248F7F24F5EE3CC67BC52AD736EDA73708DAFC062338F40F224
+        FB4ABD68FA4F326C3270A902CB2B9C5C57F301A61A463B065CFFCE0D8B74AE2C
+        B61BE78E6B25C7B52CB70C171137367CA60D90F87799BB09D80FF8B4BF81E2B3
+        0CAA22A3BC0DC1D5EC851481DF38876B89711285A4B970DAC793C7C6C7FAC689
+        D27B1250DAEA558C55EB2D25F0231E360936A83100AAB0A9BD4510A53F84B76F
+        1C1017BF3B57A9D48DD8B81C68E90324F2FE2F98573131FA3F2691948E5BF9D6
+        30CC2F2319EDCFD09B9088AF43DFAAC5031614E2044975354C096F88C09A0AB8
+        93CA581E89578BB63A4F3DB31BC38CA746539D702E670F9238B19DBD7614128F
+        6F6FB3CF27710B7060BB09649140E32F012EFC1F04D224BE5199F3221AC7857F
+        041800694932100F5267FE0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 1
+      OnClick = bfiltrarClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object pinventario: TPanel
+      Left = 276
+      Top = 0
+      Width = 542
+      Height = 53
+      Align = alRight
+      BevelOuter = bvNone
+      Color = clWhite
+      TabOrder = 2
+      Visible = False
+      ExplicitLeft = 283
+      object Label2: TLabel
+        Left = 7
+        Top = 3
+        Width = 91
+        Height = 13
+        Caption = 'Novo Invent'#225'rio'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Bevel3: TBevel
+        Left = 0
+        Top = 0
+        Width = 2
+        Height = 53
+        Align = alLeft
+        ExplicitLeft = -1
+        ExplicitHeight = 57
+      end
+      object Label3: TLabel
+        Left = 323
+        Top = 11
+        Width = 27
+        Height = 13
+        Caption = 'Data:'
+      end
+      object Label5: TLabel
+        Left = 177
+        Top = 11
+        Width = 43
+        Height = 13
+        Caption = 'Estoque:'
+      end
+      object Label11: TLabel
+        Left = 102
+        Top = 22
+        Width = 6
+        Height = 19
+        Caption = '/'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 206
+        Top = 35
+        Width = 137
+        Height = 13
+        Caption = 'Transportar uma c'#243'pia para:'
+      end
+      object Label13: TLabel
+        Left = 8
+        Top = 25
+        Width = 46
+        Height = 13
+        Caption = 'M'#234's/Ano:'
+      end
+      object bgerar: TAdvGlowButton
+        Left = 455
+        Top = 6
+        Width = 85
+        Height = 46
+        Caption = 'Gerar'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ImageIndex = 49
+        FocusType = ftHot
+        NotesFont.Charset = DEFAULT_CHARSET
+        NotesFont.Color = clWindowText
+        NotesFont.Height = -11
+        NotesFont.Name = 'Tahoma'
+        NotesFont.Style = []
+        ParentFont = False
+        Picture.Data = {
+          89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+          A2000000097048597300001BAF00001BAF015E1A911C000000206348524D0000
+          7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+          1F90000002F94944415478DAC497CD6B144918879FB7A66BBA6746649C4483DF
+          DE058FC24A20B0A7DD8B57CF41D01088076FA22201FD07048F1EF4E6C1A398E3
+          EA414F92CB9E027B58504490A849E6233D5DF57AE89930333D1F9D38928286AE
+          AAAEFAF5EF7DAB9EAE1655E5308AE1904AB077F7FE7CCE2142C3D717DAC40F01
+          2CC57B655379033923F7C7FFFDC209ED7CB28AF1B855601EC0E3569DC67FAAE0
+          F7E3744F784B1BF972A37ADFC08220748417B6B57EDF23AB79C6D706736C44F2
+          5C730696E98876436F60D988CCE599E3408BCBA8DE063931240127D2BEDFB3AA
+          4FA15C1FD99BF69D9ABAB0A8DE0066BAF5D03A42EB7A1F99E93C3355E173A2BA
+          02A02AD8C013B70BC4ED0236F0A84AF7E556807353134E9D480DA01CB6D96E5A
+          6E3D9FE7D6F379B69B9672D8DD8A52CBEBDA4CC605674459EED66D2966E37395
+          57EB1778B57E818DCF556C29EEDDE7CB02677EDDB1EA4DE0D85EDD1B42EBA81D
+          69513BD24AF3ECFBA639D619F32BC27A5A94A5BE262F54C2849275948A8E4A98
+          809741BA2D819E3EB0B0282BC0ECA070A99810D98428482815B3C2C06C67EC81
+          84E7447571B0D1AB105947D17A8AD61359875719B6201781B97D0B8FA294EB75
+          6C53C72EEB7822CDCC7E29E5BC10D98430F0848127B2A384C7D3CCE4A15426D4
+          6182927E81A330191AEA493433E32835DCB181C071B25AE764B50E814BDB46C3
+          6728CD8271941A15EAE64EC493C5B7003477229C178C8C3A81A43453917B231D
+          0F526A58896C42330E78BC7689C76B9768C601914D269D5A3234336329354CB8
+          D4E6E36685072F2FF3E0E5653E6E56884A138F4D199AF586FA5A8652434AAB69
+          393B53E7CED50F009C9DA9D36ADA3C67B52515FE055E74529AE666EB5DF535CA
+          5F9326F02A140B9E7279178046232476664C8EFB72B976F4CAF7BFFB1C4B22C7
+          35D0EEFE1B8D3A51122F6CED447D6D933E715D8D6CA83F4983594D333CED9F0B
+          01BE015FA591112EFC9067DA2A5CF4DBBE4661CAC20ECC0FB329BB3CCB081BE4
+          A9DB95FFE48BDC059D05FC14BC4BBA73E42B228F0CFA4F0F2F0EE7A7EDE700B5
+          C934E02077618A0000000049454E44AE426082}
+        Transparent = True
+        TabOrder = 3
+        OnClick = bgerarClick
+        Appearance.BorderColor = 12631218
+        Appearance.BorderColorHot = clSilver
+        Appearance.BorderColorDown = clSilver
+        Appearance.BorderColorChecked = clBlack
+        Appearance.Color = 14671574
+        Appearance.ColorTo = 15000283
+        Appearance.ColorChecked = clSilver
+        Appearance.ColorCheckedTo = clSilver
+        Appearance.ColorDisabled = 15921906
+        Appearance.ColorDisabledTo = 15921906
+        Appearance.ColorDown = clSilver
+        Appearance.ColorDownTo = clSilver
+        Appearance.ColorHot = clSilver
+        Appearance.ColorHotTo = clSilver
+        Appearance.ColorMirror = 14144974
+        Appearance.ColorMirrorTo = 15197664
+        Appearance.ColorMirrorHot = clSilver
+        Appearance.ColorMirrorHotTo = clSilver
+        Appearance.ColorMirrorDown = clSilver
+        Appearance.ColorMirrorDownTo = clSilver
+        Appearance.ColorMirrorChecked = clSilver
+        Appearance.ColorMirrorCheckedTo = clSilver
+        Appearance.ColorMirrorDisabled = 11974326
+        Appearance.ColorMirrorDisabledTo = 15921906
+        Appearance.GradientHot = ggVertical
+        Appearance.GradientMirrorHot = ggVertical
+        Appearance.GradientDown = ggVertical
+        Appearance.GradientMirrorDown = ggVertical
+        Appearance.GradientChecked = ggVertical
+      end
+      object DateEdit1: TJvDateEdit
+        Left = 358
+        Top = 5
+        Width = 94
+        Height = 21
+        Color = clWhite
+        NumGlyphs = 2
+        ShowNullDate = False
+        TabOrder = 2
+        OnExit = DateEdit1Exit
+        OnKeyPress = DateEdit1KeyPress
+      end
+      object rgano: TRzSpinEdit
+        Left = 114
+        Top = 22
+        Width = 55
+        Height = 21
+        AllowKeyEdit = True
+        ButtonWidth = 12
+        Max = 2100.000000000000000000
+        Min = 2000.000000000000000000
+        Value = 2000.000000000000000000
+        Color = clWhite
+        FocusColor = 10550008
+        TabOrder = 0
+        OnKeyPress = rganoKeyPress
+      end
+      object combo_estoque: TRzComboBox
+        Left = 225
+        Top = 6
+        Width = 88
+        Height = 21
+        Color = clWhite
+        FocusColor = 10550008
+        TabOrder = 1
+        Text = 'Com Estoque'
+        OnKeyPress = combo_estoqueKeyPress
+        Items.Strings = (
+          'Com Estoque'
+          'Todos')
+        ItemIndex = 0
+      end
+      object rgmes: TRzSpinEdit
+        Left = 64
+        Top = 22
+        Width = 33
+        Height = 21
+        AllowKeyEdit = True
+        ButtonWidth = 12
+        Max = 12.000000000000000000
+        Min = 1.000000000000000000
+        Value = 1.000000000000000000
+        Color = clWhite
+        TabOrder = 4
+        OnKeyPress = rgmesKeyPress
+      end
+      object DateEdit2: TJvDateEdit
+        Left = 358
+        Top = 30
+        Width = 94
+        Height = 21
+        Color = clWhite
+        NumGlyphs = 2
+        ShowNullDate = False
+        TabOrder = 5
+        OnKeyPress = DateEdit2KeyPress
+      end
+    end
+    object rmes: TRzSpinEdit
+      Left = 11
+      Top = 25
+      Width = 33
+      Height = 21
+      AllowKeyEdit = True
+      ButtonWidth = 12
+      Max = 12.000000000000000000
+      Min = 1.000000000000000000
+      Value = 1.000000000000000000
+      Color = clWhite
+      TabOrder = 3
+      OnKeyPress = rmesKeyPress
+    end
+  end
+  object grid: TwwDBGrid
+    Left = 0
+    Top = 53
+    Width = 818
+    Height = 316
+    ControlType.Strings = (
+      'ESTOQUE;CustomEdit;eestoque;F'
+      'CUSTO;CustomEdit;ecusto;F')
+    Selected.Strings = (
+      'CODPRODUTO'#9'6'#9'C'#243'digo'#9'F'
+      'DATA'#9'18'#9'Data'#9'F'
+      'ESTOQUE'#9'10'#9'Estoque'#9'F'
+      'CUSTO'#9'10'#9'Custo'#9'F'
+      'PRODUTO'#9'80'#9'Produto'#9'F'
+      'UNIDADE'#9'5'#9'Unidade'#9'F'
+      'CST'#9'5'#9'CST'#9#9
+      'ALIQUOTA'#9'10'#9'Al'#237'quota'#9'F'
+      'VENDA'#9'10'#9'Venda'#9'F'
+      'TOTAL'#9'10'#9'Total'#9'F'
+      'TIPO'#9'30'#9'Tipo'#9'F'
+      'ANO'#9'10'#9'Ano'#9'F'
+      'MES'#9'10'#9'M'#234's'#9'F'
+      'DATA_POSTERIOR'#9'18'#9'DATA_POSTERIOR'#9'F'#9)
+    IniAttributes.Delimiter = ';;'
+    IniAttributes.UnicodeIniFile = False
+    TitleColor = clBtnFace
+    FixedCols = 0
+    ShowHorzScrollBar = True
+    Align = alClient
+    DataSource = dsinventario
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgWordWrap]
+    TabOrder = 1
+    TitleAlignment = taLeftJustify
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    TitleLines = 1
+    TitleButtons = True
+    OnTitleButtonClick = gridTitleButtonClick
+    ExplicitTop = 88
+    ExplicitWidth = 826
+    ExplicitHeight = 344
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 404
+    Width = 818
+    Height = 57
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 3355443
+    ParentBackground = False
+    TabOrder = 2
+    ExplicitTop = 470
+    ExplicitWidth = 829
+    object Label6: TLabel
+      Left = 8
+      Top = 21
+      Width = 87
+      Height = 13
+      Caption = 'Menu de Produtos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 304
+      Top = 21
+      Width = 45
+      Height = 13
+      Caption = 'Localizar:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object bincluir: TAdvGlowButton
+      Left = 106
+      Top = 8
+      Width = 87
+      Height = 43
+      Caption = 'Incluir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003CF4944415478DAC497CF6B545714C73FDFF3DEBC31931AADF45730
+        A2B504C1AE5CB8D12C046971AD526A4117F9071477C9A28B2E926E6ACD3F60A1
+        85DA2EECBA3FB651280A22D285544A43152B8AD5A999C9CC9B774E1733F9A171
+        E2D396F40B17DEBBEFBEF3BDE7DC73BFF75C1DF8E2004BF0025506D0D05B84B7
+        7A9D1928D222FC7D607F66B62F22B6039B7A031E499A6BBB5F022E26B21F0975
+        A00D80AC4AD4FF24F22658B24495D207412018004E4A8C67B2D16E3F20AD1CBA
+        25E0EDCCEC0080C3AF119C83980968AA8F7DEB4F9A1E93D2AB66312D188D45D2
+        BE13ED36C1A8594C4BE955911E8B3E7F19EE745B015E10E1484C99255F4BC92E
+        5E1252B2AB6B83A98865FB8B7C2995CAB2F311586DF397928E13CEBF43F42660
+        1356DB3CE270A2BB44DE5BE3A1A1EE4B0C60AA4E49711CF712667B86D1DA03DD
+        51563B6E95C15B1EAD49D4040C231CC251C4111113653C35198D7C8146BE80C9
+        4A38EF889850C491453EC36BE083A9299D593B7D9671BFF980F1DD4719DF7D94
+        FBCD07A5436F4A67F0C114AF619020554E23DB5A96B89ECF7370641F0747F651
+        CFE7CBAFB96CAB54394D249829AA6671AA2C294022A3DE7E4CBDFD98A44CA857
+        7A6D714A16555BF062CCA461D609260D2F44316689D9A108D60D1150C10E59A6
+        646FB07ECC4150B1646F0AB17D95EA208A70EE36EFD1F162D5CFBFD5FFA055B4
+        969E9F85D412DE1C789D44C66AC7627B0A31C45322D0F2361B2B83CC8C7DCC6B
+        03AFAE32DA2ADABCBB651480D9C3DF524DB2676CB9BFF8FCDA39FECEE7C9ACF2
+        34F190F13F2105D5812D2B3BAB96D1ECB43839FB49DF50CF1EFE0680B1EF3E64
+        E7D0B6BEA1AE5AB62AD4811EA5A039881D4F2780490CD7DEE83BE36A520560E7
+        D036B6BD32FC5C4D7F328798B3DC8BCBCF15FAFF1042E4EE972DC7BFD7FAF122
+        418EFF601B94CC7AC49DF522F6883B1B94CC5AB85AEE3ACB0B84BB2B0229154B
+        7931F111EE3A1BAE96A18288FC0CE1B7CB924774CF6493515E6E05E1B723F233
+        A820D971EC1D50DB89644E4A3F28734A6D48337EAFDFE2E7BBD798EF34482D2D
+        733CE0918F638D5F500743063242BA10689A12C7DC605AE3CABDEB5CB9779DC1
+        B456C25923D074481716F952EAF5DED7061E3169B5CD23AAD6D6ACBB8A28D894
+        6D5C7A5EDB51235A8DAFBCF170F2C9622FCF972B042F703861D9C02DA18995D5
+        E2CBECD86E3EC4B4371E4ED26EF46E12EA05DE8C6E4BC012D44D9849F7E2A388
+        E2C6CB9FBBC58DAE0D26A565FB8B7CD64F5D82CEF988CE1E774D0037C5DA39BF
+        E2FB4D774D4474F6049DF3FD54315D4BDA8026F029CE6739FE5EC0FECC92DEA5
+        2D7A9736F52E6DC525C1C514FB09C89F5771FF33005371B84BAF5AC2F4000000
+        0049454E44AE426082}
+      Transparent = True
+      TabOrder = 0
+      OnClick = bincluirClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Enabled = False
+    end
+    object bexcluir: TAdvGlowButton
+      Left = 194
+      Top = 8
+      Width = 87
+      Height = 43
+      Caption = 'Excluir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001A0000001F0806000000F987DD
+        7D000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003C24944415478DAAC96BF8B5D5510C73FDF39E7FDD8B79B4D341B82
+        BB8A46B00A418862B0B0B20BD82982AD858A602358F80FA4B14E6195CACA26A5
+        85A5450A35103B2545DC35448524BB79F7DDBBF79E33167BDF7D777F288A6FE0
+        C0853B33DF9939DF99397AE5FD8F11622E52A0AEF7A8EB27C4B06A71B0F695E4
+        EF028F016721024EB9EBCBA6DEFBA84905C3E13A31AEE29EE88BE3448E49C66C
+        400C13421C7E61F2B752DEBF64367C04ACF4148B94F2F32184EF4218DE03AE49
+        11C89C24C780DC9D1086041B9B7BBEDA78FAD034F8E9246333ED644F9F998DDE
+        0B61E51ACAB8FBDF00896FD4D89BAAED0EF2191080041A097B51D8A7421F800F
+        8E9BABC2F359A49740B7C0B2C0DA9F09D78A0FF2258FE9DB6865BC4EF49BBB97
+        EF7FEEA3B4A5C60EBB82974F8EB17F550EF0DAA1CAC48CAAB073EACEF94FAC8C
+        3B11F39BBBAFEE506EEDBE634DDCE29FBDFE7B11E4D8FCECA3E6FAFAAD67898F
+        AEEC509F9B1276C73389A58A3CCEAAF3531E5DD9C6EAA70BAC88804F8F2A56A9
+        26BB77E417623F27F673EA5A424076A74AF509503EB569A43E5B605647308134
+        EDF35E88CDC9198621925A26359ED818ADB2315AA5697B25B9330C91CDC91984
+        F07EEDA52926AC8E98B2A3ECC8BDE83AC99D2071F1F4269330A46E9D96A9E6C2
+        DA0617D63628DB0C6A4F4CC2908BA7370912B9476FB91773FFB1875F1CBDA2E4
+        19385CBA7976FDD281B7BA470A075DF0D1D591A43841F118094F6AC893F4E6C1
+        CFFDC7C5C850014BA61D5ECC4388649BA7542C1F47056D4A31E78C3B58501124
+        96DAB0EE454E8E0431E70A77478A53313E4CCFFF85233CD7D39C1B24117F4B8F
+        499E38A5D56293090D69294001E3412E8ABD342528109F199FC3710256254F4B
+        BB9EE489A706EBD5FA600D21E28A0DE6D36096591EEF3230B43053BBF2625A6C
+        C44A4BA49D808C577376F5974FC9F2A5F36972684FB964B0524E39F76FBE1821
+        1507675952F9C1C1016391D20C7C891979897C36F71F7D714D25502E8B0E8E4A
+        47E5E215947C0164AAFAC4B3237477C0A4EEBBCF303B8E549117158A5A4C824A
+        84AA6F92FCF0409220B77BA7FFBEF056F7F000CA15A46A011427DD3EC4EB1212
+        262379E6F6C36DAA5C33B000C0D806FCB2F747F70D30B0C0B4A9B8FD709BC633
+        4176D0AE0AA5E2D8BB35F1A4B8D72EB4CC64BC510EC20AD9130EECD633A259B7
+        4D834491F6DB080DEFB66E66B79E75019922759A9545B98D7450A1F8E7831F0F
+        CA941A36B75EBF3B5A3BFD466E665DB4473769680D8F16AAAF6B61C8FEECC1DD
+        DFEF7F4F080723482FDCB8DA37784EB2AF252EB73D95FF23D90C18B9F3837B7E
+        DBF15FE73FFE1A0060E1D818B654B67A0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 1
+      OnClick = bexcluirClick
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Enabled = False
+    end
+    object combo_ordem: TComboBox
+      Left = 357
+      Top = 18
+      Width = 116
+      Height = 21
+      Style = csDropDownList
+      Color = clWhite
+      TabOrder = 2
+      OnChange = combo_ordemChange
+      Items.Strings = (
+        'CODIGO'
+        'PRODUTO'
+        'C'#211'D.BARRAS')
+    end
+    object LOC: TwwIncrementalSearch
+      Left = 480
+      Top = 18
+      Width = 289
+      Height = 21
+      DataSource = dsinventario
+      Color = clWhite
+      TabOrder = 3
+      OnEnter = LOCEnter
+    end
+    object ED_BARRA: TEdit
+      Left = 480
+      Top = 18
+      Width = 161
+      Height = 21
+      Color = clWhite
+      TabOrder = 4
+      OnKeyPress = ED_BARRAKeyPress
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 461
+    Width = 818
+    Height = 52
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 3355443
+    ParentBackground = False
+    TabOrder = 3
+    ExplicitLeft = -2
+    ExplicitTop = 527
+    ExplicitWidth = 834
+    object Label7: TLabel
+      Left = 8
+      Top = 20
+      Width = 94
+      Height = 13
+      Caption = 'Menu do Invent'#225'rio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object bitbtn5: TAdvGlowButton
+      Left = 571
+      Top = 2
+      Width = 103
+      Height = 46
+      Caption = 'Imprimir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A200000009704859730000093A0000093A01F064924A000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F900000023E4944415478DAE497BF6B136118C73FEF79E6875C6E2908E6489A
+        A1217429A2C592C52193A2462862281467375DA4FE094A163767B7D641B41474
+        097429456944BB086D2909454B1382D1547289C99D432F31391212BDFC107CC6
+        E77DEFFBE1FBBCCFFBBC9C304D9371840CF0E45DADD35A54928C4927E2862165
+        814D7BFEFE25F9042C84D1E9BB7BA649C209580863A5131840624C21016C2417
+        D9482E0E1DD6CA915B173E3EBD4B269301E0E6E3370381BD5ABA02402814EAAB
+        D4CB85FDEDA853A8A5B1DCD719874221841009FDB818740AD68F8B412144C2EE
+        D65EEA53C075605ED3B4CD1FFB5BBE6C21EB7602AE7CCB57344D2B01CF8017C0
+        1A506F825555C5308C9716185996291FEE503EDC713E286419200ADC5114654D
+        92A41BADA59E02AE0DAB9B772F7AF8E916588CA926B85EAFCF026204D75758AC
+        F6EB34AC08A7F57F6C728DED75CAE7F3E172B93C12A0D7EB0D371DEBBABE3B2A
+        A70D56C7E6AAD56A54ABD581805C2E57E32E779D5CCDC8E57278676FE30E9C77
+        04AD1C7CA0B8F51CBFDFDF1F5855557CE72691CF6A8EC0B5DA574AAADABDB980
+        A3D6A4A2285C8804D1669C39FEBCFD9D745AB1A78F9AE0542AB51E8BC5F61AE3
+        CC1E9F0E4AACBEFDD23770E956A4DBD25E2A955A6F756C0209E001300FB85A77
+        6B131EE2737E27E6ABD6EB94B4586D03E43DB000B801A1CD5C5EF913656DC2C3
+        74C0C774C0F73B77A2212CCD058BD1BDB9E28F5EB79F5541EF59EAF89C1FF5CC
+        E98E5AAB0FAFF6EE6A3B14B09C44FEBACE9DE0522FE8A0C2AE2DC6F50BF3FF3D
+        8BBF06000A89ACCFF90571920000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 0
+      OnClick = bitbtn5Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = 7915518
+      Appearance.ColorCheckedTo = 11918331
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object AdvGlowButton1: TAdvGlowButton
+      Left = 117
+      Top = 2
+      Width = 156
+      Height = 46
+      Caption = 'Zerar todo Estoque'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000006D74944415478DAC4975D6C54C715C77F67EEDCDDF5E7EEB2069B16
+        881C99F221AA34C2447545A9829214E5A18562425290F2046F5520EF48798922
+        12098354252D2849938690124C094F38418A9A125C015112153918DB81C401B3
+        B5CDDADE65BFEEBD337DD85DB3FE688354A41E691E66EECCF9DF73E67F3E4606
+        06C6B116940391468328F0F2029E1069B0180BD60A557258094F552F18CB712C
+        BB95A3883646999C4A81B5143202AEC58D58AC81FC94C20420028AF9C4822D0F
+        002533C636205A3D94B04D3942E017F9ECB30B04415052634BBAE613F59F5695
+        E2A1CAD40F026A6A6A492416E007C1D8ECED7E108C2D5A10C7048683070EE079
+        459492920E758FC0D64028C4C9501D5F58A40BA0AEAE8EAFAEF4D17DBC9B7843
+        834FB5E705E20D0DFE89EE535CE9FF8A96C58B1111AC95AE501D5F84429CB4E6
+        FB8145444E08B2A5AC730FD05557574B7FFF154E9F3A95A8AB8934CF56525713
+        693E7DEA54E2CAD57E5C570374513A8B205B44E444495D15D0D5ABD3E4AAAF8D
+        D97794C8AF67DF8B729C772627273ECC66EEFC6EC99225EB3CDF9FF1DDD59AEF
+        6EDCB8108E447E9FCFE77ED9BCA8798788CCF08AB1F683EC84EC3401191190EB
+        D7C7A004BCC6AD957FCE771FC618229108E1709889C9491C35D3518131C4A251
+        3CCFC3755D32990CD6CE659597B53F3601971150DA01ED80D6D227225D33FEB4
+        62B152148B45D2E9F41C50004729D2E934F97C9E743A3D07544410912EADA5AF
+        82A7C42DC548369B37A170E8F9F882F821AD35C618FE5731C6A0B526BE207E28
+        140E3D9FCDE60D4A105750A2219EA8A5A7E7348F6FDCC8AAE56D7B8686868E37
+        C56373C3DB5A1CC7C1711C048B70773E9F6B9BE2318686868EAF5ADEB6E7F18D
+        1BE9E9394D3C518B6850D642269BA373FB365ED8B70F02A1F7FCA7EF86B49ED7
+        E58562012F5F3C96B7B23B6F65B7972F1E2B140BA879AE20A435BDE73F7D9740
+        7861DF3E3AB76F2393CD612DC88DD171548975FCA029C1DF3EF9C7D26C21DDBD
+        61FDCFD7A5B3D9694B9552342F885F3B7FE9D20E2F93EB5DFEC83A00062E5CC4
+        ADAFE9F8597BFBD1E4ED54AB31860A4F1A6A6BF9E4DCDF2FD6861BB6FE62C34F
+        876F8E8DA3443065E0C34A78B492A116269A16FA2688A65229B4E394C8E33814
+        8A057F78F8DB873FBF74E9F2EA15AB59DDD101405F6F2F7DFD7D3CDCDEBE66E9
+        D2659F8743615D49997E10108FC7D1CA991C1D1F1BADE833968F951276016D40
+        9B769CB6D4442A9A9E9A9A0605705C97A0E0BF77EECCD9CBB7BE19A6A5A999C0
+        F7097C9F96A6666E7D33CCB933672F0705FF3DC775A7CF69C7213D35456A2215
+        D58ED356C151C22E19191B9F041AFF1B3B1590B37677E0E8238E08BEE753B425
+        AB42E2A05D4D602D4EE0EFAA11397C0FF130A5F83F89FA3E6B01742402B9C286
+        EE575FE3F597F7E3254789D5D513ABABC74B8EF2FACBFBE97EF535C81536E848
+        E45E701B95B11C010681413F0806E3B1F8644363237E99200081E7E184F5D3EB
+        373DB6A6E581A5DC1A4BE2688DA335B7C692B43CB094F59B1E5BE384F5D381E7
+        55974B1A1A1B89C7E2937E100C56708CE588067657362E8C4539F6E763CB624D
+        8D27363DF1C4BA8974A6A4C0F771B5AB3BD6B69FB6961D5E26D75BF93141F8C9
+        DAF68E8EB5ED4793B753DAF7FDE9706A8A4539D373E6E2C4D8D4D6677EDB399C
+        2AEB03D095EA01204AC816B2DF86F3A1179552A7AA73ADB596E4ED54EBB265CB
+        CE2B23C7BC6CF66380E52B573E6A947D26793B85B596EA5CAF942297CFBF982D
+        648745C9DDC268416E8E8D8305E383119FC4C204C6377F99989878AA3AA42A89
+        4497339A09FC72C9D4D35E995D60FC2020168B1D575A6D1F1F1DC7B11AD12543
+        E5BB9B6358BF345135A0E020C873F793C1167B08D813E4CAD66A5094BB3E5128
+        41BAEE37689907CF09724029940810543502E2B026344F232022D4D7D74F17F9
+        FBD608148B42A128148B72DD603F40E6D6D481C181A3C964F2D9C1C1C10B9150
+        688EC24828C4E0E0E0856432F9ECC0E0C0D139B55CC0603F2814E57A19AB647A
+        7964ACB55B8CB5DDD5D616BDC2C1B7DE7C63E747677BDE7EE5A5FD4F26A28DA9
+        D95D6622DA987AE5A5FD4F7E74B6E7EDB7DE7C6367D12B1CAC269AB1B6DB5ABB
+        45A4DC6F49259C6610D7765AE164B9D33C08ECF53D9F153F5AC1A244CBF89D5C
+        3E09C4AB0FDDC9E593BFDABC793C9E88D2DF7705606FF9D31E8BFDABB5B6734E
+        369C73A70A8A057E231E0F451AEC97D65A46464658B962153F5CDCC2CD7F8DEA
+        19616621954EEBCEAD9BB931728B3F8EFCA11CCF766F21C39FACCB976EB8D4AF
+        CFC099F7ED94136CF9ED1418C3B5AFBFA6B5B51547BB606D0A98DD174D20120F
+        7C8F6BD7AED1FAE083384A914F0BE25ADC9A7B7D3B95EFA1D204AC5DFB088E0E
+        61028BB1BC0F4C560F6379DF041647874A7BCB1E1199DDC6DF957F0F008D6843
+        9E309387C50000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 1
+      OnClick = AdvGlowButton1Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object AdvGlowButton3: TAdvGlowButton
+      Left = 277
+      Top = 2
+      Width = 144
+      Height = 46
+      Caption = 'Excluir Invent'#225'rio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001A0000001F0806000000F987DD
+        7D000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003C24944415478DAAC96BF8B5D5510C73FDF39E7FDD8B79B4D341B82
+        BB8A46B00A418862B0B0B20BD82982AD858A602358F80FA4B14E6195CACA26A5
+        85A5450A35103B2545DC35448524BB79F7DDBBF79E33167BDF7D777F288A6FE0
+        C0853B33DF9939DF99397AE5FD8F11622E52A0AEF7A8EB27C4B06A71B0F695E4
+        EF028F016721024EB9EBCBA6DEFBA84905C3E13A31AEE29EE88BE3448E49C66C
+        400C13421C7E61F2B752DEBF64367C04ACF4148B94F2F32184EF4218DE03AE49
+        11C89C24C780DC9D1086041B9B7BBEDA78FAD034F8E9246333ED644F9F998DDE
+        0B61E51ACAB8FBDF00896FD4D89BAAED0EF2191080041A097B51D8A7421F800F
+        8E9BABC2F359A49740B7C0B2C0DA9F09D78A0FF2258FE9DB6865BC4EF49BBB97
+        EF7FEEA3B4A5C60EBB82974F8EB17F550EF0DAA1CAC48CAAB073EACEF94FAC8C
+        3B11F39BBBAFEE506EEDBE634DDCE29FBDFE7B11E4D8FCECA3E6FAFAAD67898F
+        AEEC509F9B1276C73389A58A3CCEAAF3531E5DD9C6EAA70BAC88804F8F2A56A9
+        26BB77E417623F27F673EA5A424076A74AF509503EB569A43E5B605647308134
+        EDF35E88CDC9198621925A26359ED818ADB2315AA5697B25B9330C91CDC91984
+        F07EEDA52926AC8E98B2A3ECC8BDE83AC99D2071F1F4269330A46E9D96A9E6C2
+        DA0617D63628DB0C6A4F4CC2908BA7370912B9476FB91773FFB1875F1CBDA2E4
+        19385CBA7976FDD281B7BA470A075DF0D1D591A43841F118094F6AC893F4E6C1
+        CFFDC7C5C850014BA61D5ECC4388649BA7542C1F47056D4A31E78C3B58501124
+        96DAB0EE454E8E0431E70A77478A53313E4CCFFF85233CD7D39C1B24117F4B8F
+        499E38A5D56293090D69294001E3412E8ABD342528109F199FC3710256254F4B
+        BB9EE489A706EBD5FA600D21E28A0DE6D36096591EEF3230B43053BBF2625A6C
+        C44A4BA49D808C577376F5974FC9F2A5F36972684FB964B0524E39F76FBE1821
+        1507675952F9C1C1016391D20C7C891979897C36F71F7D714D25502E8B0E8E4A
+        47E5E215947C0164AAFAC4B3237477C0A4EEBBCF303B8E549117158A5A4C824A
+        84AA6F92FCF0409220B77BA7FFBEF056F7F000CA15A46A011427DD3EC4EB1212
+        262379E6F6C36DAA5C33B000C0D806FCB2F747F70D30B0C0B4A9B8FD709BC633
+        4176D0AE0AA5E2D8BB35F1A4B8D72EB4CC64BC510EC20AD9130EECD633A259B7
+        4D834491F6DB080DEFB66E66B79E75019922759A9545B98D7450A1F8E7831F0F
+        CA941A36B75EBF3B5A3BFD466E665DB4473769680D8F16AAAF6B61C8FEECC1DD
+        DFEF7F4F080723482FDCB8DA37784EB2AF252EB73D95FF23D90C18B9F3837B7E
+        DBF15FE73FFE1A0060E1D818B654B67A0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 2
+      OnClick = AdvGlowButton3Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object AdvGlowButton2: TAdvGlowButton
+      Left = 424
+      Top = 2
+      Width = 144
+      Height = 46
+      Caption = 'Editar Invent'#225'rio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000005154944415478DAB4974B6CD45514877FE73EE63F9D763A43A79D76
+        0A08D68AF55921A6D6408C24801263E223B0403446F1B5F015174617C6951BDD
+        B8F0012E7C261A13E3C6688CA0B1313E82025628880FC44A4BE7D54E679CCEFF
+        758E8BA928A42A53CADDDDCDF9EE39E7BBE7E6D2D8FB2988055409B03F19406B
+        0082461655A76033E76174F58B206BE0EB26F84F3C8DE8D8E11EDDBB7853E871
+        9736540C2667DE9319D96F5331189C8515860056F4DC628B3FBE29BE448D5210
+        06743CFA24A2785CFCF0D905076B6268BF767B69F36DAF39D6739D2F8610A63A
+        0022905686349E619F47D442018900CF5710A85B7B339557A33A080A376FF36A
+        03AB8FE94216100118101640AB2716062C8C9022487546B7144BFACD4A4DFB97
+        756527A2CAD3C54D7727DC8135637538D70F2974D9C2804D13FCE2F81D69F7E0
+        1BCB7A92FEA15F9DC93F3C13B9B42B5F8CEA4017366D8BBB036BC67431078840
+        08EE8280C589DDA7A64BAF943F7CAC968AED1BEBED6B37233F3BA8B8DAB9A42B
+        5F7074A80B9BEF6B7107D68CEBA9021086BBF4A35B628006C805745101AAE1B3
+        DC4D2E6D975493C7BDC70AC1FECFC3B6CC20A24B7BECA11F6A924CB05992A854
+        F29568B47CF1602A522EE4CD9123779E69C6DBC8553B242E2EAFF4B27AA6CBE0
+        BB4277F9ED0713EDB5EF83F3FBDAF5A15F1CA97A267269572E166DC24CE5CAB5
+        5BC4DA036702BE875C7A5912ECF215418E7264684425A9351D91E27873F9ED07
+        B823365C3AAFAFCD1C3EE274D47C5DEE4E56364AB5FA3188305F70BDBC09F679
+        6590A32C5975D02E8281839041C97499978EA2FCC903D451FD36BEF89CA6F244
+        516F84E0339A0D301FF0BDE4D20E49488D5706139453561DB04918711002D098
+        0EFBBD294A742A7C737C79F5DDA7C2386537C4E2D1AF42A6134154C399D6E825
+        69158F570579CA6BAB0EE824EC096889FB831229316A8F4E13DAC06EE986A032
+        FDB5287D5220D5B048ADE2F22A3FAB7264D488492202070C4051892F0FCA20D1
+        6AAFCDC02362135E07DBB413DAD427D73CC0A788A40C8D98457F9797A6F972BF
+        0E1D36DDF048D8F07A001FFDEBCC694CA4F02F91EA3D650006D3DCEF4F83C4A8
+        619B864B3E1B5E0760E8BF82AA331729284189D1C3360D17CC96D7FF1FF4FF32
+        AE8B9498152937A748D3A4C5A8BDB6537C105BD900C167A7D33B356F91FA4F15
+        49AE8360D769BF2B27ED1800E87EF2F082B4718D570679CA2A4307FF21929A15
+        498956C326332BD206087636F4A00917200C08B7023A721B9CE00549619ACFE7
+        2A65C9D427D229222931EABBD317694E3045D68148835AF66EE58BF3AF936D19
+        47DC32E548ABFD66119CD94C4D5D24D262F53E9B96BF4492C6A100605ADA1F02
+        B382913D8F9A880B88E53F2A6F5578623C018E38F005B032C5FD41F984485E63
+        22CDDD63EF3758ADBAA3D115BD44AD602E66C4F7B208D817C79B244709F7890B
+        255AEDB3197804B6DC904873827F1FCDA2B5B565D5E225B1963008C16151D8CF
+        3673A6725C2DA302353B197249D3F7260D97C086D7372AD29CE073977543691A
+        0C82000400E420D6725355127EAB8D5CD832137C1C0F8EEE895139E97294AF05
+        E65FDE93EEF1733B27A04CE41A938A81D90391D14DF15B3A63B1AD9D8E5D9D21
+        D818077E95090B06050075D7BA2589F142F99C4F877E81320644020E0B804C01
+        3206F10BA304E7FA85840280393A9EBBEA91ED5F2E5DDE11C7DAC1E508CBEE24
+        417E0AC2E0D363955F77C7C9FF1C84E30BFDE330373EF9C105575CD4BDFBF987
+        AF7E876BFED13094214598082544AE3A89E66680CEC2FFEACF0100BE4AB4F88B
+        9A2FD60000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 3
+      OnClick = AdvGlowButton2Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object AdvGlowButton4: TAdvGlowButton
+      Left = 678
+      Top = 2
+      Width = 103
+      Height = 46
+      Caption = 'Truncar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 49
+      FocusType = ftHot
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+        A2000000097048597300000B1300000B1301009A9C18000000206348524D0000
+        7A25000080830000F9FF000080E8000052080001155800003A970000176FD75A
+        1F90000003664944415478DAC497CF6A555714C67F6BED7DCECD91260D051151
+        1A1D04C7169CD40C3269B5838E044141077D8188B3E401924E0AE6053A68411F
+        C1DA0E74620615EAC48954D094960E8A44D3E0C93D7FF6D7C1BD37B5E0BDB9D7
+        C1ED820DFBB0F75EDF5ADFF9CE5EEBD8F3FBCB0C2C25916581D9B902CA0AC920
+        8B80A285F4B9929DC7FC53430B987D0880F45AD8364A5BE67AA8D67F046BA81B
+        CC0445CEDFBB2575DDE26E075891612681287056CCEC2B088BE60608F8D70166
+        1F199CC6C232080BFC2AF12DD226A81CE6DE878266E18AE5E1B1391BC0627F81
+        E176B0B668CE86E5E13159B882DE7DC61390802491929084897562BC4D0C6746
+        628D8A218633C478DBC4BAFABE93C4002F6683CDC151308A22FBCEDCAE298D40
+        B488AABF7AD3FC28A879376B80B9AD16457E12EAEB86A0EF37CE41EFE148863A
+        9D7593AEA5343A4D353BE447BF04A07A79170BB343F7A624F22C5ECBF2EC77EB
+        76D7D8ABC00D173D7A252E8156A5C3B955B5C3CCB1CBCC1CBB8CAA9DC3F74BF4
+        7C7349124278EACC908E149118374963BE5073944A944A301FEF4C12C4B8998E
+        14317566703C6079B849F013930928F5C62416FC84E5E1261E709C8E3937782F
+        F94E2E77736EE0EAB8C57609ECF89470013B6EA15D72121799B6C92F3AE6E7A6
+        43F35B699B9D73838569276CB0E098CD4D9D6AB339E77F3247DA9DBEB8F4DA05
+        DB53C7856D477AF49FC23ED6C9160BB3BDE2A0767269498F1C4B3F4C1C729CA5
+        DA7940B5F300E2EC7B882BDDB3973F7FD1F168CF31C6BFBD2C23EDFFD613C9CC
+        C7A07AEC64117FA646A79D645D256E4D42B7DA3DB2F925B2F925D4EE4D44B312
+        B748D6B5975B1700A2E7FE02B7B12A542A5F30FFC93D005EFD72012F4E8D5B1A
+        FF48553A0534EEDD7DFC4DD9D0342BF89859878266EF09CDDE1308C5981FAE41
+        D3ACF89BB2F1EE3EF6EAFE72AF487F900F5A9FB1BA90C92E2A43661B6FB73E71
+        7710CD7E83F6DBB5A2C84E76F27848DF65A0AA3FCD47B6BDEE46B76ABE2FCB7A
+        CD100356BD066AA06E1355D55096D575256D600666232A4CD61BC340FBE795B4
+        5196D5F5AA6AA8DBC400CFBDDFD5BB19EED6A785359AE62A4DFB74D2BBE5E0B3
+        69DAA734CD55196BD6F7ED661CE00D8DB66EEFA86ACF2AB10A3C9B00F69912AB
+        AADAB3D4ED9D61ACC5118A00AC24F1B5E01B0BE933259DC7C2909FB676CBDC1E
+        AAF59F80BA47F5F0E8FE1900792B9C9FC39EF93C0000000049454E44AE426082}
+      Transparent = True
+      TabOrder = 4
+      OnClick = AdvGlowButton4Click
+      Appearance.BorderColor = 12631218
+      Appearance.BorderColorHot = clSilver
+      Appearance.BorderColorDown = clSilver
+      Appearance.BorderColorChecked = clBlack
+      Appearance.Color = 14671574
+      Appearance.ColorTo = 15000283
+      Appearance.ColorChecked = clSilver
+      Appearance.ColorCheckedTo = clSilver
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = clSilver
+      Appearance.ColorDownTo = clSilver
+      Appearance.ColorHot = clSilver
+      Appearance.ColorHotTo = clSilver
+      Appearance.ColorMirror = 14144974
+      Appearance.ColorMirrorTo = 15197664
+      Appearance.ColorMirrorHot = clSilver
+      Appearance.ColorMirrorHotTo = clSilver
+      Appearance.ColorMirrorDown = clSilver
+      Appearance.ColorMirrorDownTo = clSilver
+      Appearance.ColorMirrorChecked = clSilver
+      Appearance.ColorMirrorCheckedTo = clSilver
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Top = 373
+    Width = 818
+    Height = 31
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    Enabled = False
+    ParentBackground = False
+    TabOrder = 4
+    ExplicitTop = 438
+    ExplicitWidth = 832
+    object Label8: TLabel
+      Left = 8
+      Top = 8
+      Width = 123
+      Height = 13
+      Caption = 'Quantidade de Registros:'
+    end
+    object Label9: TLabel
+      Left = 527
+      Top = 8
+      Width = 108
+      Height = 13
+      Caption = 'Total do Estoque - R$:'
+    end
+    object lcodigo: TLabel
+      Left = 200
+      Top = 8
+      Width = 3
+      Height = 13
+    end
+    object RQTDE: TRzNumericEdit
+      Left = 136
+      Top = 4
+      Width = 49
+      Height = 21
+      Color = clWhite
+      TabOrder = 0
+      DisplayFormat = ',0;(,0)'
+    end
+    object RTOTAL: TRzNumericEdit
+      Left = 640
+      Top = 4
+      Width = 112
+      Height = 21
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      DisplayFormat = '###,###,##0.00'
+    end
+  end
+  object eestoque: TwwDBEdit
+    Left = 296
+    Top = 176
+    Width = 121
+    Height = 21
+    Color = 15916445
+    DataField = 'ESTOQUE'
+    DataSource = dsinventario
+    TabOrder = 5
+    UnboundDataType = wwDefault
+    WantReturns = False
+    WordWrap = False
+    OnExit = eestoqueExit
+  end
+  object ecusto: TwwDBEdit
+    Left = 296
+    Top = 200
+    Width = 121
+    Height = 21
+    Color = 15916445
+    DataField = 'CUSTO'
+    DataSource = dsinventario
+    TabOrder = 6
+    UnboundDataType = wwDefault
+    WantReturns = False
+    WordWrap = False
+    OnExit = eestoqueExit
+  end
+  object qrinventario: TZQuery
+    Connection = frmmodulo.Conexao
+    OnCalcFields = qrinventarioCalcFields
+    BeforeInsert = qrinventarioBeforeInsert
+    BeforeEdit = qrinventarioBeforeEdit
+    BeforePost = qrinventarioBeforePost
+    BeforeDelete = qrinventarioBeforeDelete
+    SQL.Strings = (
+      'select * from inventario'
+      'order by produto')
+    Params = <>
+    Left = 96
+    Top = 144
+    object qrinventarioCODPRODUTO: TWideStringField
+      DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 6
+      FieldName = 'CODPRODUTO'
+      Required = True
+      Size = 6
+    end
+    object dtfldDATA: TDateField
+      DisplayLabel = 'Data'
+      DisplayWidth = 18
+      FieldName = 'DATA'
+    end
+    object qrinventarioESTOQUE: TFloatField
+      DisplayLabel = 'Estoque'
+      DisplayWidth = 10
+      FieldName = 'ESTOQUE'
+    end
+    object qrinventarioCUSTO: TFloatField
+      DisplayLabel = 'Custo'
+      DisplayWidth = 10
+      FieldName = 'CUSTO'
+      DisplayFormat = '#,##0.00'
+    end
+    object qrinventarioPRODUTO: TWideStringField
+      DisplayLabel = 'Produto'
+      DisplayWidth = 80
+      FieldName = 'PRODUTO'
+      Size = 80
+    end
+    object qrinventarioUNIDADE: TWideStringField
+      DisplayLabel = 'Unidade'
+      DisplayWidth = 5
+      FieldName = 'UNIDADE'
+      Size = 5
+    end
+    object qrinventarioCST: TWideStringField
+      DisplayWidth = 5
+      FieldName = 'CST'
+      Size = 5
+    end
+    object qrinventarioALIQUOTA: TFloatField
+      DisplayLabel = 'Al'#237'quota'
+      DisplayWidth = 10
+      FieldName = 'ALIQUOTA'
+    end
+    object qrinventarioVENDA: TFloatField
+      DisplayLabel = 'Venda'
+      DisplayWidth = 10
+      FieldName = 'VENDA'
+      DisplayFormat = '#,##0.00'
+    end
+    object qrinventarioTOTAL: TFloatField
+      DisplayLabel = 'Total'
+      DisplayWidth = 10
+      FieldName = 'TOTAL'
+      DisplayFormat = '#,##0.00'
+    end
+    object qrinventarioTIPO: TWideStringField
+      DisplayLabel = 'Tipo'
+      DisplayWidth = 30
+      FieldName = 'TIPO'
+      Size = 30
+    end
+    object qrinventarioANO: TIntegerField
+      DisplayLabel = 'Ano'
+      DisplayWidth = 10
+      FieldName = 'ANO'
+    end
+    object qrinventarioMES: TIntegerField
+      DisplayLabel = 'M'#234's'
+      DisplayWidth = 10
+      FieldName = 'MES'
+    end
+    object dtfldDATA_POSTERIOR: TDateField
+      DisplayWidth = 18
+      FieldName = 'DATA_POSTERIOR'
+    end
+    object qrinventarionome_aliquota: TStringField
+      DisplayWidth = 20
+      FieldKind = fkCalculated
+      FieldName = 'nome_aliquota'
+      Visible = False
+      Calculated = True
+    end
+  end
+  object dsinventario: TDataSource
+    DataSet = qrinventario
+    Left = 152
+    Top = 136
+  end
+  object qrproduto: TZQuery
+    Connection = frmmodulo.Conexao
+    Params = <>
+    Left = 192
+    Top = 224
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 616
+    Top = 216
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      ShortCut = 27
+      OnClick = Sair1Click
+    end
+  end
+  object fxproduto: TfrxReport
+    Version = '5.4.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 39179.400035798600000000
+    ReportOptions.LastChange = 40208.978132094900000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      ''
+      ''
+      'procedure Memo29OnAfterData(Sender: TfrxComponent);'
+      'begin'
+      '    if copy(Memo27.text,1,3) = '#39'060'#39' then'
+      '       begin'
+      
+        '         memo29.text := '#39'ST'#39'                                    ' +
+        '                                                                ' +
+        '   '
+      '       end;                 '
+      '  '
+      'end;'
+      ''
+      'procedure Memo23OnAfterData(Sender: TfrxComponent);'
+      'begin'
+      '      if copy(Memo10.text,1,3) = '#39'060'#39' then'
+      '       begin'
+      
+        '         memo23.text := '#39'ST'#39'                                    ' +
+        '                                                                ' +
+        '   '
+      '       end;                 '
+      '  '
+      'end;'
+      ''
+      'procedure Memo19OnAfterData(Sender: TfrxComponent);'
+      'begin'
+      '      if copy(Memo2.text,1,3) = '#39'060'#39' then'
+      '       begin'
+      
+        '         memo19.text := '#39'ST'#39'                                    ' +
+        '                                                                ' +
+        '   '
+      '       end;                 '
+      '  '
+      'end;'
+      '    '
+      'begin'
+      
+        '                                                                ' +
+        '                      '
+      'end.')
+    Left = 560
+    Top = 315
+    Datasets = <
+      item
+        DataSet = fsinventario
+        DataSetName = 'fsinventario'
+      end
+      item
+        DataSet = fstotal
+        DataSetName = 'fstotal'
+      end
+      item
+        DataSet = fstotal_TIPO
+        DataSetName = 'fstotal_TIPO'
+      end
+      item
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+      end
+      item
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page2: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object Rich1: TfrxRichView
+        Left = 147.401670000000000000
+        Top = 143.622140000000000000
+        Width = 445.984540000000000000
+        Height = 109.606370000000000000
+        GapX = 2.000000000000000000
+        GapY = 1.000000000000000000
+        RichEdit = {
+          7B5C727466315C616E73695C616E7369637067313235325C64656666305C6E6F
+          7569636F6D7061745C6465666C616E67313034367B5C666F6E7474626C7B5C66
+          305C666E696C5C66636861727365743020436F7572696572204E65773B7D7D0D
+          0A7B5C2A5C67656E657261746F722052696368656432302031302E302E313632
+          39397D5C766965776B696E64345C756331200D0A5C706172645C716A5C66305C
+          667332342050726F636564656D6F732C206E6573746120646174612C205C2765
+          3020616265727475726120646F2070726573656E7465206C6976726F2C206465
+          206E5C2766616D65726F2020202020205C62202C205C623020636F6E73746974
+          755C276564646F20706F7220666F726D756C5C27653172696F7320636F6D2020
+          202020666F6C6861732C20636F6E74656E646F20612065736374726974757261
+          5C2765375C2765336F2072656C617469766120616F206573746F71756520656D
+          205C62205B667872656C61746F72696F2E224C494E484137225D5C6230202E5C
+          7061720D0A5C7061720D0A5C7061720D0A5C667332305C7061720D0A7D0D0A00}
+      end
+      object Memo32: TfrxMemoView
+        Top = 15.118120000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'R E G I S T R O   D E   I N V E N T '#193' R I O')
+        ParentFont = False
+      end
+      object Memo52: TfrxMemoView
+        Top = 86.929190000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'T E R M O   D E   A B E R T U R A')
+        ParentFont = False
+      end
+      object Memo53: TfrxMemoView
+        Top = 49.133890000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        DisplayFormat.FormatStr = '00000#'
+        DisplayFormat.Kind = fkNumeric
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'N'#186'. do Livro [fxrelatorio."LINHA1"]       N'#186'. da Folha: [Page#]')
+        ParentFont = False
+      end
+      object Memo28: TfrxMemoView
+        Left = 332.039580000000000000
+        Top = 178.637910000000000000
+        Width = 45.354360000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[TotalPages#]')
+        ParentFont = False
+      end
+      object Memo61: TfrxMemoView
+        Left = 60.472480000000000000
+        Top = 472.441250000000000000
+        Width = 600.945270000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA9'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA9"]')
+        ParentFont = False
+      end
+      object Memo62: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 585.827150000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '----------------------------------')
+        ParentFont = False
+      end
+      object Memo63: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 737.008350000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '----------------------------------')
+        ParentFont = False
+      end
+      object Memo64: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 600.945270000000000000
+        Width = 495.118430000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxemitente."RESPONSAVEL"]')
+        ParentFont = False
+      end
+      object Memo65: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 752.126470000000000000
+        Width = 495.118430000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA5"]')
+        ParentFont = False
+      end
+      object Memo66: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 619.842920000000000000
+        Width = 279.685220000000000000
+        Height = 15.118120000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'CPF:')
+        ParentFont = False
+      end
+      object Memo67: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 771.024120000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA6"]')
+        ParentFont = False
+      end
+      object Memo33: TfrxMemoView
+        Left = 325.039580000000000000
+        Top = 162.519790000000000000
+        Width = 79.370130000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA1'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA1"]')
+        ParentFont = False
+      end
+      object Memo51: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 272.126160000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Nome:')
+        ParentFont = False
+      end
+      object Memo54: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 291.023810000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Endere'#231'o:')
+        ParentFont = False
+      end
+      object Memo57: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 309.921460000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Bairro/Setor:')
+        ParentFont = False
+      end
+      object Memo58: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 328.819110000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Cidade:')
+        ParentFont = False
+      end
+      object Memo59: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 347.716760000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Ins.Municipal:')
+        ParentFont = False
+      end
+      object Memo60: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 366.614410000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Insc.Estadual:')
+        ParentFont = False
+      end
+      object Memo88: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 385.512060000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'C.N.P.J.:')
+        ParentFont = False
+      end
+      object Memo89: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 404.409710000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Junta:')
+        ParentFont = False
+      end
+      object Memo90: TfrxMemoView
+        Left = 453.543600000000000000
+        Top = 404.409710000000000000
+        Width = 60.472480000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'Data:')
+        ParentFont = False
+      end
+      object Memo91: TfrxMemoView
+        Left = 453.543600000000000000
+        Top = 328.819110000000000000
+        Width = 37.795300000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'UF:')
+        ParentFont = False
+      end
+      object Memo100: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 272.126160000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo101: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 291.023810000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'ENDERECO'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]')
+        ParentFont = False
+      end
+      object Memo102: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 309.921460000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'BAIRRO'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."BAIRRO"]')
+        ParentFont = False
+      end
+      object Memo103: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 328.819110000000000000
+        Width = 257.008040000000000000
+        Height = 18.897650000000000000
+        DataField = 'CIDADE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."CIDADE"]')
+        ParentFont = False
+      end
+      object Memo104: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 347.716760000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Memo105: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 366.614410000000000000
+        Width = 230.551330000000000000
+        Height = 18.897650000000000000
+        DataField = 'IE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."IE"]')
+        ParentFont = False
+      end
+      object Memo106: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 385.512060000000000000
+        Width = 230.551330000000000000
+        Height = 18.897650000000000000
+        DataField = 'CNPJ'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."CNPJ"]')
+        ParentFont = False
+      end
+      object Memo107: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 404.409710000000000000
+        Width = 257.008040000000000000
+        Height = 18.897650000000000000
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA3"]  ')
+        ParentFont = False
+      end
+      object Memo108: TfrxMemoView
+        Left = 521.575140000000000000
+        Top = 404.409710000000000000
+        Width = 109.606370000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA4'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA4"]')
+        ParentFont = False
+      end
+      object Memo109: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 328.819110000000000000
+        Width = 49.133890000000000000
+        Height = 18.897650000000000000
+        DataField = 'UF'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."UF"]')
+        ParentFont = False
+      end
+      object Memo110: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 634.961040000000000000
+        Width = 279.685220000000000000
+        Height = 15.118120000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'RG:')
+        ParentFont = False
+      end
+      object Memo111: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 789.921770000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'CPF:')
+        ParentFont = False
+      end
+      object Line5: TfrxLineView
+        Left = 18.897650000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line6: TfrxLineView
+        Left = 18.897650000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line23: TfrxLineView
+        Left = 245.669450000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line29: TfrxLineView
+        Left = 226.771800000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line30: TfrxLineView
+        Left = 245.669450000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line31: TfrxLineView
+        Left = 226.771800000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line32: TfrxLineView
+        Left = 18.897650000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line33: TfrxLineView
+        Left = 18.897650000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line34: TfrxLineView
+        Left = 491.338900000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line35: TfrxLineView
+        Left = 491.338900000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line36: TfrxLineView
+        Left = 718.110700000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line37: TfrxLineView
+        Left = 699.213050000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line38: TfrxLineView
+        Left = 718.110700000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line39: TfrxLineView
+        Left = 699.213050000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line40: TfrxLineView
+        Left = 491.338900000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line41: TfrxLineView
+        Left = 491.338900000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Memo128: TfrxMemoView
+        Left = 30.236240000000000000
+        Top = 861.732840000000000000
+        Width = 204.094620000000000000
+        Height = 18.897650000000000000
+        DataField = 'CNPJ'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."CNPJ"]')
+        ParentFont = False
+      end
+      object Memo129: TfrxMemoView
+        Left = 30.236240000000000000
+        Top = 880.630490000000000000
+        Width = 204.094620000000000000
+        Height = 26.456710000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo130: TfrxMemoView
+        Left = 30.236240000000000000
+        Top = 907.087200000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]  [fxemitente."NUMERO"]')
+        ParentFont = False
+      end
+      object Memo131: TfrxMemoView
+        Left = 30.236240000000000000
+        Top = 925.984850000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."BAIRRO"]  -  CEP: [fxemitente."CEP"]')
+        ParentFont = False
+      end
+      object Memo132: TfrxMemoView
+        Left = 30.236240000000000000
+        Top = 941.102970000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."CIDADE"]  -  [fxemitente."UF"]')
+        ParentFont = False
+      end
+      object Memo133: TfrxMemoView
+        Left = 60.472480000000000000
+        Top = 839.055660000000000000
+        Width = 132.283550000000000000
+        Height = 18.897650000000000000
+        Visibility = [vsPreview, vsExport]
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CARIMBO CNPJ')
+        ParentFont = False
+      end
+      object Memo134: TfrxMemoView
+        Left = 532.913730000000000000
+        Top = 839.055660000000000000
+        Width = 132.283550000000000000
+        Height = 18.897650000000000000
+        Visibility = [vsPreview, vsExport]
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CARIMBO IE')
+        ParentFont = False
+      end
+      object Memo135: TfrxMemoView
+        Left = 502.677490000000000000
+        Top = 861.732840000000000000
+        Width = 204.094620000000000000
+        Height = 18.897650000000000000
+        DataField = 'IE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."IE"]')
+        ParentFont = False
+      end
+      object Memo136: TfrxMemoView
+        Left = 502.677490000000000000
+        Top = 880.630490000000000000
+        Width = 204.094620000000000000
+        Height = 26.456710000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo137: TfrxMemoView
+        Left = 502.677490000000000000
+        Top = 907.087200000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]  [fxemitente."NUMERO"]')
+        ParentFont = False
+      end
+      object Memo138: TfrxMemoView
+        Left = 502.677490000000000000
+        Top = 925.984850000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          
+            '[fxemitente."BAIRRO"]  -  [fxemitente."CIDADE"] - [fxemitente."U' +
+            'F"]')
+        ParentFont = False
+      end
+      object Memo139: TfrxMemoView
+        Left = 502.677490000000000000
+        Top = 941.102970000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CNAE .....       MUN......')
+        ParentFont = False
+      end
+    end
+    object Page3: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      Frame.Style = fsDot
+      Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+      object PageHeader1: TfrxPageHeader
+        FillType = ftBrush
+        Height = 80.370130000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        object Memo21: TfrxMemoView
+          Width = 740.787880000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -15
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'LIVRO DE REGISTRO DE INVENT'#193'RIO - RI - MODELO P7')
+          ParentFont = False
+        end
+        object Memo22: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 18.897650000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'Firma.....:')
+          ParentFont = False
+        end
+        object Memo35: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 37.795300000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'Inscr.Est.:')
+          ParentFont = False
+        end
+        object Memo36: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 56.692949999999990000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'P'#225'gina....:')
+          ParentFont = False
+        end
+        object Memo37: TfrxMemoView
+          Left = 102.047310000000000000
+          Top = 18.897650000000000000
+          Width = 642.520100000000000000
+          Height = 18.897650000000000000
+          DataField = 'NOME'
+          DataSet = frmmodulo.fxemitente
+          DataSetName = 'fxemitente'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[fxemitente."NOME"]')
+          ParentFont = False
+        end
+        object Memo38: TfrxMemoView
+          Left = 102.047310000000000000
+          Top = 37.795300000000000000
+          Width = 207.874150000000000000
+          Height = 18.897650000000000000
+          DataField = 'IE'
+          DataSet = frmmodulo.fxemitente
+          DataSetName = 'fxemitente'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[fxemitente."IE"]')
+          ParentFont = False
+        end
+        object Memo39: TfrxMemoView
+          Left = 102.047310000000000000
+          Top = 56.692949999999990000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '00000#'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[Page#]')
+          ParentFont = False
+        end
+        object Memo40: TfrxMemoView
+          Left = 532.913730000000000000
+          Top = 37.795300000000000000
+          Width = 45.354360000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            'CNPJ:')
+          ParentFont = False
+        end
+        object Memo41: TfrxMemoView
+          Left = 578.268090000000000000
+          Top = 37.795300000000000000
+          Width = 158.740260000000000000
+          Height = 18.897650000000000000
+          DataField = 'CNPJ'
+          DataSet = frmmodulo.fxemitente
+          DataSetName = 'fxemitente'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fxemitente."CNPJ"]')
+          ParentFont = False
+        end
+        object Memo42: TfrxMemoView
+          Left = 396.850650000000000000
+          Top = 56.692949999999990000
+          Width = 181.417440000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            'Estoque existentes em:')
+          ParentFont = False
+        end
+        object Memo43: TfrxMemoView
+          Left = 578.268090000000000000
+          Top = 56.692949999999990000
+          Width = 158.740260000000000000
+          Height = 18.897650000000000000
+          DataField = 'LINHA7'
+          DataSet = frmmodulo.fxrelatorio
+          DataSetName = 'fxrelatorio'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fxrelatorio."LINHA7"]')
+          ParentFont = False
+        end
+        object Line27: TfrxLineView
+          Top = 79.370130000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Height = 15.118120000000000000
+        Top = 238.110390000000000000
+        Width = 740.409927000000000000
+        DataSet = fsinventario
+        DataSetName = 'fsinventario'
+        RowCount = 0
+        object Memo3: TfrxMemoView
+          Width = 56.692950000000000000
+          Height = 15.118120000000000000
+          DataField = 'CODPRODUTO'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[fsinventario."CODPRODUTO"]')
+          ParentFont = False
+        end
+        object Memo4: TfrxMemoView
+          Left = 66.252010000000000000
+          Width = 359.055350000000000000
+          Height = 15.118120000000000000
+          DataField = 'PRODUTO'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[fsinventario."PRODUTO"]')
+          ParentFont = False
+        end
+        object Memo5: TfrxMemoView
+          Left = 432.866420000000000000
+          Width = 26.456710000000000000
+          Height = 15.118120000000000000
+          DataField = 'UNIDADE'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[fsinventario."UNIDADE"]')
+          ParentFont = False
+        end
+        object Memo6: TfrxMemoView
+          Left = 466.882190000000000000
+          Width = 83.149660000000000000
+          Height = 15.118120000000000000
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.000'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fsinventario."ESTOQUE"]')
+          ParentFont = False
+        end
+        object Memo7: TfrxMemoView
+          Left = 551.811380000000000000
+          Width = 83.149660000000000000
+          Height = 15.118120000000000000
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.000'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fsinventario."CUSTO"]')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          Left = 653.858690000000000000
+          Width = 83.149660000000000000
+          Height = 15.118120000000000000
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fsinventario."TOTAL"]')
+          ParentFont = False
+        end
+        object Line13: TfrxLineView
+          Left = 62.472480000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line14: TfrxLineView
+          Left = 429.086890000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line15: TfrxLineView
+          Left = 462.882190000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line16: TfrxLineView
+          Left = 552.811380000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line17: TfrxLineView
+          Left = 644.520100000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        FillType = ftBrush
+        Height = 22.677180000000000000
+        Top = 699.213050000000000000
+        Width = 740.409927000000000000
+        PrintOnLastPage = False
+        object Memo18: TfrxMemoView
+          Left = 128.504020000000000000
+          Top = 1.999956060000045000
+          Width = 124.724490000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            'R$ [SUM(<fsinventario."TOTAL">,MasterData1)]')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          Left = 7.559060000000000000
+          Top = 1.999956060000045000
+          Width = 113.385900000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'Total da P'#225'gina:')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          Left = 449.764070000000000000
+          Top = 2.000000000000000000
+          Width = 151.181200000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'Subtotal do Invent'#225'rio:')
+          ParentFont = False
+        end
+        object Memo15: TfrxMemoView
+          Left = 608.504330000000000000
+          Top = 2.000000000000000000
+          Width = 128.504020000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            'R$ [SUM(<fsinventario."TOTAL">,MasterData1,2)]')
+          ParentFont = False
+        end
+        object Line26: TfrxLineView
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object GroupHeader1: TfrxGroupHeader
+        FillType = ftBrush
+        Height = 56.692950000000000000
+        Top = 158.740260000000000000
+        Width = 740.409927000000000000
+        Condition = 'fsinventario."nome_aliquota"'
+        ReprintOnNewPage = True
+        object Memo1: TfrxMemoView
+          Left = 453.543600000000000000
+          Top = 1.889763780000010000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'CST:')
+          ParentFont = False
+        end
+        object Memo2: TfrxMemoView
+          Left = 502.677490000000000000
+          Top = 1.889763780000010000
+          Width = 64.252010000000000000
+          Height = 18.897650000000000000
+          OnAfterData = 'Memo2OnAfterData'
+          DataField = 'CST'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fsinventario."CST"]')
+          ParentFont = False
+        end
+        object Line7: TfrxLineView
+          Left = 62.252010000000000000
+          Top = 23.677128740000000000
+          Height = 30.236240000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo44: TfrxMemoView
+          Top = 30.236240000000010000
+          Width = 60.472480000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'C'#243'digo')
+          ParentFont = False
+        end
+        object Memo45: TfrxMemoView
+          Left = 62.252010000000000000
+          Top = 30.236240000000010000
+          Width = 366.614410000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Discrimina'#231#227'o')
+          ParentFont = False
+        end
+        object Line8: TfrxLineView
+          Left = 428.866420000000000000
+          Top = 23.677128740000000000
+          Height = 30.236240000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo46: TfrxMemoView
+          Left = 432.645950000000000000
+          Top = 30.236240000000010000
+          Width = 26.456710000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Un.')
+          ParentFont = False
+        end
+        object Memo47: TfrxMemoView
+          Left = 466.661720000000000000
+          Top = 30.236240000000010000
+          Width = 83.149660000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Quantidade')
+          ParentFont = False
+        end
+        object Memo48: TfrxMemoView
+          Left = 557.370440000000000000
+          Top = 22.677179999999990000
+          Width = 173.858380000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'VALOR')
+          ParentFont = False
+        end
+        object Memo49: TfrxMemoView
+          Left = 557.370440000000000000
+          Top = 37.795300000000000000
+          Width = 83.149660000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Unit'#225'rio')
+          ParentFont = False
+        end
+        object Memo50: TfrxMemoView
+          Left = 648.079160000000000000
+          Top = 37.795300000000000000
+          Width = 86.929190000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Total')
+          ParentFont = False
+        end
+        object Line9: TfrxLineView
+          Left = 462.882190000000000000
+          Top = 22.677179999999990000
+          Height = 30.236240000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line10: TfrxLineView
+          Left = 553.590910000000000000
+          Top = 22.677179999999990000
+          Height = 30.236240000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line11: TfrxLineView
+          Left = 644.299630000000000000
+          Top = 37.795300000000000000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line12: TfrxLineView
+          Left = 553.590910000000000000
+          Top = 37.795300000000000000
+          Width = 188.976500000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line1: TfrxLineView
+          Top = 22.456709999999990000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo17: TfrxMemoView
+          Left = 578.268090000000000000
+          Top = 1.779529999999994000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Al'#237'quota:')
+          ParentFont = False
+        end
+        object Memo19: TfrxMemoView
+          Left = 665.197280000000000000
+          Top = 1.779529999999994000
+          Width = 71.811070000000000000
+          Height = 18.897650000000000000
+          OnAfterData = 'Memo19OnAfterData'
+          DataField = 'ALIQUOTA'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00%'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fsinventario."ALIQUOTA"]')
+          ParentFont = False
+        end
+        object Line2: TfrxLineView
+          Top = 52.913420000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo86: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 2.000000000000000000
+          Width = 120.944960000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Classifica'#231#227'o:')
+          ParentFont = False
+        end
+        object Memo87: TfrxMemoView
+          Left = 132.283550000000000000
+          Top = 2.000000000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          OnAfterData = 'Memo2OnAfterData'
+          DataField = 'TIPO'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fsinventario."TIPO"]')
+          ParentFont = False
+        end
+      end
+      object GroupFooter1: TfrxGroupFooter
+        FillType = ftBrush
+        Height = 26.456710000000000000
+        Top = 275.905690000000000000
+        Width = 740.409927000000000000
+        object Line19: TfrxLineView
+          Left = 644.299630000000000000
+          Top = 2.779530000000022000
+          Height = 15.118120000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo11: TfrxMemoView
+          Left = 642.520100000000000000
+          Top = 3.779530000000022000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[SUM(<fsinventario."TOTAL">,MasterData1)]')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 3.889763780000010000
+          Width = 41.574830000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'CST:')
+          ParentFont = False
+        end
+        object Memo10: TfrxMemoView
+          Left = 52.913420000000000000
+          Top = 3.889763780000010000
+          Width = 64.252010000000000000
+          Height = 15.118120000000000000
+          DataField = 'CST'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fsinventario."CST"]')
+          ParentFont = False
+        end
+        object Memo20: TfrxMemoView
+          Left = 128.504020000000000000
+          Top = 3.779530000000022000
+          Width = 79.370130000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Al'#237'quota:')
+          ParentFont = False
+        end
+        object Memo23: TfrxMemoView
+          Left = 215.433210000000000000
+          Top = 3.779530000000022000
+          Width = 71.811070000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo23OnAfterData'
+          DataField = 'ALIQUOTA'
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00%'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fsinventario."ALIQUOTA"]')
+          ParentFont = False
+        end
+        object Memo24: TfrxMemoView
+          Left = 585.827150000000000000
+          Top = 3.779530000000022000
+          Width = 56.692950000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'TOTAL:')
+          ParentFont = False
+        end
+        object Line24: TfrxLineView
+          Top = 1.000000000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line25: TfrxLineView
+          Top = 19.897650000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object Footer1: TfrxFooter
+        FillType = ftBrush
+        Height = 41.574830000000000000
+        Top = 325.039580000000000000
+        Width = 740.409927000000000000
+        object Memo34: TfrxMemoView
+          Left = 604.724800000000000000
+          Top = 3.889761340000007000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            'R$ [SUM(<fsinventario."TOTAL">,MasterData1,2)]')
+          ParentFont = False
+        end
+        object Memo14: TfrxMemoView
+          Left = 449.764070000000000000
+          Top = 3.779530000000022000
+          Width = 151.181200000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'TOTAL GERAL:')
+          ParentFont = False
+        end
+        object Line3: TfrxLineView
+          Top = 22.677180000000020000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo16: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 25.456709999999990000
+          Width = 733.228820000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '********** RESUMO DO INVENT'#193'RIO **********')
+          ParentFont = False
+        end
+        object Line18: TfrxLineView
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object DetailData1: TfrxDetailData
+        FillType = ftBrush
+        Height = 18.897650000000000000
+        Top = 430.866420000000000000
+        Width = 740.409927000000000000
+        DataSet = fstotal
+        DataSetName = 'fstotal'
+        RowCount = 0
+        object Memo30: TfrxMemoView
+          Left = 642.520100000000000000
+          Top = 0.779530000000022500
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DataSet = fstotal
+          DataSetName = 'fstotal'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fstotal."TOTAL"]')
+          ParentFont = False
+        end
+        object Memo27: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 0.889763779999952900
+          Width = 45.354360000000000000
+          Height = 15.118120000000000000
+          DataField = 'CST'
+          DataSet = fstotal
+          DataSetName = 'fstotal'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fstotal."CST"]')
+          ParentFont = False
+        end
+        object Memo29: TfrxMemoView
+          Left = 64.252010000000000000
+          Top = 0.779530000000022500
+          Width = 71.811070000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo29OnAfterData'
+          DataField = 'ALIQUOTA'
+          DataSet = fstotal
+          DataSetName = 'fstotal'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00%'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fstotal."ALIQUOTA"]')
+          ParentFont = False
+        end
+        object Memo99: TfrxMemoView
+          Left = 154.960730000000000000
+          Width = 275.905690000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo29OnAfterData'
+          DataField = 'TIPO'
+          DataSet = fstotal
+          DataSetName = 'fstotal'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fstotal."TIPO"]')
+          ParentFont = False
+        end
+      end
+      object MasterData2: TfrxMasterData
+        FillType = ftBrush
+        Height = 18.897650000000000000
+        Top = 389.291590000000000000
+        Width = 740.409927000000000000
+        DataSet = fstotal
+        DataSetName = 'fstotal'
+        RowCount = 0
+        object Memo55: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 2.779530000000022000
+          Width = 30.236240000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo55OnAfterData'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'CST')
+          ParentFont = False
+        end
+        object Memo56: TfrxMemoView
+          Left = 64.252010000000000000
+          Top = 2.779530000000022000
+          Width = 64.252010000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo56OnAfterData'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'AL'#205'QUOTA')
+          ParentFont = False
+        end
+        object Line28: TfrxLineView
+          Top = 18.897650000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Memo26: TfrxMemoView
+          Left = 642.520100000000000000
+          Top = 3.779530000000022000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            'VALOR')
+          ParentFont = False
+        end
+        object Memo98: TfrxMemoView
+          Left = 154.960730000000000000
+          Top = 3.779530000000022000
+          Width = 147.401670000000000000
+          Height = 15.118120000000000000
+          OnAfterData = 'Memo56OnAfterData'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'CLASSIFICA'#199#195'O')
+          ParentFont = False
+        end
+      end
+      object Footer2: TfrxFooter
+        FillType = ftBrush
+        Height = 22.677180000000000000
+        Top = 472.441250000000000000
+        Width = 740.409927000000000000
+        object Memo25: TfrxMemoView
+          Left = 643.740570000000000000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[SUM(<fstotal."TOTAL">,DetailData1)]')
+          ParentFont = False
+        end
+        object Memo31: TfrxMemoView
+          Left = 7.559060000000000000
+          Width = 68.031540000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Total:')
+          ParentFont = False
+        end
+        object Line4: TfrxLineView
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object MasterData3: TfrxMasterData
+        FillType = ftBrush
+        Height = 30.236240000000000000
+        Top = 517.795610000000000000
+        Width = 740.409927000000000000
+        DataSet = fstotal_TIPO
+        DataSetName = 'fstotal_TIPO'
+        RowCount = 0
+        object Memo92: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 8.779530000000023000
+          Width = 204.094620000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'CLASSIFICA'#199#195'O DO PRODUTO')
+          ParentFont = False
+        end
+        object Memo94: TfrxMemoView
+          Left = 642.520100000000000000
+          Top = 9.779530000000023000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          HAlign = haRight
+          Memo.UTF8W = (
+            'VALOR')
+          ParentFont = False
+        end
+        object Line21: TfrxLineView
+          Top = 27.677180000000020000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+        object Line22: TfrxLineView
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+      object DetailData2: TfrxDetailData
+        FillType = ftBrush
+        Height = 18.897650000000000000
+        Top = 570.709030000000000000
+        Width = 740.409927000000000000
+        DataSet = fstotal_TIPO
+        DataSetName = 'fstotal_TIPO'
+        RowCount = 0
+        object Memo93: TfrxMemoView
+          Left = 642.520100000000000000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DataField = 'TOTAL'
+          DataSet = fstotal_TIPO
+          DataSetName = 'fstotal_TIPO'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[fstotal_TIPO."TOTAL"]')
+          ParentFont = False
+        end
+        object Memo95: TfrxMemoView
+          Left = 3.779530000000000000
+          Width = 336.378170000000000000
+          Height = 15.118120000000000000
+          DataField = 'TIPO'
+          DataSet = fstotal_TIPO
+          DataSetName = 'fstotal_TIPO'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[fstotal_TIPO."TIPO"]')
+          ParentFont = False
+        end
+      end
+      object Footer3: TfrxFooter
+        FillType = ftBrush
+        Height = 26.456710000000000000
+        Top = 612.283860000000000000
+        Width = 740.409927000000000000
+        object Memo96: TfrxMemoView
+          Left = 643.740570000000000000
+          Top = 7.181102359999954000
+          Width = 94.488250000000000000
+          Height = 15.118120000000000000
+          DataSet = fsinventario
+          DataSetName = 'fsinventario'
+          DisplayFormat.DecimalSeparator = ','
+          DisplayFormat.FormatStr = '###,###,##0.00'
+          DisplayFormat.Kind = fkNumeric
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[SUM(<fstotal_TIPO."TOTAL">,DetailData2)]')
+          ParentFont = False
+        end
+        object Memo97: TfrxMemoView
+          Left = 7.559060000000000000
+          Top = 7.000000000000000000
+          Width = 68.031540000000000000
+          Height = 15.118120000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Courier New'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Total:')
+          ParentFont = False
+        end
+        object Line20: TfrxLineView
+          Top = 5.000000000000000000
+          Width = 740.787880000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Diagonal = True
+        end
+      end
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object Rich2: TfrxRichView
+        Left = 147.401670000000000000
+        Top = 143.622140000000000000
+        Width = 445.984540000000000000
+        Height = 109.606370000000000000
+        GapX = 2.000000000000000000
+        GapY = 1.000000000000000000
+        RichEdit = {
+          7B5C727466315C616E73695C616E7369637067313235325C64656666305C6E6F
+          7569636F6D7061745C6465666C616E67313034367B5C666F6E7474626C7B5C66
+          305C666E696C5C66636861727365743020436F7572696572204E65773B7D7D0D
+          0A7B5C2A5C67656E657261746F722052696368656432302031302E302E313632
+          39397D5C766965776B696E64345C756331200D0A5C706172645C716A5C66305C
+          667332342050726F636564656D6F732C206E6573746120646174612C20616F20
+          656E63657272616D656E746F20646F2070726573656E7465206C6976726F2C20
+          6465206E5C2766616D65726F2020202020205C62202C205C623020636F6E7374
+          6974755C276564646F20706F7220666F726D756C5C27653172696F7320636F6D
+          2020202020666F6C6861732C20636F6E74656E646F2061206573637472697475
+          72615C2765375C2765336F2072656C617469766120616F206573746F71756520
+          656D205C62205B667872656C61746F72696F2E224C494E484137225D5C623020
+          2E5C7061720D0A5C7061720D0A5C7061720D0A5C667332305C7061720D0A7D0D
+          0A00}
+      end
+      object Memo68: TfrxMemoView
+        Top = 15.118120000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'R E G I S T R O   D E   I N V E N T '#193' R I O')
+        ParentFont = False
+      end
+      object Memo69: TfrxMemoView
+        Top = 86.929190000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'T E R M O   D E   E N C E R R A M E N T O')
+        ParentFont = False
+      end
+      object Memo70: TfrxMemoView
+        Top = 49.133890000000000000
+        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        DisplayFormat.FormatStr = '00000#'
+        DisplayFormat.Kind = fkNumeric
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'N'#186'. do Livro [fxrelatorio."LINHA1"]       N'#186'. da Folha: [Page#]')
+        ParentFont = False
+      end
+      object Memo71: TfrxMemoView
+        Left = 332.039580000000000000
+        Top = 178.637910000000000000
+        Width = 45.354360000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[TotalPages#]')
+        ParentFont = False
+      end
+      object Memo72: TfrxMemoView
+        Left = 60.472480000000000000
+        Top = 472.441250000000000000
+        Width = 600.945270000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA9'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA9"]')
+        ParentFont = False
+      end
+      object Memo73: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 585.827150000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '----------------------------------')
+        ParentFont = False
+      end
+      object Memo74: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 737.008350000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '----------------------------------')
+        ParentFont = False
+      end
+      object Memo75: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 600.945270000000000000
+        Width = 495.118430000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxemitente."RESPONSAVEL"]')
+        ParentFont = False
+      end
+      object Memo76: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 752.126470000000000000
+        Width = 495.118430000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA5"]')
+        ParentFont = False
+      end
+      object Memo77: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 619.842920000000000000
+        Width = 279.685220000000000000
+        Height = 15.118120000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'CPF:')
+        ParentFont = False
+      end
+      object Memo78: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 771.024120000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA6"]')
+        ParentFont = False
+      end
+      object Memo79: TfrxMemoView
+        Left = 399.850650000000000000
+        Top = 162.519790000000000000
+        Width = 64.252010000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA1'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA1"]')
+        ParentFont = False
+      end
+      object Memo80: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 272.126160000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Nome:')
+        ParentFont = False
+      end
+      object Memo81: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 291.023810000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Endere'#231'o:')
+        ParentFont = False
+      end
+      object Memo82: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 309.921460000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Bairro/Setor:')
+        ParentFont = False
+      end
+      object Memo83: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 328.819110000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Cidade:')
+        ParentFont = False
+      end
+      object Memo84: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 347.716760000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Ins.Municipal:')
+        ParentFont = False
+      end
+      object Memo85: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 366.614410000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Insc.Estadual:')
+        ParentFont = False
+      end
+      object Memo112: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 385.512060000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'C.N.P.J.:')
+        ParentFont = False
+      end
+      object Memo113: TfrxMemoView
+        Left = 37.795300000000000000
+        Top = 404.409710000000000000
+        Width = 139.842610000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        HAlign = haRight
+        Memo.UTF8W = (
+          'Junta:')
+        ParentFont = False
+      end
+      object Memo114: TfrxMemoView
+        Left = 453.543600000000000000
+        Top = 404.409710000000000000
+        Width = 60.472480000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'Data:')
+        ParentFont = False
+      end
+      object Memo115: TfrxMemoView
+        Left = 453.543600000000000000
+        Top = 328.819110000000000000
+        Width = 37.795300000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'UF:')
+        ParentFont = False
+      end
+      object Memo116: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 272.126160000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo117: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 291.023810000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'ENDERECO'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]')
+        ParentFont = False
+      end
+      object Memo118: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 309.921460000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataField = 'BAIRRO'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."BAIRRO"]')
+        ParentFont = False
+      end
+      object Memo119: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 328.819110000000000000
+        Width = 257.008040000000000000
+        Height = 18.897650000000000000
+        DataField = 'CIDADE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."CIDADE"]')
+        ParentFont = False
+      end
+      object Memo120: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 347.716760000000000000
+        Width = 532.913730000000000000
+        Height = 18.897650000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Memo121: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 366.614410000000000000
+        Width = 230.551330000000000000
+        Height = 18.897650000000000000
+        DataField = 'IE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."IE"]')
+        ParentFont = False
+      end
+      object Memo122: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 385.512060000000000000
+        Width = 230.551330000000000000
+        Height = 18.897650000000000000
+        DataField = 'CNPJ'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."CNPJ"]')
+        ParentFont = False
+      end
+      object Memo123: TfrxMemoView
+        Left = 185.196970000000000000
+        Top = 404.409710000000000000
+        Width = 257.008040000000000000
+        Height = 18.897650000000000000
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA3"]  ')
+        ParentFont = False
+      end
+      object Memo124: TfrxMemoView
+        Left = 521.575140000000000000
+        Top = 404.409710000000000000
+        Width = 109.606370000000000000
+        Height = 18.897650000000000000
+        DataField = 'LINHA4'
+        DataSet = frmmodulo.fxrelatorio
+        DataSetName = 'fxrelatorio'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxrelatorio."LINHA4"]')
+        ParentFont = False
+      end
+      object Memo125: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 328.819110000000000000
+        Width = 49.133890000000000000
+        Height = 18.897650000000000000
+        DataField = 'UF'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        Memo.UTF8W = (
+          '[fxemitente."UF"]')
+        ParentFont = False
+      end
+      object Memo126: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 634.961040000000000000
+        Width = 279.685220000000000000
+        Height = 15.118120000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'RG:')
+        ParentFont = False
+      end
+      object Memo127: TfrxMemoView
+        Left = 234.330860000000000000
+        Top = 789.921770000000000000
+        Width = 279.685220000000000000
+        Height = 18.897650000000000000
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        Memo.UTF8W = (
+          'CPF:')
+        ParentFont = False
+      end
+      object Line42: TfrxLineView
+        Left = 15.118120000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line43: TfrxLineView
+        Left = 15.118120000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line44: TfrxLineView
+        Left = 241.889920000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line45: TfrxLineView
+        Left = 222.992270000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line46: TfrxLineView
+        Left = 241.889920000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line47: TfrxLineView
+        Left = 222.992270000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line48: TfrxLineView
+        Left = 15.118120000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line49: TfrxLineView
+        Left = 15.118120000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line50: TfrxLineView
+        Left = 487.559370000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line51: TfrxLineView
+        Left = 487.559370000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line52: TfrxLineView
+        Left = 695.433520000000000000
+        Top = 850.394250000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line53: TfrxLineView
+        Left = 695.433520000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line54: TfrxLineView
+        Left = 487.559370000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line55: TfrxLineView
+        Left = 487.559370000000000000
+        Top = 963.780150000000000000
+        Width = 18.897650000000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Memo140: TfrxMemoView
+        Left = 26.456710000000000000
+        Top = 861.732840000000000000
+        Width = 204.094620000000000000
+        Height = 18.897650000000000000
+        DataField = 'CNPJ'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."CNPJ"]')
+        ParentFont = False
+      end
+      object Memo141: TfrxMemoView
+        Left = 26.456710000000000000
+        Top = 880.630490000000000000
+        Width = 204.094620000000000000
+        Height = 26.456710000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo142: TfrxMemoView
+        Left = 26.456710000000000000
+        Top = 907.087200000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]  [fxemitente."NUMERO"]')
+        ParentFont = False
+      end
+      object Memo143: TfrxMemoView
+        Left = 26.456710000000000000
+        Top = 925.984850000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."BAIRRO"]  -  CEP: [fxemitente."CEP"]')
+        ParentFont = False
+      end
+      object Memo144: TfrxMemoView
+        Left = 26.456710000000000000
+        Top = 941.102970000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."CIDADE"]  -  [fxemitente."UF"]')
+        ParentFont = False
+      end
+      object Memo145: TfrxMemoView
+        Left = 56.692950000000000000
+        Top = 839.055660000000000000
+        Width = 132.283550000000000000
+        Height = 18.897650000000000000
+        Visibility = [vsPreview, vsExport]
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CARIMBO CNPJ')
+        ParentFont = False
+      end
+      object Memo146: TfrxMemoView
+        Left = 529.134200000000000000
+        Top = 839.055660000000000000
+        Width = 132.283550000000000000
+        Height = 18.897650000000000000
+        Visibility = [vsPreview, vsExport]
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CARIMBO IE')
+        ParentFont = False
+      end
+      object Memo147: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 861.732840000000000000
+        Width = 204.094620000000000000
+        Height = 18.897650000000000000
+        DataField = 'IE'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."IE"]')
+        ParentFont = False
+      end
+      object Memo148: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 880.630490000000000000
+        Width = 204.094620000000000000
+        Height = 26.456710000000000000
+        DataField = 'NOME'
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."NOME"]')
+        ParentFont = False
+      end
+      object Memo149: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 907.087200000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          '[fxemitente."ENDERECO"]  [fxemitente."NUMERO"]')
+        ParentFont = False
+      end
+      object Memo150: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 925.984850000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          
+            '[fxemitente."BAIRRO"]  -  [fxemitente."CIDADE"] - [fxemitente."U' +
+            'F"]')
+        ParentFont = False
+      end
+      object Memo151: TfrxMemoView
+        Left = 498.897960000000000000
+        Top = 941.102970000000000000
+        Width = 204.094620000000000000
+        Height = 15.118120000000000000
+        DataSet = frmmodulo.fxemitente
+        DataSetName = 'fxemitente'
+        DisplayFormat.DecimalSeparator = ','
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        HAlign = haCenter
+        Memo.UTF8W = (
+          'CNAE .....       MUN......')
+        ParentFont = False
+      end
+      object Line56: TfrxLineView
+        Left = 714.331170000000000000
+        Top = 850.394250000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+      object Line57: TfrxLineView
+        Left = 714.331170000000000000
+        Top = 944.882500000000000000
+        Height = 18.897637800000000000
+        Color = clBlack
+        Diagonal = True
+      end
+    end
+  end
+  object frxDesigner1: TfrxDesigner
+    DefaultScriptLanguage = 'PascalScript'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = -13
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    DefaultLeftMargin = 10.000000000000000000
+    DefaultRightMargin = 10.000000000000000000
+    DefaultTopMargin = 10.000000000000000000
+    DefaultBottomMargin = 10.000000000000000000
+    DefaultPaperSize = 9
+    DefaultOrientation = poPortrait
+    GradientEnd = 11982554
+    GradientStart = clWindow
+    TemplatesExt = 'fr3'
+    Restrictions = []
+    RTLLanguage = False
+    MemoParentFont = False
+    Left = 592
+    Top = 315
+  end
+  object fsinventario: TfrxDBDataset
+    UserName = 'fsinventario'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'CODPRODUTO=CODPRODUTO'
+      'TIPO=TIPO'
+      'PRODUTO=PRODUTO'
+      'UNIDADE=UNIDADE'
+      'CST=CST'
+      'ALIQUOTA=ALIQUOTA'
+      'ESTOQUE=ESTOQUE'
+      'CUSTO=CUSTO'
+      'TOTAL=TOTAL'
+      'nome_aliquota=nome_aliquota'
+      'DATA=DATA'
+      'VENDA=VENDA'
+      'ANO=ANO'
+      'MES=MES'
+      'DATA_POSTERIOR=DATA_POSTERIOR')
+    DataSet = qrinventario
+    BCDToCurrency = False
+    Left = 624
+    Top = 315
+  end
+  object qrgrupo_aliquota: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'SELECT SUM(total) TOTAL, TIPO, CST, ALIQUOTA'
+      'FROM inventario '
+      'GROUP BY TIPO, CST, ALIQUOTA order by TIPO, CST, ALIQUOTA')
+    Params = <>
+    Left = 328
+    Top = 240
+  end
+  object qrgrupo_tipo: TZQuery
+    Connection = frmmodulo.Conexao
+    SQL.Strings = (
+      'SELECT SUM(total) TOTAL, TIPO'
+      'FROM inventario'
+      'GROUP BY TIPO order by TIPO')
+    Params = <>
+    Left = 512
+    Top = 208
+    object qrgrupo_tipoTOTAL: TExtendedField
+      FieldName = 'TOTAL'
+      ReadOnly = True
+      Precision = 19
+    end
+    object qrgrupo_tipoTIPO: TWideStringField
+      FieldName = 'TIPO'
+      Size = 30
+    end
+  end
+  object fstotal_TIPO: TfrxDBDataset
+    UserName = 'fstotal_TIPO'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'TOTAL=TOTAL'
+      'TIPO=TIPO')
+    DataSet = qrgrupo_tipo
+    BCDToCurrency = False
+    Left = 360
+    Top = 275
+  end
+  object fstotal: TfrxDBDataset
+    UserName = 'fstotal'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'TOTAL=TOTAL'
+      'TIPO=TIPO'
+      'CST=CST'
+      'ALIQUOTA=ALIQUOTA')
+    DataSet = qrgrupo_aliquota
+    BCDToCurrency = False
+    Left = 328
+    Top = 275
+  end
+  object Query: TZQuery
+    Connection = frmmodulo.Conexao
+    Params = <>
+    Left = 248
+    Top = 160
+  end
+end
